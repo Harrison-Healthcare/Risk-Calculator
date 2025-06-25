@@ -1,138 +1,98 @@
 # Harrison Healthcare Risk Calculator
-# Coronary Heart Disease Risk Simulation Dataset
 
-This repository contains R code and data files for simulating and validating cardiovascular risk datasets using both Framingham and Harrison Healthcare risk models. The project includes two main approaches:
+*Last Updated: June 2024*
 
-1. **Framingham Input Analysis**
-   - Uses original Framingham study data and methodology
-   - Uses Wilson et al. (1998) Framingham risk equations for Framingham TC and LDL model
-   - Uses updated Harrison Healthcare methodology, risk equations for the HH-CHD TC and LDL model
-   - Calculates risk using original Framingham coefficients and prevalence rates
-   
+This repository documents the methods, mathematical weights, and validation studies for Harrison Healthcare's (HH) risk calculators. These calculators are designed to estimate individuals' risk for chronic diseases by combining relative risks and prevalence estimates from peer-reviewed studies, and chaining these together to form a risk score. Unlike single-cohort models (e.g., Framingham), the HH risk calculators use a generalized form of the Harvard Cancer Risk Index (HCRI) equation that accommodates categorical risk factors with three or more levels. Furthermore, to prevent inflated risk estimates when both lifestyle exposures and downstream biomarkers are included, the HH risk calculators apply a mediation-adjusted risk formula. This enhanced method separates direct and indirect effects using a user-defined mediation parameter (α), enabling more accurate estimation of total risk.
 
-2. **Contemporary Input Analysis**
-   - Uses original Framingham study data and methodology
-   - Uses Wilson et al. (1998) Framingham risk equations for Framingham TC and LDL model with original Framingham coefficients and prevalence rates
-   - Uses modern risk factors and prevalence rates and updated Harrison Healthcare methodology, risk equations for the HH-CHD model
+All inputs—including relative risks, prevalence estimates, and mediation assumptions—are derived from peer-reviewed meta-analyses or national health surveys and are fully documented for transparency and reproducibility.
 
+## Table of Contents
 
-## File Descriptions
+- [Key Features](#key-features)
+- [Repository Structure](#repository-structure)
+- [Getting Started](#getting-started)
+- [Methodology Overview](#methodology-overview)
+- [Validation Studies](#validation-studies)
+- [Key Publications & References](#key-publications--references)
+- [Authors & Contributors](#authors--contributors)
+- [License & Usage](#license--usage)
+- [Contact](#contact)
 
-### Documentation
+## Key Features
 
-1. `Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.md`
-   - Documentation explaining the methodology and validation results
-   - Contains detailed analysis of how Harrison Healthcare risk calculator reproduces Framingham scores
-   
-### Input Data Files Relative Risk and Prevalence
+### 🔧 **Modular Framework Architecture**
+- **Multi-source Integration**: Combines relative risk and prevalence estimates from multiple peer-reviewed studies
+- **Regular Updates**: Framework enables continuous updates as new evidence emerges
+- **Generalizable Design**: Unlike single-cohort datasets (e.g., Framingham), methodology can be applied across diverse populations
 
-1. **Framingham Inputs**
-   - `TC_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
-     - Relative risk and prevalence values from original Framingham TC model
-     - Based on Wilson et al. (1998) methodology
-   
-   - `LDL_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
-     - Relative risk and prevalence values from original Framingham LDL model
-     - Based on Wilson et al. (1998) methodology
+### 🧬 **Advanced Risk Calculation Methodology**
+- **Mediation Effects Integration**: Novel approach to handle interactions between lifestyle factors and biomarkers
+- **Direct vs. Indirect Effects**: Prevents double-counting when combining lifestyle factors (e.g., saturated fat intake) with biomarkers (e.g., LDL cholesterol)
+- **Multi-level Risk Factors**: Extended Harvard Cancer Risk Index (HCRI) equation supporting factors with 3+ levels
 
-2. **Contemporary Inputs**
-   - `HH_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
-     - Relative risk and prevalence values for Harrison Healthcare model
-     - Based on contemporary meta-analysis and research
-     - Includes updated risk factor coefficients
+### 📊 **Comprehensive Chronic Disease Coverage**
+- **Multiple Health Conditions**: Risk assessment for common chronic diseases beyond cardiovascular conditions
+- **Evidence-Based Risk Factors**: All factors derived from peer-reviewed meta-analyses and cohort studies
+- **Population-Representative**: Uses contemporary demographic and health survey data
 
-### Input Data Files WPR
+### 🔬 **Transparent & Open Methodology**
+- **Public Domain**: Complete methodology, weights, and sources freely available
+- **Peer-Reviewed Sources**: All risk factors traceable to published research
+- **Validation Studies**: Includes preliminary simulations showing close replication of established risk scores
 
-1. **Framingham Inputs**
-   - `TC_WPR_by_Factor_Framingham.xlsx`
-     - Total Cholesterol weighted prevalence rates by factor
-     - Based on original Framingham study data
-     - Used for Framingham Inputs risk calculations
-   
-   - `LDL_WPR_by_Factor_Framingham.xlsx`
-     - LDL Cholesterol weighted prevalence rates by factor
-     - Based on original Framingham study data
-     - Used for Framingham Inputs risk calculations
+## Repository Structure
 
-2. **Contemporary Inputs**
-   - `HH_WPR_by_Factor_Framingham.xlsx`
-     - Harrison Healthcare weighted prevalence rates by factor
-     - Based on contemporary meta-analysis and research
-     - Used for Harrison Healthcare risk calculations
+```
+├── Methodology/                              # Core methodology documentation
+│   ├── Accounting for Mediation Effects in Risk Prediction Calculators.md
+│   ├── Enhanced equation calculations.xlsx
+│   └── Accounting for Mediation Effects in Risk Prediction Calculators.pdf
+│
+├── Simulation studies/                       # Validation and simulation work
+│   └── Coronary Heart Disease/
+│       ├── Analyses/                         # R analysis scripts
+│       │   ├── Dataset_CHD_Framingham_HH_CHD.R
+│       │   ├── Dataset_CHD_Framingham_HH_TC_LDL.R
+│       │   ├── validation_analysis_Framingham vs HH_TC_LDL.R
+│       │   └── validation_analysis_Framingham_vs_HH.R
+│       │
+│       ├── Model inputs/                     # Risk factor data and prevalence
+│       │   ├── TC_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx
+│       │   ├── LDL_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx
+│       │   ├── HH_Framingham CHD Risk Dial Risk Calculator Simualtion Study.xlsx
+│       │   ├── TC_WPR_by_Factor_Framingham.xlsx
+│       │   ├── LDL_WPR_by_Factor_Framingham.xlsx
+│       │   └── HH_WPR_by_Factor_Framingham.xlsx
+│       │
+│       ├── White paper in markdown/          # Research documentation
+│       │   ├── Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.md
+│       │   ├── Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.pdf
+│       │   └── figures/                      # Supporting visualizations
+│       │
+│       ├── CHD_simulation_study_README.md    # CHD-specific documentation
+│       └── README.md                         # Additional CHD documentation
+│
+└── Spreadsheet/                              # Comprehensive risk factor database
+    └── Risk calculator spreadsheet.csv       # Complete risk factor definitions, prevalence, and relative risks
+```
 
-### Main Simulation Scripts
+## Authors & Contributors
 
-1. **Contemporary Analysis**
-   - `Dataset_CHD_Framingham_HH_CHD.R`
-     - Main simulation script using contemporary inputs
-     - Generates dataset with both risk models (Framingham TC & LDL and HH-CHD)
-     - Contains data visualization components
+1. **Boaz Y. Saffer, PhD** - Chief Scientific Officer, Harrison Healthcare  
+2. **Julia Blumkaitis-Bosankic, MSc** - Research Assistant, Harrison Healthcare
+3. **Sidney Nedelmann, BA** - Research Assistant, Harrison Healthcare
 
-2. **Framingham Inputs Analysis**
-   - `Dataset_CHD_Framingham_HH_TC_LDL.R`
-     - Main simulation script using original Framingham inputs
-     - Includes TC and LDL models
-     - Generates comprehensive dataset with both risk models (Framingham TC & LDL and HH-CHD-TC & LDL)
+## License & Usage
 
-### Validation Analysis Scripts
+This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
-1. **Contemporary Validation**
-   - `validation_analysis_Framingham_vs_HH.R`
-     - Compares Framingham and Harrison Healthcare models using contemporary inputs
-     - Uses updated risk factors and prevalence rates
-     - Contains statistical analysis and validation metrics
+### What this means:
+- ✅ **Share** — copy and redistribute the material in any medium or format
+- ✅ **Attribution** — you must give appropriate credit to Harrison Healthcare
+- ❌ **NonCommercial** — you may not use the material for commercial purposes
+- ❌ **NoDerivatives** — you may not distribute modified versions
 
-2. **Framingham Inputs Validation**
-   - `validation_analysis_Framingham vs HH_TC_LDL.R`
-     - Compares Framingham and Harrison Healthcare models using original Framingham inputs
-     - Uses original Framingham coefficients
-     - Contains statistical analysis and validation metrics
+### For Commercial Use:
+Commercial licensing and partnerships are available. Please contact Harrison Healthcare for commercial use permissions.
 
-## How to Use
-
-1. Ensure all required packages are installed:
-   ```R
-   install.packages(c(
-     "dplyr", "MASS", "tidyr", "ggplot2", "writexl", "purrr",
-     "readxl", "readr", "truncnorm"
-   ))
-   ```
-
-2. Set the working directory to the script location
-3. Choose which analysis approach you want to perform:
-   - For contemporary analysis (using updated risk factors):
-     - Run `Dataset_CHD_Framingham_HH_CHD.R`
-     - Output: `simulation_dataset_final_Framingham.xlsx`
-   
-   - For Framingham Inputs analysis (using original Framingham methodology):
-     - Run `Dataset_CHD_Framingham_HH_TC_LDL.R`
-     - Output: `simulation_dataset_final_HH_Framingham_TC_LDL.xlsx`
-
-## Risk Models Implemented
-
-1. **Framingham Risk Model**
-   - 10-year risk calculation using both TC and LDL models
-   - Based on Wilson et al. (1998) Framingham equations
-   - Risk factors: age, cholesterol (TC, LDL, HDL), blood pressure, smoking status, and diabetes
-
-2. **Harrison Healthcare Risk Model**
-   - Absolute incidence and 10-year risk calculations
-   - Based on contemporary research and meta-analysis
-   - Risk factors: age, cholesterol (TC, LDL, HDL), blood pressure, smoking status, and diabetes
-   - Uses updated risk factor coefficients
-
-## Output Variables
-
-The final dataset includes:
-- Framingham 10-year risk (TC and LDL models)
-- Harrison Healthcare absolute incidence and 10-year risk (survival)
-- All input risk factors (age, cholesterol, BP, etc.)
-- Patient demographic information (sex, age)
-
-## Notes
-
-- The simulation uses Framingham study data for correlations and prevalence rates
-- Contemporary model uses updated risk factor coefficients and prevalence rates
-- Original Framingham inputs use Wilson et al. (1998) methodology
-- All risk calculations are age- and sex-specific where appropriate
-- Validation studies compare model performance and accuracy
+*© 2024 Harrison Healthcare. All rights reserved.*
