@@ -10,10 +10,6 @@ All inputs—including relative risks, prevalence estimates, and mediation assum
 
 - [Key Features](#key-features)
 - [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-- [Methodology Overview](#methodology-overview)
-- [Validation Studies](#validation-studies)
-- [Key Publications & References](#key-publications--references)
 - [Authors & Contributors](#authors--contributors)
 - [License & Usage](#license--usage)
 - [Contact](#contact)
