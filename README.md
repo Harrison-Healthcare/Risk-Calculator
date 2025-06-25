@@ -21,24 +21,25 @@ All inputs—including relative risks, prevalence estimates, and mediation assum
 ## Key Features
 
 ### 🔧 **Modular Framework Architecture**
-- **Multi-source Integration**: Combines relative risk and prevalence estimates from multiple peer-reviewed studies
-- **Regular Updates**: Framework enables continuous updates as new evidence emerges
+- **Chainable Design**: Modular architecture allows risk calculators to be chained together for comprehensive health risk assessment
+- **Multi-source Integration & Updates**: Combines relative risk and prevalence estimates from peer-reviewed studies with methodology that enables continuous updates as new evidence emerges
 - **Generalizable Design**: Unlike single-cohort datasets (e.g., Framingham), methodology can be applied across diverse populations
 
 ### 🧬 **Advanced Risk Calculation Methodology**
-- **Mediation Effects Integration**: Novel approach to handle interactions between lifestyle factors and biomarkers
-- **Direct vs. Indirect Effects**: Prevents double-counting when combining lifestyle factors (e.g., saturated fat intake) with biomarkers (e.g., LDL cholesterol)
-- **Multi-level Risk Factors**: Extended Harvard Cancer Risk Index (HCRI) equation supporting factors with 3+ levels
+- **Multi-level Risk Factors**: Supports the integration of risk factors with 3+ levels
+- **Mediation Effects Integration**: Novel approach to handle interactions between lifestyle factors and biomarkers, preventing risk overstimulation when combining lifestyle factors (e.g., saturated fat intake) with downstream biomarkers (e.g., LDL cholesterol)
 
 ### 📊 **Comprehensive Chronic Disease Coverage**
-- **Multiple Health Conditions**: Risk assessment for common chronic diseases beyond cardiovascular conditions
-- **Evidence-Based Risk Factors**: All factors derived from peer-reviewed meta-analyses and cohort studies
-- **Population-Representative**: Uses contemporary demographic and health survey data
+- **18 Individual Risk Calculators**: Specialized risk assessment tools for major chronic diseases and cancers:
+  - **Cancers**: Bladder, Breast, Cervical, Colorectal, Kidney, Lung, Ovarian, Pancreatic, Prostate, Skin (Melanoma)
+  - **Cardiovascular**: Coronary Heart Disease, Hypertension, Stroke
+  - **Metabolic & Endocrine**: Diabetes (Type 2), Osteoporosis
+  - **Neurological & Mental Health**: Dementia, Depression, Generalized Anxiety Disorder
 
 ### 🔬 **Transparent & Open Methodology**
 - **Public Domain**: Complete methodology, weights, and sources freely available
-- **Peer-Reviewed Sources**: All risk factors traceable to published research
-- **Validation Studies**: Includes preliminary simulations showing close replication of established risk scores
+- **Peer-Reviewed Sources**: All weights tracable to peer-reviewed studies
+- **Validation Studies**: Includes preliminary simulations showing close replication of established risk calculators
 
 ## Repository Structure
 
