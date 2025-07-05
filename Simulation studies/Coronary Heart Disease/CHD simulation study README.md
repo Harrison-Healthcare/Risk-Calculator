@@ -20,70 +20,75 @@ This repository contains R code and data files for simulating and validating car
 
 ### Documentation
 
-1. `Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.md`
-   - Documentation explaining the methodology and validation results
+1. `CHD simulation study white paper.md` (located in `White paper/` directory)
+   - Comprehensive white paper explaining the methodology and validation results
    - Contains detailed analysis of how Harrison Healthcare risk calculator reproduces Framingham scores
+   - Includes mathematical equations, statistical analysis, and full result tables
    
-### Input Data Files Relative Risk and Prevalence
+### Input Data Files (located in `Model inputs/` directory)
+
+#### Relative Risk and Prevalence Files
 
 1. **Framingham Inputs**
-   - `TC_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
+   - `TC Framingham CHD risk dial risk calculator simulation study.xlsx`
      - Relative risk and prevalence values from original Framingham TC model
      - Based on Wilson et al. (1998) methodology
    
-   - `LDL_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
+   - `LDL Framingham CHD risk dial risk calculator simulation study.xlsx`
      - Relative risk and prevalence values from original Framingham LDL model
      - Based on Wilson et al. (1998) methodology
 
 2. **Contemporary Inputs**
-   - `HH_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx`
+   - `HH Framingham CHD risk dial risk calculator simulation study.xlsx`
      - Relative risk and prevalence values for Harrison Healthcare model
      - Based on contemporary meta-analysis and research
      - Includes updated risk factor coefficients
 
-### Input Data Files WPR
+#### Weighted Prevalence Rate (WPR) Files
 
 1. **Framingham Inputs**
-   - `TC_WPR_by_Factor_Framingham.xlsx`
+   - `TC WPR by factor Framingham.xlsx`
      - Total Cholesterol weighted prevalence rates by factor
      - Based on original Framingham study data
      - Used for Framingham Inputs risk calculations
    
-   - `LDL_WPR_by_Factor_Framingham.xlsx`
+   - `LDL WPR by factor Framingham.xlsx`
      - LDL Cholesterol weighted prevalence rates by factor
      - Based on original Framingham study data
      - Used for Framingham Inputs risk calculations
 
 2. **Contemporary Inputs**
-   - `HH_WPR_by_Factor_Framingham.xlsx`
+   - `HH WPR by factor Framingham.xlsx`
      - Harrison Healthcare weighted prevalence rates by factor
      - Based on contemporary meta-analysis and research
      - Used for Harrison Healthcare risk calculations
 
-### Main Simulation Scripts
+### Analysis Scripts (located in `Analyses/` directory)
+
+#### Main Simulation Scripts
 
 1. **Contemporary Analysis**
-   - `Dataset_CHD_Framingham_HH_CHD.R`
+   - `Dataset CHD Framingham HH CHD.R`
      - Main simulation script using contemporary inputs
      - Generates dataset with both risk models (Framingham TC & LDL and HH-CHD)
      - Contains data visualization components
 
 2. **Framingham Inputs Analysis**
-   - `Dataset_CHD_Framingham_HH_TC_LDL.R`
+   - `Dataset CHD Framingham HH TC LDL.R`
      - Main simulation script using original Framingham inputs
      - Includes TC and LDL models
      - Generates comprehensive dataset with both risk models (Framingham TC & LDL and HH-CHD-TC & LDL)
 
-### Validation Analysis Scripts
+#### Validation Analysis Scripts
 
 1. **Contemporary Validation**
-   - `validation_analysis_Framingham_vs_HH.R`
+   - `Validation analysis Framingham vs HH.R`
      - Compares Framingham and Harrison Healthcare models using contemporary inputs
      - Uses updated risk factors and prevalence rates
      - Contains statistical analysis and validation metrics
 
 2. **Framingham Inputs Validation**
-   - `validation_analysis_Framingham vs HH_TC_LDL.R`
+   - `Validation analysis Framingham vs HH TC LDL.R`
      - Compares Framingham and Harrison Healthcare models using original Framingham inputs
      - Uses original Framingham coefficients
      - Contains statistical analysis and validation metrics
@@ -99,14 +104,16 @@ This repository contains R code and data files for simulating and validating car
    ```
 
 2. Set the working directory to the script location
-3. Choose which analysis approach you want to perform:
+3. Navigate to the `Analyses/` directory and choose which analysis approach you want to perform:
    - For contemporary analysis (using updated risk factors):
-     - Run `Dataset_CHD_Framingham_HH_CHD.R`
-     - Output: `simulation_dataset_final_Framingham.xlsx`
+     - Run `Dataset CHD Framingham HH CHD.R`
+     - Output: Generates simulation dataset with contemporary HH-CHD vs Framingham comparison
    
    - For Framingham Inputs analysis (using original Framingham methodology):
-     - Run `Dataset_CHD_Framingham_HH_TC_LDL.R`
-     - Output: `simulation_dataset_final_HH_Framingham_TC_LDL.xlsx`
+     - Run `Dataset CHD Framingham HH TC LDL.R`
+     - Output: Generates simulation dataset with original Framingham inputs comparison
+
+4. Run the corresponding validation analysis script to perform statistical comparison and generate validation metrics
 
 ## Risk Models Implemented
 

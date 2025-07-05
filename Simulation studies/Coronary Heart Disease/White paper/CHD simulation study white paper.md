@@ -1,35 +1,33 @@
 
+<div align="center">
+  <img src="figures/harrison logo.jpg" alt="Harrison Healthcare Logo" width="150">
+</div>
 
 
-
-
+---
 
 # Harrison Healthcare’s Coronary Heart Disease Risk Calculator Accurately Replicates the Framingham 10-Year Risk Score in a Simulated Dataset
 
+**Prepared by:** 	
 
-
-Prepared by:
-
-Julia Blumkaitis-Bosankic, MS
-
+Julia Blumkaitis-Bosankic, MS  
 Research Assistant, Harrison Healthcare
 
-
-
-Boaz Y. Saffer, PhD
-
+Boaz Y. Saffer, PhD  
 Chief Scientific Officer, Harrison Healthcare
 
-
-
-Date:
-
+**Date:** 
 May 28th, 2025
 
+## Table of Contents
 
-
-
-
+1. [Introduction](#introduction)
+2. [Study Objective](#study-objective)  
+3. [Methods](#methods)
+4. [Main Results](#main-results)
+5. [Limitations & Next Steps](#limitations-&-next-steps)
+6. [References](#references)
+7. [Appendix — Supplementary Methods, Equations, and Full Result Tables](#appendix)
 
 
 ## Introduction
@@ -61,13 +59,17 @@ The HH-CHD risk calculator demonstrated strong convergence with the Framingham R
 Figure 1. Scatterplots of HH-CHD vs. FRS estimates using Framingham inputs
 
 - Total Cholesterol (TC) Estimate
+
 **A. Total Cholesterol (TC)**  
-![Scatter TC](figures/scatter_TC_vs_HH_CHD_TC.png)
+<div align="center">
+  <img src="figures/scatter_TC_vs_HH_CHD_TC.png" width="600">
+</div>
 
 - Low-Density Lipoprotein (LDL) Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![Scatter LDL](figures/scatter_LDL_vs_HH_CHD_LDL.png)
-
+<div align="center">
+  <img src="figures/scatter_LDL_vs_HH_CHD_LDL.png" width="600">
+</div>
 
 When populated with contemporary relative risks and prevalence figures, the HH-CHD calculator continued to show strong convergence with FRS estimates (r = .87 for TC; r = .85 for LDL). HH-CHD estimates were on average 2% lower, and 95% of estimates fell within 10% of the corresponding FRS estimates. Scatterplots illustrating this comparison are provided in .
 
@@ -90,13 +92,13 @@ Several limitations should be considered when interpreting the results of this s
 
 - Use of Synthetic Data
 These analyses relied on a synthetic dataset constructed to mirror the distributions and covariances of the original Framingham cohort. While this allowed for precise control over model inputs and direct comparison of outputs, it lacks the real-world complexity of clinical data. Factors such as missing values, incomplete records, and more nuanced variable interdependencies were therefore not represented. Future research using actual clinical datasets will be necessary to confirm model performance.
-- 
 - Absence of CHD Outcome Data
 The study was designed to evaluate analytic convergence, not predictive validity. Since the synthetic dataset did not include CHD outcomes, the analyses cannot evaluate the real-world accuracy of either model in forecasting CHD events. Prospective validation efforts are currently underway using longitudinal clinical datasets, allowing for both HH-CHD and FRS to be tested against real-world CHD outcomes.
 - Restricted Variables
 Although the HH-CHD model is designed to incorporate a larger number and broader range of risk factors (including biomarkers, medications, and lifestyle variables) this study was restricted to the six variables used to calculate the FRS (age, cholesterol [TC and LDL], blood pressure, smoking, and diabetes). This constraint ensured a valid one-to-one comparison between estimates but did not permit evaluation of the extended capabilities of HH-CHD. Future work will examine the additive contribution of these additional HH-CHD variables.
 - Use of a Single Baseline Survival Curve
 To convert relative risk into absolute 10-year risk, a fixed, sex-specific baseline survival curve derived from the Framingham cohort was applied. While this maintained consistency with the original FRS methodology, it may limit generalizability to populations with different baseline event rates. Upcoming analyses will incorporate alternative survival curves (e.g., from ARIC or MESA) to test calibration across more diverse populations.
+
 ## Conclusion
 
 The HH-CHD risk calculator achieved its analytic objective: it successfully replicated the 10-year coronary heart disease (CHD) risk estimates produced by the Framingham Risk Score (FRS) when provided with identical inputs. This high level of convergence, reflected in the near-identical estimates across the risk spectrum, demonstrates that the modular, literature-derived methodology used by the HH-CHD can emulate the output of a long-established, cohort-derived model with near-perfect fidelity.
@@ -108,54 +110,73 @@ These findings represent an important foundational step in evaluating HH-CHD as 
 ## References
 
 Arnett, D. K., Blumenthal, R. S., Albert, M. A., Buroker, A. B., Goldberger, Z. D., Hahn, E. J., Ziaeian, B. (2019). 2019 ACC/AHA guideline on the primary prevention of cardiovascular disease. Circulation, 140(11), e596–e646.
+[https://doi.org/10.1161/CIR.0000000000000677](https://doi.org/10.1161/CIR.0000000000000677)
 
 British Heart Foundation. (2025). Global heart & circulatory diseases factsheet.
 
-Colditz, G. A., Atwood, K. A., Emmons, K., Monson, R. R., Willett, W. C., Trichopoulos, D., & Hunter, D. J. (2000). Harvard report on cancer prevention volume 4: Harvard Cancer Risk Index. Risk Index Working Group, Harvard Center for Cancer Prevention. Cancer causes & control : CCC, 11(6), 477–488. https://doi.org/10.1023/a:1008984432272
+Colditz, G. A., Atwood, K. A., Emmons, K., Monson, R. R., Willett, W. C., Trichopoulos, D., & Hunter, D. J. (2000). Harvard report on cancer prevention volume 4: Harvard Cancer Risk Index. Risk Index Working Group, Harvard Center for Cancer Prevention. Cancer causes & control : CCC, 11(6), 477–488. 
+[https://doi.org/10.1023/A:1008984432272](https://doi.org/10.1023/A:1008984432272)
 
-D’Agostino, R. B., Vasan, R. S., Pencina, M. J., Wolf, P. A., Cobain, M., Massaro, J. M., & Kannel, W. B. (2008). General cardiovascular risk profile for use in primary care: The Framingham Heart Study. Circulation, 117(6), 743–753.
+D’Agostino, R. B., Vasan, R. S., Pencina, M. J., Wolf, P. A., Cobain, M., Massaro, J. M., & Kannel, W. B. (2008). General cardiovascular risk profile for use in primary care: The Framingham Heart Study. Circulation, 117(6), 743–753. 
+[https://doi.org/10.1161/CIRCULATIONAHA.107.699579](https://doi.org/10.1161/CIRCULATIONAHA.107.699579)
 
 Després, J. P., Moorjani, S., Lupien, P. J., Tremblay, A., Nadeau, A., & Bouchard, C. (1990). Regional distribution of body fat, plasma lipoproteins, and cardiovascular disease. Arteriosclerosis, 10(4), 497–511.
+[https://doi.org/10.1161/01.ATV.10.4.497](https://doi.org/10.1161/01.ATV.10.4.497)
 
 Franklin, S. S., Gustin, W., Wong, N. D., Larson, M. G., Weber, M. A., Kannel, W. B., & Levy, D. (1997). Hemodynamic patterns of age-related changes in blood pressure: The Framingham Heart Study. Circulation, 96(1), 308–315.
+[https://doi.org/10.1161/01.CIR.96.1.308](https://doi.org/10.1161/01.CIR.96.1.308)
 
-Lauer, M. S., Anderson, K. M., Levy, D., & Wilson, P. W. F. (1994). The impact of obesity on left ventricular mass and geometry: The Framingham Heart Study. JAMA, 271(6), 456–460.
+Lauer MS, Anderson KM, Kannel WB, Levy D. The impact of obesity on left ventricular mass and geometry. The Framingham Heart Study. JAMA. 1991 Jul 10;266(2):231-6.
+[https://doi.org/10.1001/jama.1991.03470020057032](https://doi.org/10.1001/jama.1991.03470020057032)
 
-Saffer, B. Y. (2024). Accounting for mediation effects in risk prediction calculators (White paper). Harrison Healthcare.
+Saffer, B. Y. (2024). Accounting for mediation effects in risk prediction calculators (White paper). Harrison Healthcare. 
 
 Shrier, I., Colditz, G. A., & Steele, R. J. (2018). Synthesizing risk from summary evidence across multiple risk factors. Epidemiology (Cambridge, Mass.), 29(4), 533–535.
+[https://doi.org/10.1097/ede.0000000000000820](https://doi.org/10.1097/ede.0000000000000820)
 
-Wilson, P. W. F., D’Agostino, R. B., Levy, D., Belanger, A. M., Silbershatz, H., & Kannel, W. B. (1998). Prediction of coronary heart disease using risk factor categories. Circulation, 97(18), 1837–1847.
+Wilson, P. W. F., D’Agostino, R. B., Levy, D., Belanger, A. M., Silbershatz, H., & Kannel, W. B. (1998). Prediction of coronary heart disease using risk factor categories. Circulation, 97(18), 1837–1847. 
+[https://doi.org/10.1161/01.CIR.97.18.1837](https://doi.org/10.1161/01.CIR.97.18.1837)
 
-World Health Organization. (2021, June 11). Cardiovascular diseases (CVDs) fact sheet. )
-
-
-
+World Health Organization. (2021, June 11). Cardiovascular diseases (CVDs) fact sheet.
+[https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
 
 
 ## Appendix — Supplementary Methods, Equations, and Full Result Tables
 
-### A1 Framingham 10-Year Risk: Full Computational Workflow
+
+### A1. Framingham 10-Year Risk: Full Computational Workflow
 
 The Framingham 10-year risk score is calculated as follows:
 
 Let:
-\[L_{\text{total}} = \sum_i \beta_i x_i\]
+```math
+L_{\text{total} } = \sum_i \beta_i x_i
+```
 
-where each \(x_i\) is a risk factor (e.g., \(x_{\ln(	ext{LDL})} = \ln(	ext{LDL})\)).
+where each $x_i$ is a risk factor (e.g., $x_{\ln(\text{LDL})} = \ln(\text{LDL})$).
 
 Compute:
-\[L_{\text{mean}} = \sum_i \beta_i \bar{x}_i\]
+```math
+L_{\text{mean}} = \sum_i \beta_i \bar{x}_i
+```
 
-where \(ar{x}_i\) is the cohort mean.
+where $\bar{x}_i$ is the cohort mean.
 
-\[A = L_{\text{total}} - L_{\text{mean}}\]
+```math
+A = L_{\text{total}} - L_{\text{mean}}
+```
 
-\[B = e^A\]
+```math
+B = e^A
+```
 
-\[S_{\text{abs},10} = S_0^B = \exp\bigl(B \ln S_0\bigr)\]
+```math
+S_{\text{abs},10} = S_0^B = \exp\bigl(B \ln S_0\bigr)
+```
 
-\[R_{10} = 1 - S_{\text{abs},10} = 1 - \exp\bigl(B \ln S_0\bigr)\]
+```math
+R_{10} = 1 - S_{\text{abs},10} = 1 - \exp\bigl(B \ln S_0\bigr)
+```
 
 **Framingham LDL Worked Example**
 
@@ -165,67 +186,107 @@ Consider a 65-year-old man with:
 - No diabetes
 - Smoker
 
-1. Compute \(L_{\text{total}}\):
-\[L_{\text{total}} = \beta_{\ln(\text{LDL})} \times \ln(165) = 0.923 \times 5.1059 = 4.7099\]
+1. Compute $L_{\text{total}}$:
+```math
+L_{\text{total}} = \beta_{\ln(\text{LDL})} \times \ln(165) = 0.923 \times 5.1059 = 4.7099
+```
 
-2. Compute \(L_{\text{mean}}\):
-\[L_{\text{mean}} = 3.00069\]
+2. Compute $L_{\text{mean}}$:
+```math
+L_{\text{mean}} = 3.00069
+```
 
-3. Compute \(A\):
-\[A = 4.7099 - 3.00069 = 1.7092\]
+3. Compute $A$:
+```math
+A = 4.7099 - 3.00069 = 1.7092
+```
 
-4. Compute \(B\):
-\[B = e^{1.7092} = 5.525\]
+4. Compute $B$:
+```math
+B = e^{1.7092} = 5.525
+```
 
 5. Compute absolute survival:
-\[S_{\text{abs},10} = 0.90017^{5.525} = \exp(5.525 \times \ln(0.90017)) = 0.615\]
+```math
+S_{\text{abs},10} = 0.90017^{5.525} = \exp(5.525 \times \ln(0.90017)) = 0.615
+```
 
 6. Compute 10-year risk:
-\[R_{10} = 1 - 0.615 = 0.385 \quad (38.5\%)\]
+```math
+R_{10} = 1 - 0.615 = 0.385 \quad (38.5\%)
+```
 
-### A2 HH-CHD Calculation: Modular, Log-Sum Framework
+
+### A2. HH-CHD Calculation: Modular, Log-Sum Framework
 
 The HH-CHD 10-year risk is calculated similarly with updated baseline survival:
 
 Let:
-\[L_{\text{total}} = \sum_i \beta_i x_i\]
+```math
+L_{\text{total}} = \sum_i \beta_i x_i
+```
 
-\[L_{\text{mean}} = \sum_i \beta_i \bar{x}_i\]
+```math
+L_{\text{mean}} = \sum_i \beta_i \bar{x}_i
+```
 
-\[A = L_{\text{total}} - L_{\text{mean}}\]
+```math
+A = L_{\text{total}} - L_{\text{mean}}
+```
 
-\[B = e^A\]
+```math
+B = e^A
+```
 
-\[S_{\text{abs},10} = S_{0,\text{HH}}^B = \exp\bigl(B \ln S_{0,\text{HH}}\bigr)\]
+```math
+S_{\text{abs},10} = S_{0,\text{HH}}^B = \exp\bigl(B \ln S_{0,\text{HH}}\bigr)
+```
 
-\[R_{10,\text{HH}} = 1 - S_{\text{abs},10} = 1 - \exp\bigl(B \ln S_{0,\text{HH}}\bigr)\]
+```math
+R_{10,\text{HH}} = 1 - S_{\text{abs},10} = 1 - \exp\bigl(B \ln S_{0,\text{HH}}\bigr)
+```
 
 **HH-CHD LDL Worked Example**
 
 Using the same 65-year-old man:
 
-1. Compute \(L_{\text{total}}\):
-\[L_{\text{total}} = 0.923 \times \ln(165) = 4.7099\]
+1. Compute $L_{\text{total}}$:
+```math
+L_{\text{total}} = 0.923 \times \ln(165) = 4.7099
+```
 
-2. Compute \(L_{\text{mean}}\):
-\[L_{\text{mean}} = 3.00069\]
+2. Compute $L_{\text{mean}}$:
+```math
+L_{\text{mean}} = 3.00069
+```
 
-3. Compute \(A\):
-\[A = 4.7099 - 3.00069 = 1.7092\]
+3. Compute $A$:
+```math
+A = 4.7099 - 3.00069 = 1.7092
+```
 
-4. Compute \(B\):
-\[B = e^{1.7092} = 5.525\]
+4. Compute $B$:
+```math
+B = e^{1.7092} = 5.525
+```
 
 5. Baseline survival:
-\[S_{0,\text{HH}} = 0.932\]
+```math
+S_{0,\text{HH}} = 0.932
+```
 
 6. Compute absolute survival:
-\[S_{\text{abs},10} = 0.932^{5.525} = \exp(5.525 \times \ln(0.932)) = 0.680\]
+```math
+S_{\text{abs},10} = 0.932^{5.525} = \exp(5.525 \times \ln(0.932)) = 0.680
+```
 
 7. Compute 10-year risk:
-\[R_{10,\text{HH}} = 1 - 0.680 = 0.320 \quad (32.0\%)\]
+```math
+R_{10,\text{HH}} = 1 - 0.680 = 0.320 \quad (32.0\%)
+```
 
-### A3 Synthetic Cohort Generation
+
+### A3. Synthetic Cohort Generation
 
 A synthetic dataset of N = 10,000 adults (48% male) was generated to reflect the distributional characteristics of the original Framingham Heart Study (FHS). Seven continuous variables—age, systolic blood pressure (SBP), diastolic blood pressure (DBP), body mass index (BMI), total cholesterol (TC), low-density lipoprotein cholesterol (LDL), and high-density lipoprotein cholesterol (HDL)—were sampled from a multivariate normal distribution. Means and standard deviations were derived from Wilson et al. (1998), and a 7×7 correlation matrix was applied to impose realistic inter-variable relationships: SBP–DBP (r≈0.68) from Franklin et al. (1997), TC–LDL (r≈0.80) from Lauer et al. (1994), BMI–TC and BMI–HDL (r≈0.32, r≈–0.29) from D’Agostino et al. (2008) and Després et al. (1990), and age–lipids (r≈0.20) from Wilson et al. (1998).
 
@@ -234,16 +295,12 @@ This approach ensured that the simulated dataset preserved not only the individu
 Blood pressure was discretized into Joint National Committee (JNC-V) blood-pressure categories (Normal, High-Normal, Stage I, Stage II–IV). Binary flags for diabetes, smoking, and antihypertensive use were simulated based on prevalence rates conditional on SBP category. Age effects were modeled in 10-year bins (30-39 … 70-74) with the 40-49 bin normalized to a relative risk of 1.0 to align with FRS and HH-CHD specifications.
 
 
-
-### A4 Statistical Software and Packages
+### A4. Statistical Software and Packages
 
 All analyses were executed in R 4.3 (R Foundation, 2025): dplyr 1.1, irr 0.84, ggplot2 3.5, car 3.1, emmeans 1.10, psych 2.3, writexl 1.5. Model comparisons were conducted using Pearson and Spearman correlations, intraclass correlation coefficients (ICC) for absolute agreement, Bland–Altman analyses to assess bias and limits of agreement, and Type II ANCOVA to explore age and sex effects.
 
 
-
-
-
-### A5 Overall Agreement - Framingham Inputs
+### A5. Overall Agreement - Framingham Inputs
 
 Table 1. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
@@ -257,23 +314,25 @@ Table 1. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; HH-CHD, Harrison Healthcare coronary heart disease risk calculator; ICC, intraclass correlation coefficient; LoA, limits of agreement.
 
-
-
 Figure 2. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
 - TC Estimate
+
 **A. Total Cholesterol (TC)**  
-![BA TC Overall](figures/BA_TC_overall.png)
+<div align="center">
+  <img src="figures/BA_TC_overall.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL Overall](figures/BA_LDL_overall.png)
+<div align="center">
+  <img src="figures/BA_LDL_overall.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; LoA, limits of agreement.
 
 
-
-### A6 Subgroup Bland–Altman Statistics (Sex and Age) - Framingham Inputs
+### A6. Subgroup Bland–Altman Statistics (Sex and Age) - Framingham Inputs
 
 Table 2. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
 
@@ -292,41 +351,40 @@ Table 2. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs 
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; LoA, limits of agreement.
 
-
-
-
-
 Figure 3. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![BA TC by Sex](figures/BA_TC_by_sex.png)
+<div align="center">
+  <img src="figures/BA_TC_by_sex.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL by Sex](figures/BA_LDL_by_sex.png)
+<div align="center">
+  <img src="figures/BA_LDL_by_sex.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
-
-
 
 Figure 4. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![BA TC by Age](figures/BA_TC_by_age.png)
+<div align="center">
+  <img src="figures/BA_TC_by_age.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL by Age](figures/BA_LDL_by_age.png)
+<div align="center">
+  <img src="figures/BA_LDL_by_age.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; grp, group.
 
 
-
-
-
-### A7 ANCOVA: Type II Tests of Bias - Framingham Inputs
+### A7. ANCOVA: Type II Tests of Bias - Framingham Inputs
 
 Table 3. Type II ANCOVA of Bias Framingham vs HH-CHD
 
@@ -345,7 +403,8 @@ Table 3. Type II ANCOVA of Bias Framingham vs HH-CHD
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; Sum Sq, sum of squares; Df, degrees of freedom; F value, F-statistic; Pr(>F), probability (p-value) that the observed F exceeds the critical value under the null hypothesis; MS, mean square; partial η², partial eta-squared.
 
-### A8 Simple-Slope & Adjusted-Mean Results - Framingham Inputs
+
+### A8. Simple-Slope & Adjusted-Mean Results - Framingham Inputs
 
 Table 4. Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
@@ -361,27 +420,28 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 Figure 5. Simple Slopes Bias vs Age by Sex
 
 - TC Estimate
-**A. Total Cholesterol (TC)**  
-![Slopes TC Framingham](figures/Framingham_simple_slopes_TC.png)
+**A. Total Cholesterol (TC)** 
+<div align="center">
+  <img src="figures/Framingham_simple_slopes_TC.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![Slopes LDL Framingham](figures/Framingham_simple_slopes_LDL.png)
+<div align="center">
+  <img src="figures/Framingham_simple_slopes_LDL.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; HH, Harrison Healthcare risk calculator.
 
-
-
 Figure 6. Adjusted Mean Bias
-![Adjusted Means Framingham](figures/Framingham_adjusted_means_by_sex.png)
+<div align="center">
+  <img src="figures/Framingham_adjusted_means_by_sex.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
 
-
-
-
-### A9 Overall Agreement – Contemporary Inputs
+### A9. Overall Agreement – Contemporary Inputs
 
 Table 5. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
@@ -395,44 +455,41 @@ Table 5. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; HH-CHD, Harrison Healthcare coronary heart disease risk calculator; ICC, intraclass correlation coefficient; LoA, limits of agreement.
 
-
-
-
-
 Figure 7. Scatterplots Framingham vs HH-CHD
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![Scatter TC Modern](figures/modern_scatter_TC_vs_HH.png)
+<div align="center">
+  <img src="figures/modern_scatter_TC_vs_HH.png" width="600">
+</div>
 
 - LDL Estimate
-
 **B. Low-Density Lipoprotein (LDL)**  
-![Scatter LDL Modern](figures/modern_scatter_LDL_vs_HH.png)
+<div align="center">
+  <img src="figures/modern_scatter_LDL_vs_HH.png" width="600">
+</div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; HH, Harrison Healthcare risk calculator.
-
-
 
 Figure 8. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
 - TC Estimate
 
 **A. Total Cholesterol (TC)**  
-![BA TC Modern Overall](figures/modern_BA_TC_overall.png)
-
+<div align="center">
+  <img src="figures/modern_BA_TC_overall.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL Modern Overall](figures/modern_BA_LDL_overall.png)
-
-
+<div align="center">
+  <img src="figures/modern_BA_LDL_overall.png" width="600">
+</div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol; LoA, limits of agreement.
 
 
-
-### A10 Subgroup Bland–Altman Statistics (Sex and Age) – Contemporary Inputs
+### A10. Subgroup Bland–Altman Statistics (Sex and Age) – Contemporary Inputs
 
 Table 6. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
 
@@ -451,41 +508,40 @@ Table 6. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs 
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; LoA, limits of agreement.
 
-
-
-
-
 Figure 9. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![BA TC by Age Modern](figures/modern_BA_TC_by_age.png)
+<div align="center">
+  <img src="figures/modern_BA_TC_by_age.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL by Age Modern](figures/modern_BA_LDL_by_age.png)
+<div align="center">
+  <img src="figures/modern_BA_LDL_by_age.png" width="600">
+</div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol; grp, group.
-
-
 
 Figure 10. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![BA TC by Sex Modern](figures/modern_BA_TC_by_sex.png)
+<div align="center">
+  <img src="figures/modern_BA_TC_by_sex.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![BA LDL by Sex Modern](figures/modern_BA_LDL_by_sex.png)
+<div align="center">
+  <img src="figures/modern_BA_LDL_by_sex.png" width="600">
+</div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
 
-
-
-
-### A11 ANCOVA: Type II Tests of Bias – Contemporary Inputs
+### A11. ANCOVA: Type II Tests of Bias – Contemporary Inputs
 
 Table 7. Type II ANCOVA of Bias Framingham vs HH-CHD
 
@@ -504,7 +560,8 @@ Table 7. Type II ANCOVA of Bias Framingham vs HH-CHD
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; Sum Sq, sum of squares; Df, degrees of freedom; F value, F-statistic; Pr(>F), probability (p-value) that the observed F exceeds the critical value under the null hypothesis; MS, mean square; partial η², partial eta-squared.
 
-### A12 Simple-Slope & Adjusted-Mean Results – Contemporary Inputs
+
+## A12. Simple-Slope & Adjusted-Mean Results – Contemporary Inputs
 
 Table 8. Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
@@ -521,28 +578,29 @@ Figure 11. Simple Slopes Bias vs Age by Sex
 
 - TC Estimate
 **A. Total Cholesterol (TC)**  
-![Slopes TC Modern](figures/modern_simple_slopes_TC.png)
+<div align="center">
+  <img src="figures/modern_simple_slopes_TC.png" width="600">
+</div>
 
 - LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
-![Slopes LDL Modern](figures/modern_simple_slopes_LDL.png)
+<div align="center">
+  <img src="figures/modern_simple_slopes_LDL.png" width="600">
+</div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
-
-
-
-
 
 Figure 12. Adjusted Mean Bias
 
-![Adjusted Means Modern](figures/modern_adjusted_means_by_sex.png)
+<div align="center">
+  <img src="figures/modern_adjusted_means_by_sex.png" width="600">
+</div>
 
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
 
-
-### A13 Code Availability
+### A13. Code Availability
 
 All R scripts, and step-by-step analytical pipelines used in this study are openly available at GitHub (https://github.com/Harrison-Healthcare/Risk_Calculator).
 

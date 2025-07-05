@@ -2,7 +2,7 @@
   <img src="harrison%20logo.jpg" alt="Harrison Healthcare Logo" width="150">
 </div>
 
-#
+---
 
 # Accounting for Mediation Effects in Risk Prediction Calculators
 
@@ -11,30 +11,25 @@
 Boaz Y. Saffer, PhD  
 Chief Scientific Officer, Harrison Healthcare
 
-**Date:**
+**Date:** August 9th, 2024
 
-August 9th, 2024
+## Table of Contents
 
-**Table of Contents**
+[Introduction](#introduction)
 
-[**Introduction	2**](#introduction)
+[Shrier et al.'s (2018) Generalization of the HCRI equation](#shrier-et-al.’s-\(2018\)-generalization-of-the-hcri-equation)
 
-[**Shrier et al.’s (2018) Generalization of the HCRI equation	3**](#shrier-et-al.’s-\(2018\)-generalization-of-the-hcri-equation)
+[Mediation Effects](#mediation-effects)
 
+[Limitation of the Generalized HCRI Equation](#limitations-of-the-generalized-hcri-equation)
 
-[**Mediation Effects	5**](#mediation-effects)
+[Incorporating Mediation Effects into the Generalized HCRI Equation](#incorporating-mediation-effects-into-the-generalized-hcri-equation)
 
+[Citations](#citations)
 
-[**Limitation of the Generalized HCRI Equation	7**](#limitations-of-the-generalized-hcri-equation)
+[Appendix A. Enhanced Equation Spreadsheet](#appendix-a.-enhanced-equation-spreadsheet)
 
-[**Incorporating Mediation Effects into the Generalized HCRI Equation	9**](#incorporating-mediation-effects-into-the-generalized-hcri-equation)
-
-
-[**Citations	14**](#citations)
-
-[**Appendix A. Enhanced Equation Spreadsheet	15**](#appendix-a.-enhanced-equation-spreadsheet)
-
-# **Introduction**
+## Introduction
 
 Accurate risk assessment tools are essential to personalized medicine, enabling healthcare providers to deliver tailored advice and interventions based on individual risk profiles. Traditional risk calculators, such as the Harvard Cancer Risk Index (HCRI) developed by Colditz et al. (2000) and later expanded by Kim, Rockhill, & Colditz (2004), have provided valuable frameworks for calculating a person’s risk for developing various types of cancer. However, these tools have limitations, particularly in managing complex, multi-level risk factors.
 
@@ -44,7 +39,7 @@ Incorporating both lifestyle factors and biomarkers into the generalized HCRI eq
 
 This white paper details the development of an enhanced equation capable of integrating direct and indirect mediation effects, demonstrates its application through examples, and discusses the implications for clinical practice. By incorporating both biomarkers and lifestyle factors, this enhanced equation provides a more accurate and holistic view of patient health and facilitates more effective prevention and management of chronic diseases.
 
-# **Shrier et al.’s (2018) Generalization of the HCRI equation**
+# Shrier et al.’s (2018) Generalization of the HCRI equation
 
 The generalized equation developed by Shrier et al. (2018) extends the Harvard Cancer Risk Index (HCRI) to accommodate risk factors with more than two levels. Specifically, a person’s relative risk (RR) for developing a specific health condition, compared to the average population risk, is calculated as:
 
@@ -67,7 +62,7 @@ This equation can also be rewritten more succinctly as:
 
 Where the sum operator $\sum_{k=1}^{n}$ indicates the sum of the products of $P_k$ and $\text{RR}_{k/r}$ for each level $k$ of the risk factor, from $k = 1$ to $k = n$, where $n$ is the total number of levels for that risk factor.
 
-## **Worked example** {#worked-example}
+## Worked example
 
 Using Shrier et al.’s (2018) equation involves determining the prevalence and RR for each level of the risk factor and then computing a weighted average to derive the population-referenced RR. For example, consider calculating a female’s risk for developing type-2 diabetes based on their history of cigarette smoking and average hours of sleep per night. Below are values taken from peer-reviewed articles:
 
