@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="accounting for mediation effects/harrison%20logo.jpg" alt="Harrison Healthcare Logo" width="150">
+  <img src="accounting%20for%20mediation%20effects/harrison%20logo.jpg" alt="Harrison Healthcare Logo" width="150">
 </div>
 
 ---
