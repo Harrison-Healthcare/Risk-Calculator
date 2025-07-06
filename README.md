@@ -1,3 +1,10 @@
+
+<div align="center">
+  <img src="harrison logo.jpg" alt="Harrison Healthcare Logo" width="150">
+</div>
+
+---
+
 # Harrison Healthcare Risk Calculator
 
 *Last Updated: July 2024*
@@ -6,15 +13,13 @@
 
 - [🔬 Overview](#-overview)
 - [📁 Repository Contents](#-repository-contents)
-- [🗂️ Repository Structure](#️-repository-structure)
+- [🗺️ Repository Structure](#️-repository-structure)
 - [👥 Authors & Contributors](#-authors--contributors)
 - [📄 License & Usage](#-license--usage)
 
 ## 🔬 Overview
 
 The Harrison Healthcare Risk Calculator provides evidence-based risk prediction models for 18 major chronic diseases and cancers. Unlike traditional risk calculators that are static and developed from single datasets, our methodology addresses two fundamental limitations in current risk assessment approaches.
-
-### Key Methodological Advantages
 
 **1. Modular and Updateable Framework**
 
@@ -37,19 +42,15 @@ This methodology builds on established research:
 - **Metabolic (2)**: Type 2 Diabetes, Osteoporosis
 - **Neuropsychiatric (3)**: Dementia, Depression, Generalized Anxiety Disorder
 
-### Clinical Application
-
-The modular design enables practical advantages for clinical and research applications. Risk factors, relative risks, and prevalence estimates are continuously derived from the latest peer-reviewed meta-analyses and national health surveys, ensuring models remain current with evolving scientific evidence. This approach contrasts with static calculators that become outdated as new research emerges, allowing healthcare providers to access risk assessments that reflect the most recent understanding of disease causation and population health trends.
-
 ## 📁 Repository Contents
 
 ### Core Documents
-- **[Methodology](./Methodology/Accounting%20for%20mediation%20effects/Accounting%20for%20mediation%20effects%20in%20risk%20prediction%20calculators.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
+- **[Methodology](./Methodology.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
 - **[Risk Spreadsheet](./Risk%20spreadsheet.csv)** - Comprehensive database of risk factors, relative risks, and prevalence data for all disease models
-- **[CHD Validation Study](./Simulation%20studies/Coronary%20Heart%20Disease/)** - Validation comparing our methodology against established Framingham Risk Score (correlation r > 0.95)
+- **[CHD Simulation Study](./Simulation%20studies/Coronary%20Heart%20Disease/White%20paper/CHD%20simulation%20study%20white%20paper.md)** - Simulated study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
 
 
-## 🗂️ Repository Structure
+## 🗺️ Repository Structure
 
 ```
 ├── Methodology enhancements/                 # Enhanced methodology documentation
