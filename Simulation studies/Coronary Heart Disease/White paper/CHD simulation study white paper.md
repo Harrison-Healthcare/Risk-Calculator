@@ -25,9 +25,9 @@ May 28th, 2025
 2. [Study Objective](#study-objective)  
 3. [Methods](#methods)
 4. [Main Results](#main-results)
-5. [Limitations & Next Steps](#limitations-&-next-steps)
+5. [Limitations & Next Steps](#limitations--next-steps)
 6. [References](#references)
-7. [Appendix — Supplementary Methods, Equations, and Full Result Tables](#appendix)
+7. [Appendix — Supplementary Methods, Equations, and Full Result Tables](#appendix--supplementary-methods-equations-and-full-result-tables)
 
 
 ## Introduction

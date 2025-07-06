@@ -1,85 +1,82 @@
 # Harrison Healthcare Risk Calculator
 
-*Last Updated: June 2024*
-
-This repository documents the methods, mathematical weights, and validation studies for Harrison Healthcare's (HH) risk calculators. These calculators are designed to estimate individuals' risk for chronic diseases by combining relative risks and prevalence estimates from peer-reviewed studies, and chaining these together to form a risk score. Unlike single-cohort models (e.g., Framingham), the HH risk calculators use a generalized form of the Harvard Cancer Risk Index (HCRI) equation that accommodates categorical risk factors with three or more levels. Furthermore, to prevent inflated risk estimates when both lifestyle exposures and downstream biomarkers are included, the HH risk calculators apply a mediation-adjusted risk formula. This enhanced method separates direct and indirect effects using a user-defined mediation parameter (α), enabling more accurate estimation of total risk.
-
-All inputs—including relative risks, prevalence estimates, and mediation assumptions—are derived from peer-reviewed meta-analyses or national health surveys and are fully documented for transparency and reproducibility.
+*Last Updated: July 2024*
 
 ## Table of Contents
 
-- [Key Features](#key-features)
-- [Repository Structure](#repository-structure)
-- [Authors & Contributors](#authors--contributors)
-- [License & Usage](#license--usage)
-- [Contact](#contact)
+- [🔬 Overview](#-overview)
+- [📁 Repository Contents](#-repository-contents)
+- [🗂️ Repository Structure](#️-repository-structure)
+- [👥 Authors & Contributors](#-authors--contributors)
+- [📄 License & Usage](#-license--usage)
 
-## Key Features
+## 🔬 Overview
 
-### 🔧 **Modular Framework Architecture**
-- **Chainable Design**: Modular architecture allows risk calculators to be chained together for comprehensive health risk assessment
-- **Multi-source Integration & Updates**: Combines relative risk and prevalence estimates from peer-reviewed studies with methodology that enables continuous updates as new evidence emerges
-- **Generalizable Design**: Unlike single-cohort datasets (e.g., Framingham), methodology can be applied across diverse populations
+The Harrison Healthcare Risk Calculator provides evidence-based risk prediction models for 18 major chronic diseases and cancers. Unlike traditional risk calculators that are static and developed from single datasets, our methodology addresses two fundamental limitations in current risk assessment approaches.
 
-### 🧬 **Advanced Risk Calculation Methodology**
-- **Multi-level Risk Factors**: Supports the integration of risk factors with 3+ levels
-- **Mediation Effects Integration**: Novel approach to handle interactions between lifestyle factors and biomarkers, preventing risk overstimulation when combining lifestyle factors (e.g., saturated fat intake) with downstream biomarkers (e.g., LDL cholesterol)
+### Key Methodological Advantages
 
-### 📊 **Comprehensive Chronic Disease Coverage**
-- **18 Individual Risk Calculators**: Specialized risk assessment tools for major chronic diseases and cancers:
-  - **Cancers**: Bladder, Breast, Cervical, Colorectal, Kidney, Lung, Ovarian, Pancreatic, Prostate, Skin (Melanoma)
-  - **Cardiovascular**: Coronary Heart Disease, Hypertension, Stroke
-  - **Metabolic & Endocrine**: Diabetes (Type 2), Osteoporosis
-  - **Neurological & Mental Health**: Dementia, Depression, Generalized Anxiety Disorder
+**1. Modular and Updateable Framework**
 
-### 🔬 **Transparent & Open Methodology**
-- **Public Domain**: Complete methodology, weights, and sources freely available
-- **Peer-Reviewed Sources**: All weights tracable to peer-reviewed studies
-- **Validation Studies**: Includes preliminary simulations showing close replication of established risk calculators
+Most existing risk calculators are built from single cohort studies (e.g., Framingham) with fixed structures that cannot be easily modified or updated. Our modular approach enables dynamic risk factor inclusion, continuous weight updates as new evidence emerges, population adaptability across diverse groups, and integration of findings from multiple peer-reviewed studies rather than relying on a single dataset.
 
-## Repository Structure
+**2. Mediation Effect Correction**
+
+Traditional models suffer from risk overestimation when including both lifestyle factors and their downstream biomarkers. For example, including both saturated fat intake and LDL cholesterol levels leads to double-counting the same biological pathway. Our enhanced equation uses a mediation parameter (α) to separate direct and indirect causal pathways, preventing multiplicative error while enabling comprehensive risk factor inclusion.
+
+### Scientific Foundation
+
+This methodology builds on established research:
+- **Colditz et al. (2000)** developed the original HCRI through systematic literature review and calibration with SEER cancer registry data
+- **Shrier et al. (2018)** provided mathematical generalization to handle multi-level risk factors beyond simple binary categories
+- **Current work** integrates modular updating capabilities and mediation effect correction
+
+### Disease Coverage (n=18)
+- **Cancers (10)**: Bladder, Breast, Cervical, Colorectal, Kidney, Lung, Ovarian, Pancreatic, Prostate, Melanoma
+- **Cardiovascular (3)**: Coronary Heart Disease, Hypertension, Stroke  
+- **Metabolic (2)**: Type 2 Diabetes, Osteoporosis
+- **Neuropsychiatric (3)**: Dementia, Depression, Generalized Anxiety Disorder
+
+### Clinical Application
+
+The modular design enables practical advantages for clinical and research applications. Risk factors, relative risks, and prevalence estimates are continuously derived from the latest peer-reviewed meta-analyses and national health surveys, ensuring models remain current with evolving scientific evidence. This approach contrasts with static calculators that become outdated as new research emerges, allowing healthcare providers to access risk assessments that reflect the most recent understanding of disease causation and population health trends.
+
+## 📁 Repository Contents
+
+### Core Documents
+- **[Methodology](./Methodology/Accounting%20for%20mediation%20effects/Accounting%20for%20mediation%20effects%20in%20risk%20prediction%20calculators.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
+- **[Risk Spreadsheet](./Risk%20spreadsheet.csv)** - Comprehensive database of risk factors, relative risks, and prevalence data for all disease models
+- **[CHD Validation Study](./Simulation%20studies/Coronary%20Heart%20Disease/)** - Validation comparing our methodology against established Framingham Risk Score (correlation r > 0.95)
+
+
+## 🗂️ Repository Structure
 
 ```
-├── Methodology/                              # Core methodology documentation
-│   ├── Accounting for Mediation Effects in Risk Prediction Calculators.md
-│   ├── Enhanced equation calculations.xlsx
-│   └── Accounting for Mediation Effects in Risk Prediction Calculators.pdf
+├── Methodology enhancements/                 # Enhanced methodology documentation
+│   └── Accounting for mediation effects/    # Core mediation methodology
+│       ├── Accounting for mediation effects in risk prediction calculators.md
+│       └── Enhanced equation calculations.xlsx
 │
-├── Simulation studies/                       # Validation and simulation work
-│   └── Coronary Heart Disease/
-│       ├── Analyses/                         # R analysis scripts
-│       │   ├── Dataset_CHD_Framingham_HH_CHD.R
-│       │   ├── Dataset_CHD_Framingham_HH_TC_LDL.R
-│       │   ├── validation_analysis_Framingham vs HH_TC_LDL.R
-│       │   └── validation_analysis_Framingham_vs_HH.R
-│       │
-│       ├── Model inputs/                     # Risk factor data and prevalence
-│       │   ├── TC_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx
-│       │   ├── LDL_Framingham CHD Risk Dial Risk Calculator Simulation Study.xlsx
-│       │   ├── HH_Framingham CHD Risk Dial Risk Calculator Simualtion Study.xlsx
-│       │   ├── TC_WPR_by_Factor_Framingham.xlsx
-│       │   ├── LDL_WPR_by_Factor_Framingham.xlsx
-│       │   └── HH_WPR_by_Factor_Framingham.xlsx
-│       │
-│       ├── White paper in markdown/          # Research documentation
-│       │   ├── Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.md
-│       │   ├── Harrison Healthcare's Risk Calculator Methodology Reproduces the Framingham 10-Year Risk Score in a Simulated Dataset.pdf
-│       │   └── figures/                      # Supporting visualizations
-│       │
-│       ├── CHD_simulation_study_README.md    # CHD-specific documentation
-│       └── README.md                         # Additional CHD documentation
+├── Methodology.md                            # Main methodology document
 │
-└── Spreadsheet/                              # Comprehensive risk factor database
-    └── Risk calculator spreadsheet.csv       # Complete risk factor definitions, prevalence, and relative risks
+├── Risk spreadsheet.csv                      # Complete risk factor database
+│                                             # (risk factors, relative risks, prevalence data)
+│
+└── Simulation studies/                       # Validation and simulation work
+    └── Coronary Heart Disease/               # CHD validation study
+        ├── Analyses/                         # R analysis scripts
+        ├── Model inputs/                     # Risk factor data and prevalence
+        ├── White paper in markdown/          # Research documentation
+        └── README files                      # Study-specific documentation
 ```
 
-## Authors & Contributors
+## 👥 Authors & Contributors
 
 1. **Boaz Y. Saffer, PhD** - Chief Scientific Officer, Harrison Healthcare  
 2. **Julia Blumkaitis-Bosankic, MSc** - Research Assistant, Harrison Healthcare
 3. **Sidney Nedelmann, BA** - Research Assistant, Harrison Healthcare
 
-## License & Usage
+## 📄 License & Usage
 
 This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
