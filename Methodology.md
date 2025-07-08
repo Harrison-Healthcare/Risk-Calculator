@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Accounting for mediation effects/harrison logo.jpg" alt="Harrison Healthcare Logo" width="150">
+  <img src="harrison logo.jpg" alt="Harrison Healthcare Logo" width="150">
 </div>
 
 ---
@@ -73,7 +73,7 @@ Where $m$ is the number of risk factors and $n_i$ is the number of levels for ri
 Shrier et al.'s key contributions therefore include providing the first formal mathematical derivation of the HCRI equation, establishing its theoretical foundation and extending the formula to handle risk factors with three or more levels, significantly expanding its applicability.
 
 
-### Calculated Example
+### Calculated Example: Generalized HCRI Method
 
 **Scenario:** An individual has been diagnosed with diabetes and consumes a high saturated fat diet.
 
@@ -157,8 +157,7 @@ The numerator scales the individual’s excess risk $(\text{RR}_{\text{RFL}} - 1
 This term is calculated identically to the indpeendent risk factors in the generalized HCRI formulation. Here, it quantifies the direct effect of the mediator on the outcome. The numerator represents the individual’s relative risk based on their level of the mediator. The denominator is the prevalence-weighted average relative risk across the population. No adjustment by $\alpha$ is applied here because the mediator’s contribution is not itself mediated by another variable and is modeled as exerting a direct, independent effect on the outcome.
 
 
-### Calculated Example
-
+### Calculated Example: Enhanced HCRI with Mediation Effects
 
 **Scenario**: An individual has high saturated fat intake and elevated LDL cholesterol. The effect of saturated fat on cardiovascular disease is partially mediated through LDL levels, with a mediation coefficient of $\alpha = 0.6$ (i.e., 60% mediation).
 
@@ -254,41 +253,45 @@ While straightforward, this method can yield absolute risk estimates exceeding 1
 
 ### Survival-Power Method
 
-To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. The equation is:
+To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. This approach is based on survival analysis principles and provides probabilistically sound estimates that cannot exceed 100%. The equation is:
 
 ```math
 \text{Absolute Risk} = 1 - S_{0}^{\text{CRR}}
 ```
 
 Where:  
-- **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD survival rate from a reference cohort)  
-- *CRR*: Cumulative relative risk from the enhanced HCRI calculation  
+- **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD-free survival rate from a reference cohort)  
+- **CRR**: Cumulative relative risk from the enhanced HCRI calculation  
 
-**Step 1: Choose Baseline Survival ($S_{0}$)**  
-Identify the survival probability for your target population over 10 years.
+### Calculated Example: Converting to Absolute Risk
+
+Using the CRR calculated in the previous section, we can demonstrate the survival-power method:
+
+**Step 1: Obtain Cumulative Relative Risk**  
+From the enhanced HCRI calculation above:
+```math
+\text{CRR} = 1.996
+```
+
+**Step 2: Determine Baseline Survival Probability**  
+For 10-year coronary heart disease risk, we use population-level survival data. Assuming 89% of the reference population remains CHD-free over 10 years:
 ```math
 S_{0} = 0.89
 ```
 
-**Step 2: Compute Cumulative Relative Risk (CRR)**  
-Apply the enhanced HCRI (mediation-adjusted) method.
+**Step 3: Apply the Survival-Power Formula**  
+Exponentiate the baseline survival by the CRR:
 ```math
-CRR \approx 1.996
+S_{0}^{\text{CRR}} = 0.89^{1.996} \approx 0.79
 ```
 
-**Step 3: Raise Baseline Survival to the CRR**  
-Exponentiate the survival function by the CRR.
-```math
-S_{0}^{CRR} = 0.89^{1.996} \approx 0.79
-```
-
-**Step 4: Derive 10-Year Absolute Risk**  
-Subtract the powered survival from 1.
+**Step 4: Calculate 10-Year Absolute Risk**  
+Subtract from unity to obtain the absolute risk:
 ```math
 \text{10-Year Absolute Risk} = 1 - 0.79 = 0.21 = 21\%
 ```
 
-This survival-power approach therefore yields a clear, bounded estimate of absolute risk over the chosen time horizon, ensuring both interpretability and plausibility.
+**Interpretation**: An individual with this risk profile has a 21% absolute risk of developing coronary heart disease over the next 10 years. This survival-power approach ensures the estimate remains bounded between 0% and 100%, providing a clinically interpretable and mathematically sound risk assessment.
 
 ## References
 
