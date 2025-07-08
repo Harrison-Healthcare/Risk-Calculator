@@ -229,7 +229,7 @@ This component is not adjusted for mediation, as LDL is treated as a direct inde
 \text{RR}_{\text{LDL-c}} = \frac{4.00}{(0.30 \cdot 1.00 + 0.40 \cdot 2.00 + 0.30 \cdot 4.00)} = \frac{4.00}{2.30} = 1.739
 ```
 
-** Step 3: Compute the Risk Estimate**
+**Step 3: Compute the Risk Estimate**
 
 ```math
 \text{RR}_{\text{enhanced}} = \frac{1.40}{1.22} \times \frac{4.00}{2.30} \approx 1.148 \times 1.739 \approx 1.996
@@ -251,12 +251,44 @@ Shrier et al. (2018) originally proposed converting cumulative relative risk int
 
 While straightforward, this method can yield absolute risk estimates exceeding 100% when relative risks are high or when multiple risk factors are compounded. Although useful as a conceptual bridge from relative to absolute risk, this formulation lacks probabilistic constraints and is sensitive to overestimation, especially in high-risk populations.
 
+
 ### Survival-Power Method
 
-To address these limitations, we recommend suing a survival-power method, which ensures interpretability and bounded output. The equation is:
+To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. The equation is:
 
+```math
+\text{Absolute Risk} = 1 - S_{0}^{\text{CRR}}
+```
 
+Where:  
+- **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD survival rate from a reference cohort)  
+- *CRR*: Cumulative relative risk from the enhanced HCRI calculation  
 
+**Step 1: Choose Baseline Survival ($S_{0}$)**  
+Identify the survival probability for your target population over 10 years.
+```math
+S_{0} = 0.89
+```
+
+**Step 2: Compute Cumulative Relative Risk (CRR)**  
+Apply the enhanced HCRI (mediation-adjusted) method.
+```math
+CRR \approx 1.996
+```
+
+**Step 3: Raise Baseline Survival to the CRR**  
+Exponentiate the survival function by the CRR.
+```math
+S_{0}^{CRR} = 0.89^{1.996} \approx 0.79
+```
+
+**Step 4: Derive 10-Year Absolute Risk**  
+Subtract the powered survival from 1.
+```math
+\text{10-Year Absolute Risk} = 1 - 0.79 = 0.21 = 21\%
+```
+
+This survival-power approach therefore yields a clear, bounded estimate of absolute risk over the chosen time horizon, ensuring both interpretability and plausibility.
 
 ## References
 
