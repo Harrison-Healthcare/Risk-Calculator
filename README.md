@@ -39,7 +39,8 @@ This methodology builds on established research:
 ### Disease Coverage (n=18)
 - **Cancers (10)**: Bladder, Breast, Cervical, Colorectal, Kidney, Lung, Ovarian, Pancreatic, Prostate, Melanoma
 - **Cardiovascular (3)**: Coronary Heart Disease, Hypertension, Stroke  
-- **Metabolic (2)**: Type 2 Diabetes, Osteoporosis
+- **Metabolic (1)**: Type 2 Diabetes
+- **Musculoskeletal (1)**: Osteoporosis
 - **Neuropsychiatric (3)**: Dementia, Depression, Generalized Anxiety Disorder
 
 ## 📁 Repository Contents
