@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="harrison logo.jpg" alt="Harrison Healthcare Logo" width="150">
+  <img src="assets/harrison-logo.jpg" alt="Harrison Healthcare Logo" width="150">
 </div>
 
 ---
@@ -9,12 +9,17 @@
 
 *Last Updated: July 2024*
 
+## Authors and Contributors
+
+1. **Boaz Y. Saffer, PhD** - Chief Scientific Officer, Harrison Healthcare  
+2. **Julia Blumkaitis-Bosankic, MSc** - Research Assistant, Harrison Healthcare
+3. **Sidney Nedelmann, BA** - Research Assistant, Harrison Healthcare
+
 ## Table of Contents
 
 - [🔬 Overview](#-overview)
 - [📁 Repository Contents](#-repository-contents)
 - [🗺️ Repository Structure](#️-repository-structure)
-- [👥 Authors & Contributors](#-authors--contributors)
 - [📄 License & Usage](#-license--usage)
 
 ## 🔬 Overview
@@ -46,37 +51,45 @@ This methodology builds on established research:
 ## 📁 Repository Contents
 
 ### Core Documents
-- **[Methodology](./Methodology.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
-- **[Risk Spreadsheet](./Risk%20spreadsheet.csv)** - Comprehensive database of risk factors, relative risks, and prevalence data for all disease models
-- **[CHD Simulation Study](./Simulation%20studies/Coronary%20Heart%20Disease/White%20paper/CHD%20simulation%20study%20white%20paper.md)** - Simulated study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
+- **[Methodology](./docs/methodology/methodology.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
+- **[Risk Calculator Dataset](./data/risk-calculator.csv)** - Comprehensive database of risk factors, relative risks, and prevalence data for all disease models
+- **[Risk Factor Summary](./docs/evidence/risk-factor-summary.md)** - Complete list of the relative risk values extracted from peer-reviewed studies with complete citations, DOI links, and JBI quality scores
+- **[Prevalence Summary](./docs/evidence/prevalence-summary.md)** - Complete list of the prevalence values extracted from peer-reviewed studies with complete citations, DOI links, and JBI quality scores
+- **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md)** - Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
 
 
 ## 🗺️ Repository Structure
 
 ```
-├── Methodology enhancements/                 # Enhanced methodology documentation
-│   └── Accounting for mediation effects/    # Core mediation methodology
-│       ├── Accounting for mediation effects in risk prediction calculators.md
-│       └── Enhanced equation calculations.xlsx
+├── assets/                                   # Media files and branding
+│   └── harrison-logo.jpg                     # Harrison Healthcare logo
 │
-├── Methodology.md                            # Main methodology document
+├── docs/                                     # Documentation and evidence
+│   ├── methodology/                          # Methodology documentation
+│   │   └── Methodology.md                    # Complete mathematical derivation
+│   ├── evidence/                             # Evidence and research summaries
+│   │   ├── risk-factor-summary.md            # Risk factor studies with complete citations & DOI links
+│   │   ├── prevalence-summary.md             # Population prevalence studies with citations & DOI links
+│   │   ├── evidence-summary.md               # Central study summary document
+│   │   └── jbi-reports/                      # JBI Critical Appraisal reports (~200 files)
+│   └── reference-data/                       # Supporting calculations and reference materials
+│       └── [calculation-spreadsheets]/       # Age, prevalence, and RR calculations
 │
-├── Risk spreadsheet.csv                      # Complete risk factor database
-│                                             # (risk factors, relative risks, prevalence data)
+├── data/                                     # Core datasets and risk calculation inputs
+│   ├── risk-calculator.csv                  # Main risk factor database
+│   └── incidence-rates.csv                  # Disease incidence rates by population
 │
-└── Simulation studies/                       # Validation and simulation work
-    └── Coronary Heart Disease/               # CHD validation study
-        ├── Analyses/                         # R analysis scripts
-        ├── Model inputs/                     # Risk factor data and prevalence
-        ├── White paper in markdown/          # Research documentation
-        └── README files                      # Study-specific documentation
+└── analysis/                                 # Research studies and validation work
+    ├── methodology-enhancements/             # Enhanced methodology research
+    │   └── mediation-effects/                # Mediation effect correction methodology
+    └── simulation-studies/                   # Validation studies
+        └── coronary-heart-disease/           # CHD validation study
+            ├── code/                         # R analysis scripts  
+            ├── data/                         # Study-specific datasets
+            ├── figures/                      # Generated visualizations
+            ├── CHD-simulation-study-white paper.md
+            └── CHD-simulation-study-README.md
 ```
-
-## 👥 Authors & Contributors
-
-1. **Boaz Y. Saffer, PhD** - Chief Scientific Officer, Harrison Healthcare  
-2. **Julia Blumkaitis-Bosankic, MSc** - Research Assistant, Harrison Healthcare
-3. **Sidney Nedelmann, BA** - Research Assistant, Harrison Healthcare
 
 ## 📄 License & Usage
 
