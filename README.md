@@ -7,7 +7,7 @@
 
 # Harrison Healthcare Risk Calculator
 
-*Last Updated: July 2024*
+*Last Updated: July 2025*
 
 ## Authors and Contributors
 
@@ -37,9 +37,10 @@ Traditional models suffer from risk overestimation when including both lifestyle
 ### Scientific Foundation
 
 This methodology builds on established research:
-- **Colditz et al. (2000)** developed the original HCRI through systematic literature review and calibration with SEER cancer registry data
-- **Shrier et al. (2018)** provided mathematical generalization to handle multi-level risk factors beyond simple binary categories
-- **Current work** integrates modular updating capabilities and mediation effect correction
+- **[Colditz et al. (2000)](https://doi.org/10.1023/a:1008984432272)** developed the original HCRI through systematic literature review and calibration with SEER cancer registry data.
+- **[Kim et al. (2004)](https://doi.org/10.1097/00000539-200406000-00002)** prospectively evaluated the HCRI using a 10-year period using the Nurses' Health Study for ovary, colon, and pancreas cancer. 
+- **[Shrier et al. (2018)](https://doi.org/10.1097/ede.0000000000000820)** provided mathematical generalization to handle multi-level risk factors beyond simple binary categories
+- Our **[recent work (2024)](/docs/methodology/mediation-enhancement/Accounting%20for%20mediation%20effects/Accounting%20for%20mediation%20effects%20in%20risk%20prediction%20calculators.md)** applies mediation correction to reduce risk overestimation.
 
 ### Disease Coverage (n=18)
 - **Cancers (10)**: Bladder, Breast, Cervical, Colorectal, Kidney, Lung, Ovarian, Pancreatic, Prostate, Melanoma
