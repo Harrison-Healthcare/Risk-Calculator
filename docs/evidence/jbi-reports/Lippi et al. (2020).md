@@ -1,4 +1,4 @@
-# Lippi et al. (2021)
+# Lippi et al. (2020)
 
 ### Item-by-item Scoring Justification:
 
