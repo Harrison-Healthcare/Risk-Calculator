@@ -52,11 +52,10 @@ This methodology builds on established research:
 ## 📁 Repository Contents
 
 ### Core Documents
-- **[Methodology](./docs/methodology/methodology.md)** - Complete mathematical derivation of the enhanced HCRI equation with worked examples
-- **[Risk Calculator Dataset](./data/risk-calculator.csv)** - Comprehensive database of risk factors, relative risks, and prevalence data for all disease models
-- **[Risk Factor Summary](./docs/evidence/risk-factor-summary.md)** - Complete list of the relative risk values extracted from peer-reviewed studies with complete citations, DOI links, and JBI quality scores
-- **[Prevalence Summary](./docs/evidence/prevalence-summary.md)** - Complete list of the prevalence values extracted from peer-reviewed studies with complete citations, DOI links, and JBI quality scores
-- **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md)** - Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
+- **[Methodology](./docs/methodology/methodology.md):** Complete methodology documentation with worked examples
+- **[Evidence Summary](./docs/evidence/evidence-summary.md):** Central study document with complete citations, DOI links, and JBI quality scores for the relative risk and prevalence values used in the risk calculator.
+- **[Risk Calculator Spreadsheet](./data/risk-calculator.csv):** Comprehensive spreadsheet of risk factors, relative risks, and prevalence data for all disease models
+- **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
 
 
 ## 🗺️ Repository Structure
@@ -67,18 +66,13 @@ This methodology builds on established research:
 │
 ├── docs/                                     # Documentation and evidence
 │   ├── methodology/                          # Methodology documentation
-│   │   └── Methodology.md                    # Complete mathematical derivation
-│   ├── evidence/                             # Evidence and research summaries
-│   │   ├── risk-factor-summary.md            # Risk factor studies with complete citations & DOI links
-│   │   ├── prevalence-summary.md             # Population prevalence studies with citations & DOI links
-│   │   ├── evidence-summary.md               # Central study summary document
-│   │   └── jbi-reports/                      # JBI Critical Appraisal reports (~200 files)
-│   └── reference-data/                       # Supporting calculations and reference materials
-│       └── [calculation-spreadsheets]/       # Age, prevalence, and RR calculations
+│   │   └── methodology.md                    # Complete mathematical derivation
+│   └── evidence/                             # Evidence and research summaries
+│       ├── evidence-summary.md               # Central study summary document with complete citations & DOI links
+│       └── jbi-reports/                      # JBI Critical Appraisal reports (~214 files)
 │
 ├── data/                                     # Core datasets and risk calculation inputs
-│   ├── risk-calculator.csv                  # Main risk factor database
-│   └── incidence-rates.csv                  # Disease incidence rates by population
+│   └── risk-calculator.csv                  # Main risk factor database
 │
 └── analysis/                                 # Research studies and validation work
     ├── methodology-enhancements/             # Enhanced methodology research
