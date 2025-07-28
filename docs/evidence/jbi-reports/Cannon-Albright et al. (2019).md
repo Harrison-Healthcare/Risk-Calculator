@@ -8,9 +8,9 @@
 
 **Exposure measured in a valid and reliable way (2/2):** Exposure data (family history constellations) derived from validated registry and genealogy sources.
 
-**Confounding factors identified (2/2):** Identification of potential confounders such as genetics and smoking.
+**Confounding factors identified (2/2):** Cohort-specific rates for sex, birth year, and birthplace were used to control for confounding in relative risk calculations.
 
-**Strategies to deal with confounding factors (0/2):** No statistical control or stratification by key confounders like tobacco use.
+**Strategies to deal with confounding factors (2/2):** Expected AD cases were calculated using stratified population rates, adjusting for confounders in rate-based risk estimation.
 
 **Participants free of outcome at start (2/2):** Only incident lung cancer cases were included; exposure assessed prior to outcome.
 
@@ -26,4 +26,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Cannon-Albright et al. (2019) | JBI Checklist for Cohort Studies | 18/22 | 81.8% | Large population-based cohort using genealogic linkage and cancer registry; Item 5 – no strategies to adjust for confounding; Item 9 – follow-up status unclear; Item 10 – no discussion of loss to follow-up or strategies to address it. |
+| Cannon-Albright et al. (2019) | JBI Checklist for Cohort Studies | 21/22 | 95.5% | Methodologically rigorous population-based cohort using Utah genealogical and mortality records to assess AD risk from extended family history. Item 10 - no discussion of loss to follow-up or strategies to address it. |
