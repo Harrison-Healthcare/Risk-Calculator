@@ -22,4 +22,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Lippi et al. (2021) | JBI Checklist for Prevalence Studies | 16/18 | 88.9% | Strong methodological quality; global AF prevalence trends well supported by data. Item 5 – response rate not applicable; Item 8 – appropriate numerator/denominator not explicitly described. |
+| Lippi et al. (2020) | JBI Checklist for Prevalence Studies | 16/18 | 88.9% | Strong methodological quality; global AF prevalence trends well supported by data. Item 5 – response rate not applicable; Item 8 – appropriate numerator/denominator not explicitly described. |

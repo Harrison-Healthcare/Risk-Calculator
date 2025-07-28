@@ -20,6 +20,6 @@
 
 **Adequate response rate (2/2):** Nonresponse biases discussed and weighted; response rates and demographic representativeness described in detail for each country.
 
-| Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
-| --- | --- | --- | --- | --- |
-| Kessler et al. (2007) | JBI Checklist for Prevalence Studies | 18/18 | 100% | Massive 17-country survey (n=85,052) with standardized face-to-face interviews using the WHO-CIDI. Prevalence and risk estimates are stratified, validated, and cross-nationally harmonized. All checklist items met. |
+| Study ID               | Checklist Used                         | Total Score | Normalized Score (%) | Comments                                                                                                                                               |
+| ---------------------- | -------------------------------------- | ----------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Kessler et al. (2007)  | JBI Checklist for Prevalence Studies   | 18/18       | 100%                 | Massive 17-country survey (n=85,052) with standardized face-to-face interviews using the WHO-CIDI. Prevalence and risk estimates are stratified, validated, and cross-nationally harmonized. All checklist items met. |
