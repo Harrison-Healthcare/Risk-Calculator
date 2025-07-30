@@ -1,4 +1,4 @@
-# Montonen et al. (2011)
+# Montonen et al. (2010)
 
 ### Item-by-item Scoring Justification:
 
@@ -26,4 +26,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Montonen et al. (2011) | JBI Checklist for Cohort Studies | 22/22 | 100% | Excellent case-cohort study within EPIC-Potsdam (n=613 cases, 2021 controls) assessing biomarker pathways (e.g., adiponectin, HDL-C, GGT, hs-CRP) and T2DM risk. Valid measures, detailed follow-up, and advanced decomposition analysis fully meet JBI criteria. |
+| Montonen et al. (2010) | JBI Checklist for Cohort Studies | 22/22 | 100% | Excellent case-cohort study within EPIC-Potsdam (n=613 cases, 2021 controls) assessing biomarker pathways (e.g., adiponectin, HDL-C, GGT, hs-CRP) and T2DM risk. Valid measures, detailed follow-up, and advanced decomposition analysis fully meet JBI criteria. |

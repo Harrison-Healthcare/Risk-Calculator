@@ -333,11 +333,11 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 
 ### Diabetes - Type 2
  - **Relative risk:**
-   - Boyle, P., Boniol, M., Koechlin, A., Robertson, C., Valentini, F., Coppens, K., Fairley, L.-L., Boniol, M., Zheng, T., Zhang, Y., Pasterk, M., Smans, M., Curado, M. P., Mullie, P., Gandini, S., Bota, M., Bolli, G. B., Rosenstock, J., & Autier, P. (2012). Diabetes and breast cancer risk: a meta-analysis. British Journal of Cancer, 107(9), 1608–1617. [DOI: 10.1038/bjc.2012.414](https://doi.org/10.1038/bjc.2012.414)
+   - Boyle, P., Boniol, M., Koechlin, A., Robertson, C., Valentini, F., Coppens, K., Fairley, L.-L., Boniol, M., Zheng, T., Zhang, Y., Pasterk, M., Smans, M., Curado, M. P., Mullie, P., Gandini, S., Bota, M., Bolli, G. B., Rosenstock, J., & Autier, P. (2012). Diabetes and breast cancer risk: a meta-analysis. *British Journal of Cancer*, 107(9), 1608–1617. [DOI: 10.1038/bjc.2012.414](https://doi.org/10.1038/bjc.2012.414)
       - JBI Score: 100. [See report](jbi-reports/Boyle%20et%20al.%20(2012).md)
 
  - **Prevalence:**
-     - LeBlanc, A. G., Gao, Y. J., McRae, L., & Pelletier, C. (2019). At-a-glance - Twenty years of diabetes surveillance using the Canadian Chronic Disease Surveillance System. Health Promotion and Chronic Disease Prevention in Canada, 39(11), 306–309. [DOI: 10.24095/hpcdp.39.11.03](https://doi.org/10.24095/hpcdp.39.11.03)
+     - LeBlanc, A. G., Gao, Y. J., McRae, L., & Pelletier, C. (2019). At-a-glance - Twenty years of diabetes surveillance using the Canadian Chronic Disease Surveillance System. *Health Promotion and Chronic Disease Prevention in Canada*, 39(11), 306–309. [DOI: 10.24095/hpcdp.39.11.03](https://doi.org/10.24095/hpcdp.39.11.03)
         - JBI Score: 94.4. [See report](jbi-reports/LeBlanc%20et%20al.%20(2019).md)
 
 ### Family history
@@ -426,7 +426,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 
 ### Oral contraceptive use
  - **Relative risk and prevalence:**
-    - International Collaboration of Epidemiological Studies of Cervical Cancer. (2007). Cervical cancer and hormonal contraceptives: collaborative reanalysis of individual data for 16 573 women with cervical cancer and 35 509 women without cervical cancer from 24 epidemiological studies. The Lancet, 370(9599), 1609–1621. [DOI: 10.1016/s0140-6736(07)61684-5](https://doi.org/10.1016/s0140-6736(07)61684-5)
+    - International Collaboration of Epidemiological Studies of Cervical Cancer. (2007). Cervical cancer and hormonal contraceptives: collaborative reanalysis of individual data for 16 573 women with cervical cancer and 35 509 women without cervical cancer from 24 epidemiological studies. *The Lancet*, 370(9599), 1609–1621. [DOI: 10.1016/s0140-6736(07)61684-5](https://doi.org/10.1016/s0140-6736(07)61684-5)
       - JBI Score: 100. [See report](jbi-reports/International%20Collaboration%20of%20Epidemiological%20Studies%20of%20Cervical%20Cancer%20(2007).md)
 
 ### Race
@@ -524,7 +524,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 100. [See report](jbi-reports/Wolin%20et%20al.%20(2009).md)
 
  - **Prevalence:**
-    - Whitfield, G. P., Hyde, E. T., & Carlson, S. A. (2021). Participation in Leisure-Time Aerobic Physical Activity Among Adults, National Health Interview Survey, 1998–2018. Journal of Physical Activity and Health, 18(S1), S25–S36. [DOI: 10.1123/jpah.2021-0014](https://doi.org/10.1123/jpah.2021-0014)
+    - Whitfield, G. P., Hyde, E. T., & Carlson, S. A. (2021). Participation in Leisure-Time Aerobic Physical Activity Among Adults, National Health Interview Survey, 1998–2018. *Journal of Physical Activity and Health*, 18(S1), S25–S36. [DOI: 10.1123/jpah.2021-0014](https://doi.org/10.1123/jpah.2021-0014)
       - JBI Score: 100. [See report](jbi-reports/Whitfield%20et%20al.%20(2021).md)
 
 ### Race
@@ -564,32 +564,33 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 
 ### Anxiety
  - **Relative risk:**
-- Roest, A. M., Martens, E. J., de Jonge, P., Denollet, J. (2010)
-    - JBI Score: 100. [See report](jbi-reports/Roest%20et%20al.%20(2010).md)
+    - Emdin, C. A., Odutayo, A., Wong, C. X., Tran, J., Hsiao, A. J., & Hunn, B. H. M. (2016). Meta-Analysis of Anxiety as a Risk Factor for Cardiovascular Disease. The American Journal of Cardiology, 118(4), 511–519. [DOI: 10.1016/j.amjcard.2016.05.041](https://doi.org/10.1016/j.amjcard.2016.05.041)
+      - JBI Score: 95.5. [See report](jbi-reports/Emdin%20et%20al.%20(2016).md)
 
  - **Prevalence:**
     - Kessler, R. C., Angermeyer, M., Anthony, J. C., DE Graaf, R., Demyttenaere, K., Gasquet, I., DE Girolamo, G., Gluzman, S., Gureje, O., Haro, J. M., Kawakami, N., Karam, A., Levinson, D., Medina Mora, M. E., Oakley Browne, M. A., Posada-Villa, J., Stein, D. J., Adley Tsang, C. H., Aguilar-Gaxiola, S., Alonso, J., … Ustün, T. B. (2007). Lifetime prevalence and age-of-onset distributions of mental disorders in the World Health Organization's World Mental Health Survey Initiative. *World psychiatry : official journal of the World Psychiatric Association (WPA)*, 6(3), 168–176. [https://pmc.ncbi.nlm.nih.gov/articles/PMC2174588/](https://pmc.ncbi.nlm.nih.gov/articles/PMC2174588/)
+      - JBI Score: 100. [See report](jbi-reports/Kessler%20et%20al.%20(2007).md)
 
 ### Apolipoprotein B-100
  - **Relative risk:**
     - Benn, M., Nordestgaard, B. G., Jensen, G. B., & Tybjærg-Hansen, A. (2007) Improving Prediction of Ischemic Cardiovascular Disease in the General Population Using Apolipoprotein B. *Arteriosclerosis, Thrombosis, and Vascular Biology*, 27(3), 661-670. [DOI: 10.1161/01.ATV.0000255580.73689.8e](https://doi.org/10.1161/01.ATV.0000255580.73689.8e)
-      - JBI Score: Missing
+      - JBI Score: 91 [See report](jbi-reports/Benn%20et%20al.%20%282007%29.md)
 
  - **Prevalence:**
     - Carroll, M. D., Kruszon-Moran, D., & Tolliver, E. (2019). Trends in Apolipoprotein B, Non-high-density Lipoprotein Cholesterol, and Low-density Lipoprotein Cholesterol for Adults Aged 20 and Over, 2005-2016. National health statistics reports, (127), 1–16. [https://www.cdc.gov/nchs/data/nhsr/nhsr127.pdf](https://www.cdc.gov/nchs/data/nhsr/nhsr127.pdf)
 
 ### Apolipoproteins (B-100 and A-I)
  - **Relative risk and prevalence:**
-    - Walldius, G., de Faire, U., Alfredsson, L., Leander, K., Westerholm, P., Malmström, H., ... Hammar, N. (2021) Long-term risk of a major cardiovascular event by apoB, apoA-1, and the apoB/apoA-1 ratio—Experience from the Swedish AMORIS cohort: A cohort study. *PLOS Medicine*, 18(12), e1003853. [DOI: 10.1371/JOURNAL.PMED.1003853](https://doi.org/10.1371/JOURNAL.PMED.1003853)
+    - Walldius, G., de Faire, U., Alfredsson, L., Leander, K., Westerholm, P., Malmström, H., Ivert, T., & Hammar, N. (2021). Long-term risk of a major cardiovascular event by apoB, apoA-1, and the apoB/apoA-1 ratio—Experience from the Swedish AMORIS cohort: A cohort study. *PLOS Medicine*, 18(12), e1003853. [DOI: 10.1371/journal.pmed.1003853](https://doi.org/10.1371/journal.pmed.1003853)
       - JBI Score: 95.5. [See report](jbi-reports/Walldius%20et%20al.%20(2021).md)
 
 ### Blood pressure
  - **Relative risk:**
-    - Razo, C., Welgan, C. A., Johnson, C. O., McLaughlin, S. A., Iannucci, V., Rodgers, A., Wang, N., LeGrand, K. E., Sorensen, R. J. D., He, J., Zheng, P., Aravkin, A. Y., Hay, S. I., Murray, C. J. L., & Roth, G. A. (2022). Effects of elevated systolic blood pressure on ischemic heart disease: a Burden of Proof study. Nature Medicine, 28(10), 2056–2065. https://doi.org/10.1038/s41591-022-01974-1
+    - Razo, C., Welgan, C. A., Johnson, C. O., McLaughlin, S. A., Iannucci, V., Rodgers, A., Wang, N., LeGrand, K. E., Sorensen, R. J. D., He, J., Zheng, P., Aravkin, A. Y., Hay, S. I., Murray, C. J. L., & Roth, G. A. (2022). Effects of elevated systolic blood pressure on ischemic heart disease: a Burden of Proof study. *Nature Medicine*, 28(10), 2056–2065. https://doi.org/10.1038/s41591-022-01974-1
       - JBI Score: 100. [See report](jbi-reports/Razo%20et%20al.%20(2022).md)
 
  - **Prevalence:**
-    - Muntner, P., Hardy, S. T., Fine, L. J., Jaeger, B. C., Wozniak, G., Levitan, E. B., & Colantonio, L. D. (2020). Trends in Blood Pressure Control Among US Adults With Hypertension, 1999-2000 to 2017-2018. JAMA, 324(12), 1190. https://doi.org/10.1001/jama.2020.14545
+    - Muntner, P., Hardy, S. T., Fine, L. J., Jaeger, B. C., Wozniak, G., Levitan, E. B., & Colantonio, L. D. (2020). Trends in Blood Pressure Control Among US Adults With Hypertension, 1999-2000 to 2017-2018. *JAMA*, 324(12), 1190. https://doi.org/10.1001/jama.2020.14545
       - JBI Score: 100. [See report](jbi-reports/Muntner%20et%20al.%20(2020).md)
 
 ### BMI
@@ -603,7 +604,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 95.5. [See report](jbi-reports/Pai%20et%20al.%20(2004).md)
 
  - **Prevalence:**
-    - Khera, A., McGuire, D. K., Murphy, S. A., Stanek, H. G., Das, S. R., Vongpatanasin, W., Wians, F. H., Jr, Grundy, S. M., & de Lemos, J. A. (2005). Race and Gender Differences in C-Reactive Protein Levels. Journal of the American College of Cardiology, 46(3), 464–469. [DOI: 10.1016/j.jacc.2005.04.051](https://doi.org/10.1016/j.jacc.2005.04.051) 
+    - Khera, A., McGuire, D. K., Murphy, S. A., Stanek, H. G., Das, S. R., Vongpatanasin, W., Wians, F. H., Jr, Grundy, S. M., & de Lemos, J. A. (2005). Race and Gender Differences in C-Reactive Protein Levels. *Journal of the American College of Cardiology*, 46(3), 464–469. [DOI: 10.1016/j.jacc.2005.04.051](https://doi.org/10.1016/j.jacc.2005.04.051) 
       - JBI Score: 100. [See report](jbi-reports/Khera20et20al.20(2005).md)
 
 ### Cholesterol - HDL
@@ -616,7 +617,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 
 ### Cholesterol - LDL
  - **Relative risk and prevalence:**
-    - Mortensen, M. B., & Nordestgaard, B. G. (2020). Elevated LDL cholesterol and increased risk of myocardial infarction and atherosclerotic cardiovascular disease in individuals aged 70–100 years: a contemporary primary prevention cohort. The Lancet, 396(10263), 1644–1652. [DOI: 10.1016/s0140-6736(20)32233-9](https://doi.org/10.1016/s0140-6736(20)32233-9)
+    - Mortensen, M. B., & Nordestgaard, B. G. (2020). Elevated LDL cholesterol and increased risk of myocardial infarction and atherosclerotic cardiovascular disease in individuals aged 70–100 years: a contemporary primary prevention cohort. *The Lancet*, 396(10263), 1644–1652. [DOI: 10.1016/s0140-6736(20)32233-9](https://doi.org/10.1016/s0140-6736(20)32233-9)
       - JBI Score: 90.9. [See report](jbi-reports/Mortensen%20%26%20Nordestgaard%20(2020).md)
 
 ### Cholesterol - Total
@@ -633,16 +634,16 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 100. [See report](jbi-reports/Gan%20et%20al.%20(2014).md)
 
  - **Prevalence:**
-    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. JAMA Psychiatry, 75(4), 336. https://doi.org/10.1001/jamapsychiatry.2017.4602
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. https://doi.org/10.1001/jamapsychiatry.2017.4602
       - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
 
 ### Diabetes - Type 2
  - **Relative risk:**
-    - Peters, S. A. E., Huxley, R. R., & Woodward, M. (2014). Diabetes as risk factor for incident coronary heart disease in women compared with men: a systematic review and meta-analysis of 64 cohorts including 858,507 individuals and 28,203 coronary events. Diabetologia, 57(8), 1542-1551. [DOI: 10.1007/s00125-014-3260-6](https://doi.org/10.1007/s00125-014-3260-6)
+    - Peters, S. A. E., Huxley, R. R., & Woodward, M. (2014). Diabetes as risk factor for incident coronary heart disease in women compared with men: a systematic review and meta-analysis of 64 cohorts including 858,507 individuals and 28,203 coronary events. *Diabetologia*, 57(8), 1542-1551. [DOI: 10.1007/s00125-014-3260-6](https://doi.org/10.1007/s00125-014-3260-6)
       - JBI Score: 100. [See report](jbi-reports/Peters%20et%20al.%20(2014).md)
 
  - **Prevalence:**
-    - LeBlanc, A. G., Gao, Y. J., McRae, L., & Pelletier, C. (2019). At-a-glance - Twenty years of diabetes surveillance using the Canadian Chronic Disease Surveillance System. Health Promotion and Chronic Disease Prevention in Canada, 39(11), 306–309. [DOI: 10.24095/hpcdp.39.11.03](https://doi.org/10.24095/hpcdp.39.11.03)
+    - LeBlanc, A. G., Gao, Y. J., McRae, L., & Pelletier, C. (2019). At-a-glance - Twenty years of diabetes surveillance using the Canadian Chronic Disease Surveillance System. *Health Promotion and Chronic Disease Prevention in Canada*, 39(11), 306–309. [DOI: 10.24095/hpcdp.39.11.03](https://doi.org/10.24095/hpcdp.39.11.03)
       - JBI Score: 94.4. [See report](jbi-reports/LeBlanc%20et%20al.%20(2019).md)
 
 ### Family history
@@ -656,16 +657,16 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 100. [See report](jbi-reports/He%20et%20al.%20(2007).md)
 
  - **Prevalence:**
-    - Miller, V., Mente, A., Dehghan, M., Rangarajan, S., Zhang, X., Swaminathan, S., Dagenais, G., Gupta, R., Mohan, V., Lear, S., Bangdiwala, S. I., Schutte, A. E., Wentzel-Viljoen, E., Avezum, A., Altuntas, Y., Yusoff, K., Ismail, N., Peer, N., Chifamba, J., … Mapanga, R. (2017). Fruit, vegetable, and legume intake, and cardiovascular disease and deaths in 18 countries (PURE): a prospective cohort study. The Lancet, 390(10107), 2037–2049. [DOI: 10.1016/s0140-6736(17)32253-5](https://doi.org/10.1016/s0140-6736(17)32253-5)
+    - Miller, V., Mente, A., Dehghan, M., Rangarajan, S., Zhang, X., Swaminathan, S., Dagenais, G., Gupta, R., Mohan, V., Lear, S., Bangdiwala, S. I., Schutte, A. E., Wentzel-Viljoen, E., Avezum, A., Altuntas, Y., Yusoff, K., Ismail, N., Peer, N., Chifamba, J., … Mapanga, R. (2017). Fruit, vegetable, and legume intake, and cardiovascular disease and deaths in 18 countries (PURE): a prospective cohort study. *The Lancet*, 390(10107), 2037–2049. [DOI: 10.1016/s0140-6736(17)32253-5](https://doi.org/10.1016/s0140-6736(17)32253-5)
       - JBI Score: 100. [See report](jbi-reports/Miller%20et%20al.%20(2017).md)
 
  ### Gum disease
   - **Relative risk:**
-    - Janket, S.-J., Baird, A. E., Chuang, S.-K., & Jones, J. A. (2003). Meta-analysis of periodontal disease and risk of coronary heart disease and stroke. Oral Surgery, Oral Medicine, Oral Pathology, Oral Radiology, and Endodontology, 95(5), 559–569. [DOI: 10.1067/moe.2003.107](https://doi.org/10.1067/moe.2003.107)
+    - Janket, S.-J., Baird, A. E., Chuang, S.-K., & Jones, J. A. (2003). Meta-analysis of periodontal disease and risk of coronary heart disease and stroke. *Oral Surgery, Oral Medicine, Oral Pathology, Oral Radiology, and Endodontology*, 95(5), 559–569. [DOI: 10.1067/moe.2003.107](https://doi.org/10.1067/moe.2003.107)
       - JBI Score: 100. [See report](jbi-reports/Janket%20et%20al.%20(2003).md)
 
   - **Prevalence:**
-    - Eke, P. I., Dye, B. A., Wei, L., Thornton-Evans, G. O., & Genco, R. J. (2012). Prevalence of Periodontitis in Adults in the United States: 2009 and 2010. Journal of Dental Research, 91(10), 914–920. [DOI: 10.1177/0022034512457373](https://doi.org/10.1177/0022034512457373)
+    - Eke, P. I., Dye, B. A., Wei, L., Thornton-Evans, G. O., & Genco, R. J. (2012). Prevalence of Periodontitis in Adults in the United States: 2009 and 2010. *Journal of Dental Research*, 91(10), 914–920. [DOI: 10.1177/0022034512457373](https://doi.org/10.1177/0022034512457373)
       - JBI Score: 100. [See report](jbi-reports/Eke%20et%20al.%20(2012).md)
 
 ### Hemoglobin A1c
@@ -694,7 +695,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 ### Lipoprotein (a)
  - **Relative risk and prevalence:**
     - Bhatia, H. S., Ambrosio, M., Razavi, A. C., Alebna, P. L., Yeang, C., Spitz, J. A., Patel, J., Tsai, M. Y., Sperling, L., Shapiro, M. D., Tsimikas, S., & Mehta, A. (2025). AHA PREVENT Equations and Lipoprotein(a) for Cardiovascular Disease Risk . *JAMA Cardiology*. [DOI: 10.1001/jamacardio.2025.1603](https://doi.org/10.1001/jamacardio.2025.1603)
-      - JBI Score: Missing  
+      - JBI Score: 95.5. [See report](jbi-reports/Bhatia%20et%20al.%20%282025%29.md)   
 
 ### Physical activity
  - **Relative risk:**
@@ -726,6 +727,14 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
     - Levesque, J., & Mischki, T. (2021). Exposure to tobacco smoke among Canadian nonsmokers based on questionnaire and biomonitoring data. *Health Reports*, 32(2), 16–26. [DOI: 10.25318/82-003-x202100200002-eng](https://doi.org/10.25318/82-003-x202100200002-eng)
       - JBI Score: 100. [See report](jbi-reports/Levesque%20%26%20Mischki%20(2021).md)
 
+### Sleep apnea
+ - **Relative risk:**
+    - Hla, K. M., Young, T., Hagen, E. W., Stein, J. H., Finn, L. A., Nieto, F. J., & Peppard, P. E. (2015). Coronary Heart Disease Incidence in Sleep Disordered Breathing: The Wisconsin Sleep Cohort Study. *Sleep*, 38(5), 677–684. [DOI: 10.5665/sleep.4654](https://doi.org/10.5665/sleep.4654)
+      - JBI Score: 95.5. [See report](jbi-reports/Hla%20et%20al.%20(2015).md)
+- **Prevalence:**
+    - Kendzerska, T., Gershon, A. S., Hawker, G., Tomlinson, G., & Leung, R. S. (2014). Obstructive Sleep Apnea and Incident Diabetes. A Historical Cohort Study. *American Journal of Respiratory and Critical Care Medicine*, 190(2), 218–225. [DOI: 10.1164/rccm.201312-2209oc](https://doi.org/10.1164/rccm.201312-2209oc)
+      - JBI Score: 100. [See report](jbi-reports/Kendzerska%20et%20al.%20(2014).md)
+      
 ### Smoking - cigarettes
  - **Relative risk:**
     - Prescott, E., Hippe, M., Schnohr, P., Hein, H. O., & Vestbo, J. (1998). Smoking and risk of myocardial infarction in women and men: longitudinal population study. *BMJ*, 316(7137), 1043–1047. [DOI: 10.1136/bmj.316.7137.1043](https://doi.org/10.1136/bmj.316.7137.1043)
@@ -753,6 +762,11 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
  - **Prevalence:**
     - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset](https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/2021/age-sex-composition/2021agesex_table1.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html>
 
+### Apolipoprotein E
+ - **Relative risk and Prevalence:**
+    - Rasmussen, K. L., Tybjærg-Hansen, A., Nordestgaard, B. G., & Frikke-Schmidt, R. (2018). Absolute 10-year risk of dementia by age, sex and APOE genotype: a population-based cohort study. *Canadian Medical Association Journal*, 190(35), E1033–E1041. [DOI: 10.1503/cmaj.180066](https://doi.org/10.1503/cmaj.180066)
+      - JBI Score: 100. [See report](jbi-reports/Rasmussen%20et%20al.%20(2018).md)
+
 ### Atrial fibrillation
  - **Relative risk:**
     - Santangeli, P., Di Biase, L., Bai, R., Mohanty, S., Pump, A., Cereceda Brantes, M., ... Natale, A. (2012) Atrial fibrillation and the risk of incident dementia: A meta-analysis. *Heart Rhythm*, 9(11), 1761-1768.e2. [DOI: 10.1016/j.hrthm.2012.07.026](https://doi.org/10.1016/j.hrthm.2012.07.026)
@@ -760,6 +774,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 
  - **Prevalence:**
     - Lippi, G., Sanchis-Gomar, F., & Cervellin, G. (2020). Global epidemiology of atrial fibrillation: An increasing epidemic and public health challenge. *International Journal of Stroke*, 16(2), 217–221. [DOI: 10.1177/1747493019897870](https://doi.org/10.1177/1747493019897870)
+      - JBI Score: 88.9. [See report](jbi-reports/Lippi%20et%20al.%20(2020).md)
 
 ### BMI
  - **Relative risk:**
@@ -805,7 +820,7 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
 ### Family history
  - **Relative risk and prevalence:**
     - Cannon-Albright, L. A., Foster, N. L., Schliep, K., Farnham, J. M., Teerlink, C. C., Kaddas, H., Tschanz, J., Corcoran, C., & Kauwe, J. S. K. (2019). Relative risk for Alzheimer disease based on complete family history. *Neurology*, 92(15). [DOI: 10.1212/wnl.0000000000007231](https://doi.org/10.1212/wnl.0000000000007231)
-      - JBI Score: 81.8. [See report](jbi-reports/Cannon-Albright%20et%20al.%20(2019).md)
+      - JBI Score: 95.5. [See report](jbi-reports/Cannon-Albright%20et%20al.%20(2019).md)
 
 ### Hearing loss
  - **Relative risk:**
@@ -871,34 +886,35 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 100. [See report](jbi-reports/Kuzma%20et%20al.%20(2018).md)
 
 
-### Depression
+## Depression
 
 
 ### Adverse childhood experiences
  - **Relative risk:**
-    - Giano, Z., Wheeler, D. L., & Hubach, R. D. (2020) The frequencies and disparities of adverse childhood experiences in the U.S.. *BMC Public Health*, 20(1). [DOI: 10.1186/s12889-020-09411-z](https://doi.org/10.1186/s12889-020-09411-z)
-      - JBI Score: 100. [See report](jbi-reports/Giano%20et%20al.%20(2020).md)
-    - Björkenstam, E., Vinnerljung, B., & Hjern, A. (2017)
+    - Björkenstam, E., Vinnerljung, B., & Hjern, A. (2017). Impact of childhood adversities on depression in early adulthood: A longitudinal cohort study of 478,141 individuals in Sweden. *Journal of Affective Disorders*, 223, 95–100. [DOI: 10.1016/j.jad.2017.07.030](https://doi.org/10.1016/j.jad.2017.07.030)
       - JBI Score: 100. [See report](jbi-reports/Bjorkenstam%20et%20al.%20(2017).md)
-    - Nelson et al. (2017)
+    - Nelson, J., Klumparendt, A., Doebler, P., & Ehring, T. (2017). Childhood maltreatment and characteristics of adult depression: Meta-analysis. *British Journal of Psychiatry*, 210(2), 96–104. [DOI: 10.1192/bjp.bp.115.180752](https://doi.org/10.1192/bjp.bp.115.180752)
       - JBI Score: 100. [See report](jbi-reports/Nelson%20et%20al.%20(2017).md)
 
  - **Prevalence:**
+    - Giano, Z., Wheeler, D. L., & Hubach, R. D. (2020). The frequencies and disparities of adverse childhood experiences in the U.S. *BMC Public Health*, 20(1). [DOI: 10.1186/s12889-020-09411-z](https://doi.org/10.1186/s12889-020-09411-z)
+      - JBI Score: 100. [See report](jbi-reports/Giano%20et%20al.%20(2020).md)
 
-### Chronic pain
+### Age
  - **Relative risk:**
-    - Ohayon, M. M., & Schatzberg, A. F. (2003) Using Chronic Pain to Predict Depressive Morbidity in the General Population. *Archives of General Psychiatry*, 60(1), 39. [DOI: 10.1001/archpsyc.60.1.39](https://doi.org/10.1001/archpsyc.60.1.39)
-      - JBI Score: 100. [See report](jbi-reports/Ohayon%20%26%20Schatzberg%20(2003).md)
-    - NCHS (2020)
-
- - **Prevalence:**
-
-### Demographic variables (age, marital status, race)
- - **Relative risk:**
-    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., ... Grant, B. F. (2018) Epidemiology of Adult <i>DSM-5</i> Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
       - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
 
  - **Prevalence:**
+    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset](https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/2021/age-sex-composition/2021agesex_table1.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html>
+
+### Chronic pain
+ - **Relative risk:**
+    - Ohayon, M. M., & Schatzberg, A. F. (2003). Using Chronic Pain to Predict Depressive Morbidity in the General Population. *Archives of General Psychiatry*, 60(1), 39. [DOI: 10.1001/archpsyc.60.1.39](https://doi.org/10.1001/archpsyc.60.1.39)
+      - JBI Score: 100. [See report](jbi-reports/Ohayon%20%26%20Schatzberg%20(2003).md)
+ 
+ - **Prevalence:**
+    - Zelaya, C. E., Dahlhammer, J. M., Lucas, J. W., & Connor, E. M. (2020). Chronic pain and high-impact chronic pain among U.S. adults: Prevalence and correlates. NCHS data brief, (390), 1–8. [https://www.cdc.gov/nchs/data/databriefs/db390-H.pdf](https://www.cdc.gov/nchs/data/databriefs/db390-H.pdf)
 
 ### Diabetes - Type 2
  - **Relative risk:**
@@ -906,30 +922,59 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
       - JBI Score: 100. [See report](jbi-reports/Rotella%20%26%20Mannucci%20(2013).md)
 
  - **Prevalence:**
-
-### Family history
+    - LeBlanc, A. G., Gao, Y. J., McRae, L., & Pelletier, C. (2019). At-a-glance - Twenty years of diabetes surveillance using the Canadian Chronic Disease Surveillance System. Health Promotion and Chronic Disease Prevention in Canada, 39(11), 306–309. [DOI: 10.24095/hpcdp.39.11.03](https://doi.org/10.24095/hpcdp.39.11.03)
+      - JBI Score: 94.4. [See report](jbi-reports/LeBlanc%20et%20al.%20(2019).md)
+  
+### Education
  - **Relative risk:**
-    - Van Dijk et al. (2021)
-      - JBI Score: 100. [See report](jbi-reports/Van%20Dijk%20et%20al.%20(2021).md)
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
+      - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
 
  - **Prevalence:**
+    - U.S. Census Bureau. (2021). Educational Attainment in the United States, Table 1: All Races [Dataset](https://www2.census.gov/programs-surveys/demo/tables/educational-attainment/2021/cps-detailed-tables/table-1-1.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/educational-attainment/cps-detailed-tables.html>
+
+### Family history
+ - **Relative risk and Prevalence:**
+    - van Dijk, M. T., Murphy, E., Posner, J. E., Talati, A., & Weissman, M. M. (2021). Association of Multigenerational Family History of Depression With Lifetime Depressive and Other Psychiatric Disorders in Children. *JAMA Psychiatry*, 78(7), 778. [DOI: 10.1001/jamapsychiatry.2021.0350](https://doi.org/10.1001/jamapsychiatry.2021.0350)
+      - JBI Score: 100. [See report](jbi-reports/Van%20Dijk%20et%20al.%20(2021).md)
+
+### Household income
+ - **Relative risk:**
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
+      - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
+
+ - **Prevalence:**
+    - U.S. Census Bureau. (2022). Income in the United States: 2022. Table A-1, [Dataset](https://www2.census.gov/programs-surveys/demo/tables/p60/279/tableA1.xlsx). Available from: <https://www.census.gov/library/publications/2023/demo/p60-279.html>
 
 ### Job strain
  - **Relative risk:**
-    - Nyberg et al. (2013)
-      - JBI Score: 100. [See report](jbi-reports/Nyberg%20et%20al.%20(2013).md)
-    - Madsen et al. (2017)
+    - Madsen, I. E. H., Nyberg, S. T., Magnusson Hanson, L. L., Ferrie, J. E., Ahola, K., Alfredsson, L., Batty, G. D., Bjorner, J. B., Borritz, M., Burr, H., Chastang, J.-F., de Graaf, R., Dragano, N., Hamer, M., Jokela, M., Knutsson, A., Koskenvuo, M., Koskinen, A., … Leineweber, C. (2017). Job strain as a risk factor for clinical depression: systematic review and meta-analysis with additional individual participant data. *Psychological Medicine*, 47(8), 1342–1356. [DOI: 10.1017/s003329171600355x](https://doi.org/10.1017/s003329171600355x)
       - JBI Score: 100. [See report](jbi-reports/Madsen%20et%20al.%20(2017).md)
 
  - **Prevalence:**
+    - Nyberg, S. T., Fransson, E. I., Heikkilä, K., Alfredsson, L., Casini, A., Clays, E., De Bacquer, D., Dragano, N., Erbel, R., Ferrie, J. E., Hamer, M., Jöckel, K.-H., Kittel, F., Knutsson, A., Ladwig, K.-H., Lunau, T., Marmot, M. G., Nordin, M., … Rugulies, R. (2013). Job Strain and Cardiovascular Disease Risk Factors: Meta-Analysis of Individual-Participant Data from 47,000 Men and Women. *PLoS ONE*, 8(6), e67323. [DOI: 10.1371/journal.pone.0067323](https://doi.org/10.1371/journal.pone.0067323)
+      - JBI Score: 100. [See report](jbi-reports/Nyberg%20et%20al.%20(2013).md)
 
-### Sedentary behaviour
+### Marital status
  - **Relative risk:**
-    - Vallance et al. (2011)
-      - JBI Score: 100. [See report](jbi-reports/Vallance%20et%20al.%20(2011).md)
-    - Zhou et al. (2023)
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
+      - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
 
  - **Prevalence:**
+    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States: 2021. Table 1, [Dataset](https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/2021/age-sex-composition/2021agesex_table2.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html>
+
+### Race
+ - **Relative risk:**
+    - Hasin, D. S., Sarvet, A. L., Meyers, J. L., Saha, T. D., Ruan, W. J., Stohl, M., & Grant, B. F. (2018). Epidemiology of Adult DSM-5 Major Depressive Disorder and Its Specifiers in the United States. *JAMA Psychiatry*, 75(4), 336. [DOI: 10.1001/jamapsychiatry.2017.4602](https://doi.org/10.1001/jamapsychiatry.2017.4602)
+      - JBI Score: 100. [See report](jbi-reports/Hasin%20et%20al.%20(2018).md)
+
+ - **Prevalence:**
+    - USA Facts. (2021). US population by year, race, age, ethnicity, & more. <https://USAFacts.org/data/topics/people-society/population-and-demographics/our-changing-population/?endDate=2021-01-01&startDate=2020-01-01>
+
+### Sedentary behaviour
+ - **Relative risk and Prevalence:**
+    - Vallance, J. K., Winkler, E. A. H., Gardiner, P. A., Healy, G. N., Lynch, B. M., & Owen, N. (2011). Associations of objectively-assessed physical activity and sedentary time with depression: NHANES (2005–2006). *Preventive Medicine*, 53(4–5), 284–288. [DOI: 10.1016/j.ypmed.2011.07.013](https://doi.org/10.1016/j.ypmed.2011.07.013)
+      - JBI Score: 100. [See report](jbi-reports/Vallance%20et%20al.%20(2011).md)
 
 ### Sleep
  - **Relative risk:**
@@ -938,13 +983,13 @@ Taken together, these sources form the empirical foundation of the Harrison Heal
     - Sheehan et al. (2019)
 
  - **Prevalence:**
+    - Statistics Canada. (2022). Sleep behaviours among Canadian adults: Findings from the 2020 Canadian Community Health Survey healthy living rapid response module. Government of Canada. [DOI: 10.25318/82-003-X202200300001-ENG](  https://doi.org/10.25318/82-003-X202200300001-ENG)
+      - JBI Score: 100. [See report](jbi-reports/Wang%20et%20al.%20(2022).md)  
 
 ### Smoking - cigarettes
- - **Relative risk:**
-    - Mojtabai, R., & Crum, R. M. (2013) Cigarette Smoking and Onset of Mood and Anxiety Disorders. *American Journal of Public Health*, 103(9), 1656-1665. [DOI: 10.21052FAJPH.2012.300911](https://doi.org/10.21052FAJPH.2012.300911)
+ - **Relative risk and Prevalence:**
+    - Mojtabai, R., & Crum, R. M. (2013). Cigarette Smoking and Onset of Mood and Anxiety Disorders. *American Journal of Public Health*, 103(9), 1656–1665. [DOI: 10.2105/ajph.2012.300911](https://doi.org/10.2105/ajph.2012.300911)
       - JBI Score: 100. [See report](jbi-reports/Mojtabai%20%26%20Crum%20(2013).md)
-
- - **Prevalence:**
 
 ## Diabetes - Type 2
 ### Adiponectin
