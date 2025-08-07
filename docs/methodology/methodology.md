@@ -240,7 +240,7 @@ This component is not adjusted for mediation, as LDL is treated as a direct inde
 
 After computing the individual’s cumulative relative risk (CRR) using the enhanced HCRI methodology that accounts for mediated relationships, we can use this value to calculate their absolute risk estimate for developing a condition using either an incidence-based method or the survival-power method.
 
-### Incidence-based Method
+### Incidence-Based Method
 
 Shrier et al. (2018) originally proposed converting cumulative relative risk into absolute risk by multiplying it with the average population-level incidence:
 
@@ -253,24 +253,52 @@ While straightforward, this method can yield absolute risk estimates exceeding 1
 
 ### Survival-Power Method
 
-To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. This approach is based on survival analysis principles and provides probabilistically sound estimates that cannot exceed 100%. The equation is:
+To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. This approach is based on survival analysis principles and provides probabilistically sound estimates that cannot exceed 100%. 
+
+To ensure numerical stability when combining many risk factors, we first compute CRR via log-sum aggregation, then convert to absolute risk:
 
 ```math
-\text{Absolute Risk} = 1 - S_{0}^{\text{CRR}}
+\Delta = \ln(\mathrm{CIR}) - \ln(\mathrm{PR}) 
 ```
 
+```math
+\mathrm{CRR} = e^{\Delta} 
+```
+
+```math
+\text{Absolute Risk} = 1 - S_{0}^{\mathrm{CRR}}
+```
 Where:  
 - **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD-free survival rate from a reference cohort)  
-- **CRR**: Cumulative relative risk from the enhanced HCRI calculation  
+- **CRR**: Log-sum aggregated cumulative relative risk from the enhanced HCRI calculation
+- **CIR**: Raw cumulative incidence ratio
+- **PR**: Population‐average RR
 
 ### Calculated Example: Converting to Absolute Risk
 
 Using the CRR calculated in the previous section, we can demonstrate the survival-power method:
 
-**Step 1: Obtain Cumulative Relative Risk**  
-From the enhanced HCRI calculation above:
+**Step 1a: Compute raw CIR and PR**
+
+  ```math
+    \mathrm{CIR} = \underbrace{1.40}_{\mathrm{RR_{SFI,direct}}}\;\times\;\underbrace{4.00}_{\mathrm{RR_{LDL}}}
+    = 5.60
+  ```
+
+  ```math
+    \mathrm{PR} = \underbrace{1.22}_{\text{pop‐avg SFI}} \;\times\; \underbrace{2.30}_{\text{pop‐avg LDL}}
+    = 2.806
+  ```
+
+**Step 1b: Log‐sum aggregation**  
 ```math
-\text{CRR} = 1.996
+Δ = \ln(\mathrm{CIR}) - \ln(\mathrm{HHPR})
+  = \ln(5.60) - \ln(2.806)
+  ≈ 1.7228 - 1.0320
+  ≈ 0.6908
+```
+```math
+\mathrm{CRR} = e^{Δ} ≈ e^{0.6908} ≈ 1.996
 ```
 
 **Step 2: Determine Baseline Survival Probability**  
@@ -290,6 +318,7 @@ Subtract from unity to obtain the absolute risk:
 ```math
 \text{10-Year Absolute Risk} = 1 - 0.79 = 0.21 = 21\%
 ```
+
 
 **Interpretation**: An individual with this risk profile has a 21% absolute risk of developing coronary heart disease over the next 10 years. This survival-power approach ensures the estimate remains bounded between 0% and 100%, providing a clinically interpretable and mathematically sound risk assessment.
 
