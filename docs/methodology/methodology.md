@@ -255,7 +255,7 @@ While straightforward, this method can yield absolute risk estimates exceeding 1
 
 To address these limitations, we recommend using a survival-power method, which ensures interpretability and bounded output. This approach is based on survival analysis principles and provides probabilistically sound estimates that cannot exceed 100%. 
 
-To ensure numerical stability when combining many risk factors, we first compute CRR via log-sum aggregation, then convert to absolute risk:
+To ensure numerical stability when combining many risk factors, we first compute CRR via log-ratio aggregation, then convert to absolute risk:
 
 ```math
 \Delta = \ln(\mathrm{CIR}) - \ln(\mathrm{PR}) 
@@ -269,10 +269,10 @@ To ensure numerical stability when combining many risk factors, we first compute
 \text{Absolute Risk} = 1 - S_{0}^{\mathrm{CRR}}
 ```
 Where:  
-- **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD-free survival rate from a reference cohort)  
-- **CRR**: Log-sum aggregated cumulative relative risk from the enhanced HCRI calculation
 - **CIR**: Raw cumulative incidence ratio
-- **PR**: Population‐average RR
+- **PR**: Population‐average RR 
+- **CRR**: Log-ratio aggregated cumulative relative risk from the enhanced HCRI calculation
+- **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD-free survival rate from a reference cohort) 
 
 ### Calculated Example: Converting to Absolute Risk
 
@@ -280,19 +280,16 @@ Using the CRR calculated in the previous section, we can demonstrate the surviva
 
 **Step 1a: Compute raw CIR and PR**
 
-  ```math
-    \mathrm{CIR} = \underbrace{1.40}_{\mathrm{RR_{SFI,direct}}}\;\times\;\underbrace{4.00}_{\mathrm{RR_{LDL}}}
-    = 5.60
-  ```
 
-  ```math
-    \mathrm{PR} = \underbrace{1.22}_{\text{pop‐avg SFI}} \;\times\; \underbrace{2.30}_{\text{pop‐avg LDL}}
-    = 2.806
-  ```
-
-**Step 1b: Log‐sum aggregation**  
 ```math
-Δ = \ln(\mathrm{CIR}) - \ln(\mathrm{HHPR})
+\mathrm{CIR} = 1.40\bigl(\mathrm{RR_{Saturated Fat Intake,direct}}\bigr)\times\;4.00\;\bigl(\mathrm{RR_{LDL}}\bigr)\;=\;5.60
+```
+```math
+\mathrm{PR} = 1.22\bigl(\mathrm{Population-average_{Saturated Fat Intake}}\bigr)\;\times\;2.30\;\bigl(\mathrm{Population-average_{LDL}}\bigr)\;=\;2.806
+```
+**Step 1b: Log‐ratio aggregation**  
+```math
+Δ = \ln(\mathrm{CIR}) - \ln(\mathrm{PR})
   = \ln(5.60) - \ln(2.806)
   ≈ 1.7228 - 1.0320
   ≈ 0.6908
