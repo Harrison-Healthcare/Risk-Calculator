@@ -258,7 +258,7 @@ To address these limitations, we recommend using a survival-power method, which 
 To ensure numerical stability when combining many risk factors, we first compute CRR via log-ratio aggregation, then convert to absolute risk:
 
 ```math
-\Delta = \ln(\mathrm{CIR}) - \ln(\mathrm{PR}) 
+\Delta = \ln(\mathrm{CIR}) - \ln(\mathrm{CPR}) 
 ```
 
 ```math
@@ -269,8 +269,8 @@ To ensure numerical stability when combining many risk factors, we first compute
 \text{Absolute Risk} = 1 - S_{0}^{\mathrm{CRR}}
 ```
 Where:  
-- **CIR**: Raw cumulative incidence ratio
-- **PR**: Population‐average RR 
+- **CIR**: Raw cumulative incidence ratio (product of individual RRs)  
+- **CPR**: Cumulative population RR (product of population-average RRs for each factor)
 - **CRR**: Log-ratio aggregated cumulative relative risk from the enhanced HCRI calculation
 - **$S_{0}$**: Baseline survival probability over the chosen time horizon (e.g., 10-year CHD-free survival rate from a reference cohort) 
 
@@ -285,11 +285,11 @@ Using the CRR calculated in the previous section, we can demonstrate the surviva
 \mathrm{CIR} = 1.40\bigl(\mathrm{RR_{Saturated Fat Intake,direct}}\bigr)\times\;4.00\;\bigl(\mathrm{RR_{LDL}}\bigr)\;=\;5.60
 ```
 ```math
-\mathrm{PR} = 1.22\bigl(\mathrm{Population-average_{Saturated Fat Intake}}\bigr)\;\times\;2.30\;\bigl(\mathrm{Population-average_{LDL}}\bigr)\;=\;2.806
+\mathrm{CPR} = 1.22\bigl(\mathrm{PR_{Saturated Fat Intake}}\bigr)\;\times\;2.30\;\bigl(\mathrm{PR_{LDL}}\bigr)\;=\;2.806
 ```
 **Step 1b: Log‐ratio aggregation**  
 ```math
-Δ = \ln(\mathrm{CIR}) - \ln(\mathrm{PR})
+Δ = \ln(\mathrm{CIR}) - \ln(\mathrm{CPR})
   = \ln(5.60) - \ln(2.806)
   ≈ 1.7228 - 1.0320
   ≈ 0.6908
