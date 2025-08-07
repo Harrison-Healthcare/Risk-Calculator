@@ -1,4 +1,4 @@
-# Sanchez-Villegas et al. (2007)
+# Sanchez-Villegas et al. (2008)
 
 ### Item-by-item Scoring Justification:
 
@@ -26,4 +26,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Sánchez-Villegas et al. (2007) | JBI Checklist for Cohort Studies | 21/22 | 95.5% | Large prospective cohort with validated activity assessment and strong covariate control. Item 10 – no detailed strategy for managing loss to follow-up. |
+| Sánchez-Villegas et al. (2008) | JBI Checklist for Cohort Studies | 21/22 | 95.5% | Large prospective cohort with validated activity assessment and strong covariate control. Item 10 – no detailed strategy for managing loss to follow-up. |

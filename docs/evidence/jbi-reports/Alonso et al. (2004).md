@@ -22,4 +22,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Alonso et al. (2004) | JBI Checklist for Prevalence Studies | 16/18 | 90.0% | High-quality multinational prevalence survey. Strengths include rigorous sampling, standardized diagnostic tools, and analytic weighting. Item 5 – unclear analysis coverage; Item 9 – limited handling of low response bias. |
+| Alonso et al. (2004) | JBI Checklist for Prevalence Studies | 16/18 | 88.9% | High-quality multinational prevalence survey. Strengths include rigorous sampling, standardized diagnostic tools, and analytic weighting. Item 5 – unclear analysis coverage; Item 9 – limited handling of low response bias. |

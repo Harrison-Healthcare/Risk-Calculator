@@ -1,4 +1,4 @@
-# Li et al. (2015)
+# Li et al. (2016)
 
 ### Item-by-item Scoring Justification:
 
@@ -26,4 +26,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Li et al. (2015) | JBI Checklist for Systematic Reviews and Research Syntheses | 20/22 | 90.9% | Robust dose-response meta-analysis of FV intake and hypertension. Item 5 – no formal quality appraisal described; Item 6 – dual data extraction but unclear if appraisal was duplicate. |
+| Li et al. (2016) | JBI Checklist for Systematic Reviews and Research Syntheses | 20/22 | 90.9% | Robust dose-response meta-analysis of FV intake and hypertension. Item 5 – no formal quality appraisal described; Item 6 – dual data extraction but unclear if appraisal was duplicate. |
