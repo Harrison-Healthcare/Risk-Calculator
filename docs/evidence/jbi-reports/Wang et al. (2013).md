@@ -2,28 +2,39 @@
 
 ### Item-by-item Scoring Justification:
 
-**Review question clearly and explicitly stated (2/2):** Investigated whether elevated levels of IL-6 and CRP are associated with increased risk of type 2 diabetes.
+**Review question clearly stated (2/2):**  
+Explicit aim to examine OSA and type 2 diabetes risk using cohort data.
 
-**Inclusion criteria appropriate for the review question (2/2):** Included prospective cohort, nested case-control, and case-cohort studies in non-diabetic adults with ≥1 year follow-up and outcome ascertainment of incident diabetes.
+**Inclusion criteria appropriate (2/2):**  
+Included only prospective studies with objective sleep measurements.
 
-**Search strategy appropriate (2/2):** Searched PubMed, EMBASE, ISI Web of Knowledge, and Cochrane Library through February 2012 using comprehensive and clearly documented search terms.
+**Search strategy appropriate (2/2):**  
+Multi-database strategy with broad terms and manual reference checks.
 
-**Sources and resources used adequate (2/2):** Multiple databases and manual reference checks were used; no language restrictions applied.
+**Sources/resources adequate (2/2):**  
+PubMed, EMBASE, CINAHL, and ISI searched through March 2012.
 
-**Criteria for appraising studies appropriate (2/2):** Study quality was assessed using a Newcastle-Ottawa Scale–derived scoring system; studies were labeled as low, moderate, or high quality.
+**Appraisal criteria appropriate (0/2):**  
+No mention of using any critical appraisal or quality assessment tool.
 
-**Critical appraisal conducted by two or more reviewers independently (2/2):** Dual-reviewer screening, data extraction, and quality appraisal were performed with discrepancies resolved by consensus with a third reviewer.
+**Independent critical appraisal (1/2):**  
+Two investigators reviewed studies but not using formal appraisal criteria.
 
-**Methods to minimize errors in data extraction (2/2):** Standardized data forms and independent duplicate extraction minimized error and ensured consistency.
+**Minimized data extraction errors (2/2):**  
+Dual independent data extraction process described.
 
-**Methods used to combine studies appropriate (2/2):** Used generalized least squares for trend estimation (GLST) and random-effects models; stratified analyses and dose-response modeling applied (Figures 1–3, pages 171–173).
+**Appropriate synthesis methods (2/2):**  
+Random-effects meta-analysis with subgroup and sensitivity analyses.
 
-**Likelihood of publication bias assessed (2/2):** Funnel plots and Begg’s and Egger’s tests were used; no evidence of publication bias was detected for IL-6 or CRP analyses.
+**Publication bias assessed (2/2):**  
+Funnel plots and Begg’s/Egger’s tests reported.
 
-**Recommendations for policy/practice supported by reported data (2/2):** Suggested IL-6 and CRP as potential markers for identifying high-risk individuals for type 2 diabetes and emphasized targeting inflammation in prevention strategies.
+**Recommendations supported by data (2/2):**  
+Conclusions aligned with effect sizes and statistical results.
 
-**Specific directives for new research appropriate (2/2):** Recommended further studies to assess causal mechanisms, explore heterogeneity by sex and ethnicity, and validate predictive models using IL-6 and CRP.
+**New research directives appropriate (2/2):**  
+Called for large, community-based prospective studies for future work.
 
-| Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
-| --- | --- | --- | --- | --- |
-| Wang et al. (2013) | JBI Checklist for Systematic Reviews | 22/22 | 100% | Rigorous meta-analysis of 19 prospective studies assessing IL-6 and CRP in relation to type 2 diabetes risk. Detailed protocol, independent dual-review process, robust dose-response modeling, and extensive subgroup/sensitivity analyses meet all JBI criteria. |
+| Study ID           | Checklist Used                                     | Total Score | Normalized Score (%) | Comments |
+|--------------------|----------------------------------------------------|-------------|------------------------|----------|
+| Wang et al. (2013) | JBI Critical Appraisal Checklist for Systematic Reviews | 19/22       | 86.4%                 | Clear review question, defined inclusion criteria, comprehensive search strategy, and appropriate synthesis using adjusted RRs; Item 5 – no appraisal criteria described; Item 6 – dual review mentioned but not as appraisal. |

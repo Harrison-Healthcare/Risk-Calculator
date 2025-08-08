@@ -1,4 +1,4 @@
-# Mijtabai & Crum (2013)
+# Mojtabai & Crum (2013)
 
 ### Item-by-item Scoring Justification:
 
