@@ -1,4 +1,4 @@
-# Muntner et al. (2020)
+# Muntner et al. (2021)
 
 ### Item-by-item Scoring Justification:
 
@@ -22,4 +22,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Muntner et al. (2020) | JBI Checklist for Prevalence Studies | 18/18 | 100% | Serial cross-sectional analysis of NHANES data (n=51,761; 18,262 with hypertension). BP control improved from 1999 to 2014 but declined thereafter. Full methodological transparency, standard BP measurement protocols, and detailed subgroup stratification. All appraisal criteria met. |
+| Muntner et al. (2021) | JBI Checklist for Prevalence Studies | 18/18 | 100% | Serial cross-sectional analysis of NHANES data (n=51,761; 18,262 with hypertension). BP control improved from 1999 to 2014 but declined thereafter. Full methodological transparency, standard BP measurement protocols, and detailed subgroup stratification. All appraisal criteria met. |
