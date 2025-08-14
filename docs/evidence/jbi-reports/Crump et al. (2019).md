@@ -1,4 +1,4 @@
-# Crump et al. (2020)
+# Crump et al. (2019)
 
 ### Item-by-item Scoring Justification:
 
@@ -26,4 +26,4 @@
 
 | Study ID | Checklist Used | Total Score | Normalized Score (%) | Comments |
 | --- | --- | --- | --- | --- |
-| Crump et al. (2020) | JBI Cohort Studies Checklist | 21/22 | 95.5% | Large-scale national registry study with rigorous methodology and extended follow-up. Item 9 – follow-up completeness acknowledged but not fully quantified across time or registry types. |
+| Crump et al. (2019) | JBI Cohort Studies Checklist | 21/22 | 95.5% | Large-scale national registry study with rigorous methodology and extended follow-up. Item 9 – follow-up completeness acknowledged but not fully quantified across time or registry types. |
