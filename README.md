@@ -7,7 +7,7 @@
 
 # Harrison Healthcare Risk Calculator
 
-*Last Updated: July 2025*
+*Last Updated: August 2025*
 
 ## Authors and Contributors
 
@@ -53,7 +53,7 @@ This methodology builds on established research:
 
 ### Core Documents
 - **[Methodology](./docs/methodology/methodology.md):** Complete methodology documentation with worked examples
-- **[Evidence Summary](./docs/evidence/evidence-summary.md):** Central study document with complete citations, DOI links, and JBI quality scores for the relative risk and prevalence values used in the risk calculator.
+- **[Risk Dial Citations](./docs/evidence/risk-dial-citations/):** Peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate weights in the Harrison Healthcare Risk Dial for each disease.
 - **[Risk Calculator Spreadsheet](./data/risk-calculator.csv):** Comprehensive spreadsheet of risk factors, relative risks, and prevalence data for all disease models
 - **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
 
@@ -68,8 +68,8 @@ This methodology builds on established research:
 │   ├── methodology/                          # Methodology documentation
 │   │   └── methodology.md                    # Complete mathematical derivation
 │   └── evidence/                             # Evidence and research summaries
-│       ├── evidence-summary.md               # Central study summary document with complete citations & DOI links
-│       └── jbi-reports/                      # JBI Critical Appraisal reports (~214 files)
+│       ├── risk-dial-citations/              # Peer-reviewed studies for risk dial weights (18 disease summaries)
+│       └── jbi-reports/                      # JBI Critical Appraisal reports (~225 files)
 │
 ├── data/                                     # Core datasets and risk calculation inputs
 │   └── risk-calculator.csv                  # Main risk factor database
