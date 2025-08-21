@@ -1,17 +1,15 @@
+# Ovarian cancer
+
 ## Table of Contents
-
-- [Ovarian cancer](#ovarian-cancer)
-  - [Age](#age)
-  - [Asbestos exposure](#asbestos-exposure)
-  - [Breastfeeding](#breastfeeding)
-  - [Family history](#family-history)
-  - [High parity](#high-parity)
-  - [Hysterectomy](#hysterectomy)
-  - [Oral contraceptives](#oral-contraceptives)
-  - [Race](#race)
-  - [Tubal ligation](#tubal-ligation)
-
-## Ovarian cancer
+- [Age](#age)
+- [Asbestos exposure](#asbestos-exposure)
+- [Breastfeeding](#breastfeeding)
+- [Family history](#family-history)
+- [High parity](#high-parity)
+- [Hysterectomy](#hysterectomy)
+- [Oral contraceptives](#oral-contraceptives)
+- [Race](#race)
+- [Tubal ligation](#tubal-ligation)
 
 ### Age
 
