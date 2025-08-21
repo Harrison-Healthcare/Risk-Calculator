@@ -1,4 +1,6 @@
-# Generalized anxiety disorder
+# Generalized Anxiety Disorder Risk Dial Citations
+
+*This document contains the peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate the weights in the Harrison Healthcare Risk Dial for generalized anxiety disorder.*
 
 ## Table of Contents
 - [ACEs](#adverse-childhood-experiences)

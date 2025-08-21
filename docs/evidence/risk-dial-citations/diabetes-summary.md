@@ -1,4 +1,6 @@
-# Diabetes - Type 2
+# Type 2 Diabetes Risk Dial Citations
+
+*This document contains the peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate the weights in the Harrison Healthcare Risk Dial for type 2 diabetes.*
 
 ## Table of Contents
 - [Adiponectin](#adiponectin)

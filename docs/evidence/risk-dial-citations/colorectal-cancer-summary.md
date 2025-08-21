@@ -1,4 +1,6 @@
-# Colorectal cancer
+# Colorectal Cancer Risk Dial Citations
+
+*This document contains the peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate the weights in the Harrison Healthcare Risk Dial for colorectal cancer.*
 
 ## Table of Contents
 - [Age](#age)

@@ -1,4 +1,6 @@
-# Cervical Cancer
+# Cervical Cancer Risk Dial Citations
+
+*This document contains the peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate the weights in the Harrison Healthcare Risk Dial for cervical cancer.*
 
 ## Table of Contents
 - [Age](#age)
