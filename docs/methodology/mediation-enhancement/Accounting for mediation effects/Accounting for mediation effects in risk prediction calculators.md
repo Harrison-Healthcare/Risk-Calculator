@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="harrison%20logo.jpg" alt="Harrison Healthcare Logo" width="150">
+  <img src="../../../../assets/harrison-logo.jpg" alt="Harrison Healthcare Logo" width="150">
 </div>
 
 ---
