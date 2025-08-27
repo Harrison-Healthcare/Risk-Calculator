@@ -69,7 +69,7 @@ This methodology builds on established research:
 │   │   └── methodology.md                    # Complete mathematical derivation
 │   └── evidence/                             # Evidence and research summaries
 │       ├── risk-dial-citations/              # Peer-reviewed studies for risk dial weights (18 disease summaries)
-│       └── jbi-reports/                      # JBI Critical Appraisal reports (~225 files)
+│       └── jbi-reports/                      # JBI Critical Appraisal reports (~200 files)
 │
 ├── data/                                     # Core datasets and risk calculation inputs
 │   └── risk-calculator.csv                  # Main risk factor database

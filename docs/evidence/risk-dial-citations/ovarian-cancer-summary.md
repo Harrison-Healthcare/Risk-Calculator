@@ -13,13 +13,15 @@
 - [Race](#race)
 - [Tubal ligation](#tubal-ligation)
 
+---
+
 ### Age
 
  - **Relative risk:**
-    - SEER*Explorer: An interactive website for SEER cancer statistics [Internet]. Surveillance Research Program, National Cancer Institute; cited 2024 Jan 15. Available from: https://seer.cancer.gov/statistics-network/explorer/. Data source(s): SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries.
+    - Surveillance Research Program, National Cancer Institute. (2024). SEER*Explorer: An interactive website for SEER cancer statistics. Retrieved January 15, 2024, from https://seer.cancer.gov/statistics-network/explorer/. Data source: SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries.
 
 - **Prevalence:**
-    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset](https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/2021/age-sex-composition/2021agesex_table1.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html>
+    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset]. Retrieved from https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html
 
 ### Asbestos exposure
 
@@ -79,10 +81,10 @@
 ### Race
 
  - **Relative risk:**
-    - SEER*Explorer: An interactive website for SEER cancer statistics [Internet]. Surveillance Research Program, National Cancer Institute; cited 2024 Jan 15. Available from: https://seer.cancer.gov/statistics-network/explorer/. Data source(s): SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries.
+    - Surveillance Research Program, National Cancer Institute. (2024). SEER*Explorer: An interactive website for SEER cancer statistics. Retrieved January 15, 2024, from https://seer.cancer.gov/statistics-network/explorer/. Data source: SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries.
 
 - **Prevalence:**
-    - USAFacts. Our changing population: United States population between January 1, 2020 and January 1, 2021. https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/?endDate=2021-01-01&startDate=2020-01-01
+    - USAFacts. (2021). Our changing population: United States population between January 1, 2020 and January 1, 2021. Retrieved from https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/?endDate=2021-01-01&startDate=2020-01-01
 
 ### Tubal ligation
 

@@ -28,16 +28,16 @@
       - JBI Score: 95.5 [See report](../jbi-reports/Kanis%20et%20al.%20(2001).md)
 
  - **Prevalence:**
-    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset](https://www2.census.gov/programs-surveys/demo/tables/age-and-sex/2021/age-sex-composition/2021agesex_table1.xlsx). Available from: <https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html>
+    - U.S. Census Bureau. (2021). Age and Sex Composition in the United States, Table 1: Population by Age and Sex 2021 [Dataset]. Retrieved from https://www.census.gov/data/tables/2021/demo/age-and-sex/2021-age-sex-composition.html
 
 ### Alcohol
  - **Relative risk:**
     - Berg, K. M., Kunins, H. V., Jackson, J. L., Nahvi, S., Chaudhry, A., Harris, K. A., ... Arnsten, J. H. (2008) Association Between Alcohol Consumption and Both Osteoporotic Fracture and Bone Density. *The American Journal of Medicine*, 121(5), 406-418. [DOI: 10.10162Fj.amjmed.2007.12.012](https://doi.org/10.10162Fj.amjmed.2007.12.012)
-      - JBI Score: 100.0 [See report](../jbi-reports/Berg%20et%20al.%20(2008).md)
+      - JBI Score: 100 [See report](../jbi-reports/Berg%20et%20al.%20(2008).md)
 
  - **Prevalence:**
     - Guenther, P. M., Ding, E. L., & Rimm, E. B. (2013). Alcoholic Beverage Consumption by Adults Compared to Dietary Guidelines: Results of the National Health and Nutrition Examination Survey, 2009-2010. *Journal of the Academy of Nutrition and Dietetics*, 113(4), 546–550. [DOI: 10.1016/j.jand.2012.12.015](https://doi.org/10.1016/j.jand.2012.12.015)
-      - JBI Score: 100.0 [See report](../jbi-reports/Guenther%20et%20al.%20(2013).md)
+      - JBI Score: 100 [See report](../jbi-reports/Guenther%20et%20al.%20(2013).md)
 
 ### BMI
  - **Relative risk and prevalence:**
@@ -50,7 +50,7 @@
       - JBI Score: 86.4 [See report](../jbi-reports/Lee%20et%20al.%20(2020).md)
 
  - **Prevalence:**
-     - SEER*Explorer: An interactive website for SEER cancer statistics [Internet]. Surveillance Research Program, National Cancer Institute; cited 2024 Jan 15. Available from: https://seer.cancer.gov/statistics-network/explorer/. Data source(s): SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries. 
+     - Surveillance Research Program, National Cancer Institute. (2024). SEER*Explorer: An interactive website for SEER cancer statistics. Retrieved January 15, 2024, from https://seer.cancer.gov/statistics-network/explorer/. Data source: SEER Incidence Data, November 2024 Submission (1975-2022), SEER 21 registries. 
 
 ### Celiac disease
  - **Relative risk:**
@@ -76,7 +76,7 @@
       - JBI Score: 95.5 [See report](../jbi-reports/Vestergaard%20(2005).md)
 
  - **Prevalence:**
-    - Public Health Agency of Canada. (2024, May). Epilepsy in Canada. Canada.ca. <https://www.canada.ca/en/public-health/services/publications/diseases-conditions/epilepsy.html>
+    - Public Health Agency of Canada. (2024, May). Epilepsy in Canada. Retrieved from https://www.canada.ca/en/public-health/services/publications/diseases-conditions/epilepsy.html
 
 ### Family history of fractures
  - **Relative risk and prevalence:**
@@ -95,7 +95,7 @@
 ### Irritable bowel syndrome
  - **Relative risk:**
     - Wongtrakul, W., Charoenngam, N., & Ungprasert, P. (2020) The association between irritable bowel syndrome and osteoporosis: a systematic review and meta-analysis. *Osteoporosis International*, 31(6), 1049-1057. [DOI: 10.1007/s00198-020-05318-y](https://doi.org/10.1007/s00198-020-05318-y)
-      - JBI Score: 100.0 [See report](../jbi-reports/Wongtrakul%20et%20al.%20(2020).md)
+      - JBI Score: 100 [See report](../jbi-reports/Wongtrakul%20et%20al.%20(2020).md)
 
  - **Prevalence:**
    - Canavan, C., West, J., & Card, T. (2014). The epidemiology of irritable bowel syndrome. *Clinical Epidemiology*, 6, 71–80. [DOI: 10.2147/CLEP.S40245](https://doi.org/10.2147/CLEP.S40245)
@@ -112,7 +112,7 @@
       - JBI Score: 100.0 [See report](../jbi-reports/Bao%20et%20al.%20(2023).md)
 
  - **Prevalence:**
-    - USA Facts. (2023). US population by year, race, age, ethnicity, & more. <https://USAFacts.org/data/topics/people-society/population-and-demographics/our-changing-population/?endDate=2021-01-01&startDate=2020-01-01> 
+    - USAFacts. (2023). US population by year, race, age, ethnicity, & more. Retrieved from https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/?endDate=2021-01-01&startDate=2020-01-01 
 
 ### Rheumatoid arthritis
  - **Relative risk:**
@@ -120,7 +120,7 @@
       - JBI Score: 100.0 [See report](../jbi-reports/Jin%20et%20al.%20(2018).md)
 
  - **Prevalence:**
-   - Public Health Agency of Canada. (2020, September). Rheumatoid arthritis in Canada. Government of Canada. <https://www.canada.ca/en/public‑health/services/publications/diseases‑conditions/rheumatoid‑arthritis.html>
+   - Public Health Agency of Canada. (2020, September). Rheumatoid arthritis in Canada. Retrieved from https://www.canada.ca/en/public-health/services/publications/diseases-conditions/rheumatoid-arthritis.html
 
 ### Smoking - cigarettes
  - **Relative risk and prevalence:**
@@ -133,4 +133,4 @@
       - JBI Score: 95.5 [See report](../jbi-reports/Blum%20et%20al.%20(2015).md)
 
  - **Prevalence:**
-   - Public Health Agency of Canada. (2024, May). Subclinical hyperthyroidism. Canada.ca. <https://www.canada.ca/en/public-health/services/publications/diseases-conditions/subclinical-hyperthyroidism.html>
+   - Public Health Agency of Canada. (2024, May). Subclinical hyperthyroidism. Retrieved from https://www.canada.ca/en/public-health/services/publications/diseases-conditions/subclinical-hyperthyroidism.html
