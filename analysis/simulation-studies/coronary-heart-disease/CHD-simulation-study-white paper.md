@@ -58,14 +58,12 @@ The HH-CHD risk calculator demonstrated strong convergence with the Framingham R
 
 Figure 1. Scatterplots of HH-CHD vs. FRS estimates using Framingham inputs
 
-- Total Cholesterol (TC) Estimate
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/scatter-TC-vs-HH-CHD-TC.png" width="600">
 </div>
 
-- Low-Density Lipoprotein (LDL) Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/scatter-LDL-vs-HH-CHD-LDL.png" width="600">
@@ -316,14 +314,12 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 2. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
-- TC Estimate
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/BA-TC-overall.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/BA-LDL-overall.png" width="600">
@@ -353,13 +349,11 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 3. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/BA-TC-by-sex.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/BA-LDL-by-sex.png" width="600">
@@ -369,13 +363,11 @@ Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
 Figure 4. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/BA-TC-by-age.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/BA-LDL-by-age.png" width="600">
@@ -419,13 +411,11 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 5. Simple Slopes Bias vs Age by Sex
 
-- TC Estimate
 **A. Total Cholesterol (TC)** 
 <div align="center">
   <img src="figures/Framingham-simple-slopes-TC.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/Framingham-simple-slopes-LDL.png" width="600">
@@ -457,13 +447,11 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 7. Scatterplots Framingham vs HH-CHD
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/modern-scatter-TC-vs-HH.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/modern-scatter-LDL-vs-HH.png" width="600">
@@ -473,14 +461,13 @@ Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; 
 
 Figure 8. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
-- TC Estimate
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/modern-BA-TC-overall.png" width="600">
 </div>
 
-- LDL Estimate
+
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/modern-BA-LDL-overall.png" width="600">
@@ -510,13 +497,11 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 9. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/modern-BA-TC-by-age.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/modern-BA-LDL-by-age.png" width="600">
@@ -526,13 +511,11 @@ Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipopro
 
 Figure 10. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/modern-BA-TC-by-sex.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/modern-BA-LDL-by-sex.png" width="600">
@@ -576,13 +559,11 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 Figure 11. Simple Slopes Bias vs Age by Sex
 
-- TC Estimate
 **A. Total Cholesterol (TC)**  
 <div align="center">
   <img src="figures/modern-simple-slopes-TC.png" width="600">
 </div>
 
-- LDL Estimate
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
   <img src="figures/modern-simple-slopes-LDL.png" width="600">
