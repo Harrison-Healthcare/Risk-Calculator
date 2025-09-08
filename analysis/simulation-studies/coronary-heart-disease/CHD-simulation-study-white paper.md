@@ -79,7 +79,7 @@ Risk estimate differences between HH-CHD and FRS increased slightly with age, by
 
 A small interaction effect between sex and age was observed in predicting differences between the HH-CHD and FRS estimates. However, this interaction explained less than 2% of the total variance, suggesting minimal practical impact.
 
-Detailed results for all subgroup and interaction analyses are provided in .
+Detailed results for all subgroup and interaction analyses are provided in Appendix.
 
 ## Limitations
 
