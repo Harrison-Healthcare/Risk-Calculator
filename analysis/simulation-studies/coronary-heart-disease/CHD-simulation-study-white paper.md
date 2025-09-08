@@ -25,7 +25,7 @@ May 28th, 2025
 2. [Study Objective](#study-objective)  
 3. [Methods](#methods)
 4. [Main Results](#main-results)
-5. [Limitations & Next Steps](#limitations--next-steps)
+5. [Limitations](#limitations)
 6. [References](#references)
 7. [Appendix — Supplementary Methods, Equations, and Full Result Tables](#appendix--supplementary-methods-equations-and-full-result-tables)
 
@@ -56,7 +56,7 @@ To assess the degree of agreement between HH-CHD and FRS risk estimates, several
 
 The HH-CHD risk calculator demonstrated strong convergence with the Framingham Risk Score (FRS) in estimating 10-year coronary heart disease (CHD). Using Framingham inputs, correlations between HH-CHD and FRS estimates were high for both the Total Cholesterol (TC) and low-density lipoprotein (LDL) models (r = 0.95 and r = 0.94, respectively). On average, HH-CHD estimates differed from FRS by approximately 3%, with 95% of scores falling within 7–9 percentage points of each other.
 
-Figure 1. Scatterplots of HH-CHD vs. FRS estimates using Framingham inputs
+Figure 1. Scatterplots of HH-CHD vs. FRS Estimates Using Framingham Inputs
 
 
 **A. Total Cholesterol (TC)**  
@@ -73,18 +73,15 @@ When populated with contemporary relative risks and prevalence figures, the HH-C
 
 We also examined whether convergence varied by participant sex or age.
 
-Sex
 When stratified by sex, HH-CHD predictions differed from FRS by an average of 2-3% in women and 3% in men. Limits of agreement were narrower among women (±5%) than men (±6%), indicating that individual-level differences were more tightly clustered. While both sexes showed minimal systematic bias, agreement was slightly stronger in women.
 
-Age
 Risk estimate differences between HH-CHD and FRS increased slightly with age, by approximately 2% in individuals under 50 to 5% in those over age 70. This corresponds to an increase of 0.1% per year, or ~1% per decade. Among individuals over age 70, 90% of HH-CHD scores still fell within  9% of FRS estimates, indicating stable convergence across age groups.
 
-Sex–Age interaction
 A small interaction effect between sex and age was observed in predicting differences between the HH-CHD and FRS estimates. However, this interaction explained less than 2% of the total variance, suggesting minimal practical impact.
 
 Detailed results for all subgroup and interaction analyses are provided in .
 
-## Limitations & Next Steps
+## Limitations
 
 Several limitations should be considered when interpreting the results of this study.
 
