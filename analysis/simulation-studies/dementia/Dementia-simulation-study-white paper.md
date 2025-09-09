@@ -58,9 +58,9 @@ September 9, 2025
 
 Dementia is a leading cause of disability and dependency worldwide. Prevalence is projected to triple by 2050, and up to half of cases may be preventable or delayable through risk‑factor modification, underscoring the importance of early risk identification (Hampel et al., 2022; Livingston et al., 2024; WHO, 2019).
 
-The Dementia Population Risk Tool (DemPoRT) is a sex‑specific algorithm estimating 5‑year incident dementia risk among community‑dwelling adults aged ≥55 years (Fisher et al., 2021). Built from the Canadian Community Health Survey linked to administrative data, DemPoRT uses Fine–Gray subdistribution hazards to handle the competing risk of death and assigns regression‑based weights to socio‑demographic, health behaviour, and clinical factors. Continuous predictors are modelled with **restricted cubic splines (RCS)** and centred at population means.
+The Dementia Population Risk Tool (DemPoRT) is a sex‑specific algorithm estimating 5‑year incident dementia risk among community‑dwelling adults aged ≥55 years (Fisher et al., 2021). Built from the Canadian Community Health Survey linked to administrative data, DemPoRT uses Fine–Gray subdistribution hazards to handle the competing risk of death and assigns regression‑based weights to socio‑demographic, health behaviour, and clinical factors. Continuous predictors are modelled with restricted cubic splines (RCS) and centred at population means.
 
-Harrison Healthcare’s (HH) risk platform is a modular, literature‑driven framework. Predictor‑specific relative risks (RRs) are standardised to population averages and combined multiplicatively to form a composite risk score. This score is log‑transformed and mapped to **absolute risk** using a calibrated baseline survival (S₀), enabling alignment to a 5‑year horizon for comparison with DemPoRT. The modular design allows rapid updates to RRs and prevalences without changing the overall structure.
+Harrison Healthcare’s (HH) risk platform is a modular, literature‑driven framework. Predictor‑specific relative risks (RRs) are standardised to population averages and combined multiplicatively to form a composite risk score. This score is log‑transformed and mapped to absolute risk using a calibrated baseline survival (S₀), enabling alignment to a 5‑year horizon for comparison with DemPoRT. The modular design allows rapid updates to RRs and prevalences without changing the overall structure.
 
 ## Study Objective
 
@@ -70,17 +70,17 @@ To test whether HH–Dementia can reproduce DemPoRT 5‑year risk estimates when
 
 ### Synthetic Cohort
 
-We generated a synthetic cohort of 50,000 adults aged ≥55 years (43% male) matched to distributions reported for DemPoRT. Continuous variables (age, pack‑years, alcohol intake, fruit/vegetable servings, weekly physical activity in METs, BMI) were simulated from multivariate normal distributions using published means/SDs; correlations were informed by large general‑population cohorts (e.g., CLSA, NHANES). Categorical variables (sex, ethnicity, smoking status) reflected published prevalences. DemPoRT predictors for **potato intake, juice intake, and survey cycle** were excluded (minimal contribution and not applicable to HH).
+We generated a synthetic cohort of 50,000 adults aged ≥55 years (43% male) matched to distributions reported for DemPoRT. Continuous variables (age, pack‑years, alcohol intake, fruit/vegetable servings, weekly physical activity in METs, BMI) were simulated from multivariate normal distributions using published means/SDs; correlations were informed by large general‑population cohorts (e.g., CLSA, NHANES). Categorical variables (sex, ethnicity, smoking status) reflected published prevalences. DemPoRT predictors for potato intake, juice intake, and survey cycle were excluded (minimal contribution and not applicable to HH).
 
 ### Risk Calculations
 
 **DemPoRT.** We implemented the published model with RCS for continuous predictors, centred predictors, β‑coefficients, and sex‑specific baseline survival to yield individual 5‑year risk.
 
-**HH–Dementia.** We applied a modular RR approach using contemporary prevalence estimates. Each RR was standardised to the population mean and combined multiplicatively; the composite was transformed to 5‑year absolute risk via sex‑specific baseline incidence calibrated to DemPoRT’s 5‑year incidence. Continuous predictors were treated **linearly** (no splines or age interactions); variables were harmonised with DemPoRT wherever possible.
+**HH–Dementia.** We applied a modular RR approach using contemporary prevalence estimates. Each RR was standardised to the population mean and combined multiplicatively; the composite was transformed to 5‑year absolute risk via sex‑specific baseline incidence calibrated to DemPoRT’s 5‑year incidence. Continuous predictors were treated linearly (no splines or age interactions); variables were harmonised with DemPoRT wherever possible.
 
 ### Statistical Comparisons
 
-Agreement metrics included Pearson r, Spearman ρ, and a two‑way absolute‑agreement intraclass correlation coefficient (ICC). Bland–Altman analyses estimated mean bias and 95% limits of agreement (LoA), with penalised splines to visualise non‑linear trends. Results were stratified by **sex** and **age** (55–69, 70–79, 80+). We modelled bias via **ANCOVA** (age, sex, age×sex), estimated adjusted means (marginal means), and used appropriate post‑hoc tests. Analyses were run in **R 4.3.x** (dplyr, ggplot2, irr, rstatix, car, emmeans, broom, mgcv, scales).
+Agreement metrics included Pearson r, Spearman ρ, and a two‑way absolute‑agreement intraclass correlation coefficient (ICC). Bland–Altman analyses estimated mean bias and 95% limits of agreement (LoA), with penalised splines to visualise non‑linear trends. Results were stratified by sex and age (55–69, 70–79, 80+). We modelled bias via ANCOVA (age, sex, age×sex), estimated adjusted means (marginal means), and used appropriate post‑hoc tests. Analyses were run in R 4.3.x (dplyr, ggplot2, irr, rstatix, car, emmeans, broom, mgcv, scales).
 
 ## Results
 
@@ -88,20 +88,20 @@ Agreement metrics included Pearson r, Spearman ρ, and a two‑way absolute‑ag
 
 Across 50,000 records, DemPoRT and HH–Dementia showed strong association (r = 0.804; ρ = 0.956) and moderate absolute agreement (ICC = 0.670). Concordance is tight at lower predicted risk, with larger numerical gaps at higher risk. In upper ranges, HH tends to yield higher risks, while DemPoRT flattens near mid‑range (see Figure 1).
 
-**Figure 1.** Scatterplot of DemPoRT vs HH–Dementia using DemPoRT inputs
+**Figure 1.** Scatterplot of DemPoRT vs HH–Dementia using DemPoRT Inputs
 
 <div align="center">
-  <img src="figures/Part 1/Scatter.png" width="700"/>
+  <img src="figures/part 1/scatter_DemPoRT_vs_HH.png" width="600"/>
 </div>
 
 ### Convergence Across the Risk Spectrum
 
 Average bias was small: DemPoRT – HH = −1.8 pp (SD = 5.1 pp); 95% LoA: −11.8 to +8.1 pp. Agreement is near‑perfect at low mean risk and widens as risk increases, with DemPoRT generally lower than HH at higher risk (Figure 2).
 
-**Figure 2.** Bland–Altman plot comparing DemPoRT and HH–Dementia (DemPoRT inputs)
+**Figure 2.** Bland–Altman plot comparing DemPoRT and HH–Dementia (DemPoRT Inputs)
 
 <div align="center">
-  <img src="figures/Part 1/BA.png" width="700"/>
+  <img src="figures/part 1/BA_overall.png" width="600"/>
 </div>
 
 ### Age and Sex Effects
@@ -115,13 +115,13 @@ With **modern HH inputs** (updated RRs and prevalences), correlation remained si
 **Figure 3.** Scatterplot of DemPoRT vs HH–Dementia using HH inputs
 
 <div align="center">
-  <img src="figures/Part 2/Scatter.png" width="700"/>
+  <img src="figures/part 2/scatter_DemPoRT_vs_HH_modern.png" width="600"/>
 </div>
 
 **Figure 4.** Bland–Altman plot comparing DemPoRT and HH–Dementia (HH inputs)
 
 <div align="center">
-  <img src="figures/Part 2/BA.png" width="700"/>
+  <img src="figures/part 2/BA_overall_modern.png" width="600"/>
 </div>
 
 ### Convergence Across the Risk Spectrum — HH Inputs
@@ -164,7 +164,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 
 #### A1. Overall Agreement
 
-**Table A1.** Agreement and correlation metrics for DemPoRT vs HH–Dementia risk scores
+**Table A1.** Agreement and Correlation Metrics for DemPoRT vs HH–Dementia Risk Scores
 
 | Metric                         | Value            |
 | ------------------------------ | ---------------- |
@@ -174,7 +174,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | Mean difference (DemPoRT − HH) | −0.018           |
 | 95% LoA (±1.96 SD)             | −0.118 to +0.081 |
 
-**Table A2.** Bland–Altman convergence summary
+**Table A2.** Bland–Altman Convergence summary
 
 | Mean Difference | SD(Diff) | 95% LoA Lower | 95% LoA Upper |
 | --------------: | -------: | ------------: | ------------: |
@@ -182,7 +182,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 
 #### A2. Age and Sex Differences
 
-**Table A3.** Age‑ and sex‑stratified Bland–Altman and correlation statistics
+**Table A3.** Age‑ and Sex‑stratified Bland–Altman and Correlation Statistics
 
 | Group  | Mean Difference | LoA (±) | Pearson | Spearman |
 | ------ | --------------: | ------: | ------: | -------: |
@@ -209,34 +209,30 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | Female | −0.030 (0.000) | −159.96 (49,996) | <.001 |     −0.035 \[−0.034, −0.035] |         −0.041 \[−0.042, −0.040] | <.001 |
 | Male   | +0.007 (0.000) |  +26.23 (49,996) | <.001 |     +0.006 \[+0.006, +0.007] |                                — |     — |
 
-**Figure A1.** Simple slopes of bias vs age by sex
+**Figure A1.** Simple Slopes of Bias vs Age by Sex
 
 <div align="center">
-  <img src="figures/Part 1/simple_slopes_bySex.png" width="650"/>
+  <img src="figures/part 1/simple_slopes_bias_age_sex.png" width="600"/>
 </div>
 
-**Figure A2.** Bland–Altman plots by sex
+**Figure A2.** Bland–Altman Plots by Sex
 
 <p align="center">
-  <img src="figures/Part 1/BA_female.png" width="45%"/>
-  <img src="figures/Part 1/BA_male.png" width="45%"/>
+  <img src="figures/part 1/BA_by_Sex.png" width="600"/>
 </p>
 
-**Figure A3.** Bland–Altman plots by age group
+**Figure A3.** Bland–Altman Plots by Age Group
 
 <p align="center">
-  <img src="figures/Part 1/BA_age_55-69.png" width="33%"/>
-  <img src="figures/Part 1/BA_age_70-79.png" width="33%"/>
-  <img src="figures/Part 1/BA_age_80plus.png" width="33%"/>
+  <img src="figures/part 1/BA_by_Age_Group.png" width="600"/>
 </p>
 
----
 
 ### Part 2: HH Inputs
 
 #### A3. Overall Agreement — HH Inputs
 
-**Table B1.** Agreement metrics (modern HH inputs)
+**Table B1.** Agreement Metrics (Modern HH Inputs)
 
 | Metric                         | Value               |
 | ------------------------------ | ------------------- |
@@ -246,7 +242,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | Mean difference (DemPoRT − HH) | −0.005              |
 | 95% LoA (±1.96 SD)             | −0.141 to +0.131    |
 
-**Table B2.** Bland–Altman mean difference summary (modern HH inputs)
+**Table B2.** Bland–Altman mean Difference Summary (Modern HH Inputs)
 
 | Mean Difference | SD(Diff) | 95% LoA Lower | 95% LoA Upper |
 | --------------: | -------: | ------------: | ------------: |
@@ -254,7 +250,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 
 #### A4. Age and Sex Differences — HH Inputs
 
-**Table B3.** Age‑ and sex‑stratified statistics (modern HH inputs)
+**Table B3.** Age‑ and Sex‑stratified Statistics (Modern HH Inputs)
 
 | Group  | Mean Difference | LoA (±) | Pearson | Spearman |
 | ------ | --------------: | ------: | ------: | -------: |
@@ -264,7 +260,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | 70–79  |          +0.023 |   0.076 |   0.374 |    0.435 |
 | 80+    |          −0.085 |   0.276 |   0.191 |    0.187 |
 
-**Table B4.** Type III ANCOVA of bias (modern HH inputs)
+**Table B4.** Type III ANCOVA of bias (Modern HH Inputs)
 
 | Term      |  Sum Sq |     Df |  F value | Pr(>F) |     MS | Partial η² |
 | --------- | ------: | -----: | -------: | -----: | -----: | ---------: |
@@ -284,22 +280,19 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 **Figure B1.** Simple slopes of bias vs age by sex (modern HH inputs)
 
 <div align="center">
-  <img src="figures/Part 2/simple_slopes_bySex.png" width="650"/>
+  <img src="figures/part 2/simple_slopes_bias_age_sex_modern.png" width="600"/>
 </div>
 
 **Figure B2.** Bland–Altman plots by sex (modern HH inputs)
 
 <p align="center">
-  <img src="figures/Part 2/BA_female.png" width="45%"/>
-  <img src="figures/Part 2/BA_male.png" width="45%"/>
+  <img src="figures/part 2/BA_by_Sex_modern.png" width="600"/>
 </p>
 
 **Figure B3.** Bland–Altman plots by age group (modern HH inputs)
 
 <p align="center">
-  <img src="figures/Part 2/BA_age_55-69.png" width="33%"/>
-  <img src="figures/Part 2/BA_age_70-79.png" width="33%"/>
-  <img src="figures/Part 2/BA_age_80plus.png" width="33%"/>
+  <img src="figures/part 2/BA_by_Age_Group_modern.png" width="600"/>
 </p>
 
 ---
