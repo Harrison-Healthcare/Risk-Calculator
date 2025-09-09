@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="figures/harrison-logo.png" alt="Harrison Healthcare Logo" width="300"/>
+  <img src="figures/harrison-logo.jpg" alt="Harrison Healthcare Logo" width="150"/>
 </p>
+---
 
 # Agreement Between Harrison Healthcare’s and QDiabetes 10-Year Type 2 Diabetes Risk Calculator in a Simulated Dataset
 
@@ -15,7 +16,7 @@ Chief Scientific Officer, Harrison Healthcare
 **Date:**  
 September 8, 2025
 
----
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Study Objective](#study-objective)
