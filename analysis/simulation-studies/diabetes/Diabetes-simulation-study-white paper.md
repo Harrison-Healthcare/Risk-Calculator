@@ -1,70 +1,44 @@
-<div align="center">
-  <img src="../../../assets/harrison-logo.jpg" alt="Harrison Healthcare Logo" width="150">
-</div>
+<p align="center">
+  <img src="figures/harrison-logo.png" alt="Harrison Healthcare Logo" width="300"/>
+</p>
+
+# Harrison Healthcare’s Diabetes Risk Calculator Converges with QDiabetes-2018 in a Simulated Dataset
+
+**Prepared by:**  
+Julia Blumkaitis-Bosankic, MS  
+Research Assistant, Harrison Healthcare
+
+Boaz Y. Saffer, PhD  
+Chief Scientific Officer, Harrison Healthcare
+
+**Date:**  
+September 8, 2025
 
 ---
-# Table of Contents
 ## Table of Contents
-
+- [Introduction](#introduction)
+- [Study Objective](#study-objective)
+- [Methods](#methods)
   - [Synthetic Cohort](#synthetic-cohort)
   - [Risk Calculations](#risk-calculations)
   - [Statistical Comparisons](#statistical-comparisons)
+- [Results](#results)
   - [Overall Agreement](#overall-agreement)
   - [Convergence Across the Risk Spectrum](#convergence-across-the-risk-spectrum)
   - [Age and Sex Effects](#age-and-sex-effects)
-  - [Overall Agreement – HH Inputs](#overall-agreement-hh-inputs)
-  - [Average difference and limits of agreement (Bland–Altman) – HH Inputs](#average-difference-and-limits-of-agreement-blandaltman-hh-inputs)
-  - [Age and Sex Patterns – HH Inputs](#age-and-sex-patterns-hh-inputs)
-  - [**A1. Overall Agreement**](#a1-overall-agreement)
-  - [**A2. Age and Sex Differences**](#a2-age-and-sex-differences)
-  - [**A3. Overall Agreement - HH Inputs**](#a3-overall-agreement-hh-inputs)
-  - [**A4. Age and Sex Differences – HH Inputs**](#a4-age-and-sex-differences-hh-inputs)
-
-[Introduction [3](#introduction-1)](#introduction-1)
-
-[Study Objective [3](#study-objective)](#study-objective)
-
-[Methods [4](#methods)](#methods)
-
-[Synthetic Cohort [4](#synthetic-cohort)](#synthetic-cohort)
-
-[Risk Calculations [4](#risk-calculations)](#risk-calculations)
-
-[Statistical Comparisons [5](#statistical-comparisons)](#statistical-comparisons)
-
-[Results [5](#results)](#results)
-
-[Overall Agreement [5](#overall-agreement)](#overall-agreement)
-
-[Convergence Across the Risk Spectrum [7](#convergence-across-the-risk-spectrum)](#convergence-across-the-risk-spectrum)
-
-[Age and Sex Effects [9](#age-and-sex-effects)](#age-and-sex-effects)
-
-[Overall Agreement – HH Inputs [10](#overall-agreement-hh-inputs)](#overall-agreement-hh-inputs)
-
-[Average difference and limits of agreement (Bland–Altman) – HH Inputs [11](#average-difference-and-limits-of-agreement-blandaltman-hh-inputs)](#average-difference-and-limits-of-agreement-blandaltman-hh-inputs)
-
-[Age and Sex Patterns – HH Inputs [13](#age-and-sex-patterns-hh-inputs)](#age-and-sex-patterns-hh-inputs)
-
-[Limitations [13](#limitations)](#limitations)
-
-[Conclusion [14](#conclusion)](#conclusion)
-
-[References [15](#references)](#references)
-
-[Appendix — Supplementary Methods, Full Result Tables, Additional Graphs [16](#appendix-supplementary-methods-full-result-tables-additional-graphs)](#appendix-supplementary-methods-full-result-tables-additional-graphs)
-
-[Part 1 QDiabetes Inputs [16](#part-1-qdiabetes-inputs)](#part-1-qdiabetes-inputs)
-
-[A1. Overall Agreement [16](#a1.-overall-agreement)](#a1.-overall-agreement)
-
-[A2. Age and Sex Differences [17](#a2.-age-and-sex-differences)](#a2.-age-and-sex-differences)
-
-[Part 2: HH Inputs [22](#part-2-hh-inputs)](#part-2-hh-inputs)
-
-[A3. Overall Agreement - HH Inputs [22](#a3.-overall-agreement---hh-inputs)](#a3.-overall-agreement---hh-inputs)
-
-[A4. Age and Sex Differences – HH Inputs [22](#a4.-age-and-sex-differences-hh-inputs)](#a4.-age-and-sex-differences-hh-inputs)
+  - [Overall Agreement – HH Inputs](#overall-agreement--hh-inputs)
+  - [Average Difference and Limits of Agreement (Bland–Altman) – HH Inputs](#average-difference-and-limits-of-agreement-blandaltman--hh-inputs)
+  - [Age and Sex Patterns – HH Inputs](#age-and-sex-patterns--hh-inputs)
+- [Limitations](#limitations)
+- [Conclusion](#conclusion)
+- [References](#references)
+- [Appendix — Supplementary Methods, Full Result Tables, Additional Graphs](#appendix--supplementary-methods-full-result-tables-additional-graphs)
+  - [Part 1 QDiabetes Inputs](#part-1-qdiabetes-inputs)
+    - [A1. Overall Agreement](#a1-overall-agreement)
+    - [A2. Age and Sex Differences](#a2-age-and-sex-differences)
+  - [Part 2 HH Inputs](#part-2-hh-inputs)
+    - [A3. Overall Agreement – HH Inputs](#a3-overall-agreement--hh-inputs)
+    - [A4. Age and Sex Differences – HH Inputs](#a4-age-and-sex-differences--hh-inputs)
 
 # Introduction
 
@@ -169,7 +143,7 @@ Figure 3. Scatterplot of QDiabetes vs HH-Diabetes Using HH Inputs
 
 ![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image9.png)
 
-### Average difference and limits of agreement (Bland–Altman) – HH Inputs 
+### Average Difference and Limits of Agreement (Bland–Altman) – HH Inputs 
 
 On average, HH estimates were slightly higher for 10‑year risk than QDiabetes ([Table 6](#part-2-hh-inputs)). Mean bias was +2.83% in Model A and approximately +4% in Models B and C; typical absolute differences ranged from \~3% to 4.4%. The 95% limits of agreement were −6.9 to +12.5% in Model A and −11 to +19% in the biomarker models, indicating wider spread when fasting glucose or HbA1c are included. The Bland–Altman plots (Figure 4A–C) show differences centred on the mean across the risk range, with somewhat greater dispersion for Models B and C.
 
@@ -241,8 +215,6 @@ World Health Organization. (2023). Diabetes fact sheet. https://www.who.int/news
 
 *Abbreviations.* HH: Harrison Healthcare Diabetes risk calculator; QD: QDiabetes risk calculator; LoA: Limits of agreement.
 
-**  
-**
 
 ### **A2. Age and Sex Differences**
 
@@ -264,9 +236,7 @@ Table 4 shows how the average difference between QDiabetes and HH widens as peop
 | 18–44         | 1.15%       | 2.16%       | 2.39%       |
 | 45–64         | 4.15%       | 5.76%       | 5.86%       |
 | 65+           | 6.11%       | 7.17%       | 6.48%       |
-
-**  
-**
+ 
 
 **Figure 5.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Sex
 
