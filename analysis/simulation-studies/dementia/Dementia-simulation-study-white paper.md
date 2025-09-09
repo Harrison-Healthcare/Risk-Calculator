@@ -86,7 +86,7 @@ Agreement metrics included Pearson r, Spearman ρ, and a two‑way absolute‑ag
 
 ### Overall Agreement
 
-Across 50,000 records, DemPoRT and HH–Dementia showed strong association (r = 0.804; ρ = 0.956) and moderate absolute agreement (ICC = 0.670). Concordance is tight at lower predicted risk, with larger numerical gaps at higher risk. In upper ranges, HH tends to yield higher risks, while DemPoRT flattens near mid‑range (see Figure 1).
+Across 50,000 records, DemPoRT and HH–Dementia showed strong association (r = 0.804; ρ = 0.956) and moderate absolute agreement (ICC = 0.670). Concordance is tight at lower predicted risk, with larger numerical gaps at higher risk. In upper ranges, HH tends to yield higher risks, while DemPoRT flattens near mid‑range (Figure 1).
 
 **Figure 1.** Scatterplot of DemPoRT vs HH–Dementia using DemPoRT Inputs
 
@@ -98,7 +98,7 @@ Across 50,000 records, DemPoRT and HH–Dementia showed strong association (r =
 
 Average bias was small: DemPoRT – HH = −1.8 pp (SD = 5.1 pp); 95% LoA: −11.8 to +8.1 pp. Agreement is near‑perfect at low mean risk and widens as risk increases, with DemPoRT generally lower than HH at higher risk (Figure 2).
 
-**Figure 2.** Bland–Altman plot comparing DemPoRT and HH–Dementia (DemPoRT Inputs)
+**Figure 2.** Bland–Altman Plot Comparing DemPoRT and HH–Dementia using DemPoRT Inputs
 
 <div align="center">
   <img src="figures/part 1/BA_overall.png" width="600"/>
@@ -106,19 +106,19 @@ Average bias was small: DemPoRT – HH = −1.8 pp (SD = 5.1 pp); 95% LoA
 
 ### Age and Sex Effects
 
-Divergence varies by age and sex. Mean bias (DemPoRT – HH) is −0.3 pp (LoA ±1.8) at 55–69, −2.4 pp (±8.6) at 70–79, and −6.1 pp (±19.9) at 80+. Women show larger average gaps and spread (−3.7 pp, ±11.8) than men (+0.6 pp, ±2.5). ANCOVA indicates significant main effects and age×sex interaction (all *p* < 0.001). Simple slopes suggest the HH–DemPoRT difference becomes slightly more negative with age in women (sex gap widens) (Figure A1).
+Divergence varies by age and sex. Mean bias (DemPoRT – HH) is −0.3 pp (LoA ±1.8) at 55–69, −2.4 pp (±8.6) at 70–79, and −6.1 pp (±19.9) at 80+. Women show larger average gaps and spread (−3.7 pp, ±11.8) than men (+0.6 pp, ±2.5). ANCOVA indicates significant main effects and age×sex interaction (all *p* < 0.001). Simple slopes suggest the HH–DemPoRT difference becomes slightly more negative with age in women (sex gap widens) ([Figure A1](#table-a1-agreement-and-correlation-metrics-for-demport-vs-hh-dementia-risk-scores)).
 
 ### Overall Agreement — HH Inputs
 
-With **modern HH inputs** (updated RRs and prevalences), correlation remained significant (r = 0.659; ρ = 0.726) with modest absolute agreement (ICC = 0.535*. Bland–Altman patterns again show increasing divergence at higher risk where HH tends to over‑predict relative to DemPoRT (Figures 3–4).
+With modern HH inputs (updated RRs and prevalences), correlation remained significant (r = 0.659; ρ = 0.726) with modest absolute agreement (ICC = 0.535*. Bland–Altman patterns again show increasing divergence at higher risk where HH tends to over‑predict relative to DemPoRT (Figures 3–4).
 
-**Figure 3.** Scatterplot of DemPoRT vs HH–Dementia using HH inputs
+**Figure 3.** Scatterplot of DemPoRT vs HH–Dementia using HH Inputs
 
 <div align="center">
   <img src="figures/part 2/scatter_DemPoRT_vs_HH_modern.png" width="600"/>
 </div>
 
-**Figure 4.** Bland–Altman plot comparing DemPoRT and HH–Dementia (HH inputs)
+**Figure 4.** Bland–Altman Plot Comparing DemPoRT and HH–Dementia using HH Inputs
 
 <div align="center">
   <img src="figures/part 2/BA_overall_modern.png" width="600"/>
@@ -130,7 +130,9 @@ Agreement is close at lower predicted risk and decreases with increasing risk. B
 
 ### Age and Sex Effects — HH Inputs
 
-Preliminary stratified results echo Part 1. Divergence is larger in women (partly reflecting DemPoRT’s female‑specific predictors not implemented in HH) and increases with age (HH linear terms continue to escalate risk whereas DemPoRT’s splines flatten). See Appendix Tables B3–B5 and Figures B1–B3.
+Preliminary stratified results echo Part 1. Divergence is larger in women (partly reflecting DemPoRT’s female‑specific predictors not implemented in HH) and increases with age (HH linear terms continue to escalate risk whereas DemPoRT’s splines flatten). See Appendix ([Tables B3–B5](#table-b3-age‑-and-sex‑stratified-statistics)) and ([Figures B1–B3](#figure-b1-simple-slopes-of-bias-vs-age-by-sex)).
+
+Detailed results for all subgroup and interaction analyses are provided in the Appendix.
 
 ## Limitations
 
@@ -192,7 +194,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | 70–79  |          −0.024 |   0.086 |   0.629 |    0.683 |
 | 80+    |          −0.061 |   0.199 |   0.284 |    0.299 |
 
-**Table A4.** Type III ANCOVA of bias (DemPoRT − HH)
+**Table A4.** Type III ANCOVA of Bias (DemPoRT − HH)
 
 | Term      | Sum Sq |    Df |  F value | Pr(>F) |     MS | Partial η² |
 | --------- | -----: | ----: | -------: | -----: | -----: | ---------: |
@@ -202,7 +204,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | Sex × Age | 22.564 |     1 | 17189.79 | <.0001 | 22.564 |      0.256 |
 | Residuals | 65.627 | 49996 |        — |      — |  0.001 |      0.500 |
 
-**Table A5.** Simple slopes & adjusted means (bias = DemPoRT − HH)
+**Table A5.** Simple Slopes & Adjusted Means (bias = DemPoRT − HH)
 
 | Sex    | Age Slope (SE) |         *t* (df) |   *p* | Adjusted Mean Bias \[95% CI] | Female − Male Contrast \[95% CI] |   *p* |
 | ------ | -------------: | ---------------: | ----: | ---------------------------: | -------------------------------: | ----: |
@@ -232,7 +234,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 
 #### A3. Overall Agreement — HH Inputs
 
-**Table B1.** Agreement Metrics (Modern HH Inputs)
+**Table B1.** Agreement Metrics 
 
 | Metric                         | Value               |
 | ------------------------------ | ------------------- |
@@ -250,7 +252,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 
 #### A4. Age and Sex Differences — HH Inputs
 
-**Table B3.** Age‑ and Sex‑stratified Statistics (Modern HH Inputs)
+**Table B3.** Age‑ and Sex‑stratified Statistics 
 
 | Group  | Mean Difference | LoA (±) | Pearson | Spearman |
 | ------ | --------------: | ------: | ------: | -------: |
@@ -260,7 +262,7 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | 70–79  |          +0.023 |   0.076 |   0.374 |    0.435 |
 | 80+    |          −0.085 |   0.276 |   0.191 |    0.187 |
 
-**Table B4.** Type III ANCOVA of bias (Modern HH Inputs)
+**Table B4.** Type III ANCOVA of Bias
 
 | Term      |  Sum Sq |     Df |  F value | Pr(>F) |     MS | Partial η² |
 | --------- | ------: | -----: | -------: | -----: | -----: | ---------: |
@@ -270,26 +272,26 @@ Using modern HH inputs preserves rank‑order agreement but increases absolute d
 | Age × Sex |  23.033 |      1 | 6260.071 | <.0001 | 23.033 |      0.111 |
 | Residuals | 183.952 | 49,996 |        — |      — |  0.004 |      0.500 |
 
-**Table B5.** Simple slopes & adjusted means (modern HH inputs)
+**Table B5.** Simple Slopes & Adjusted Means 
 
 | Sex    |       Age Slope (SE) |          *t* (df) |   *p* | Adjusted Mean Bias \[95% CI] | Female − Male Contrast \[95% CI] |   *p* |
 | ------ | -------------------: | ----------------: | ----: | ---------------------------: | -------------------------------: | ----: |
 | Female | −0.003651 (0.000036) | −102.802 (49,996) | <.001 |     −0.018 \[−0.019, −0.017] |         −0.034 \[−0.035, −0.033] | <.001 |
 | Male   | +0.000851 (0.000044) |  +19.141 (49,996) | <.001 |     +0.016 \[+0.015, +0.017] |                                — |     — |
 
-**Figure B1.** Simple slopes of bias vs age by sex (modern HH inputs)
+**Figure B1.** Simple Slopes of Bias vs Age by Sex 
 
 <div align="center">
   <img src="figures/part 2/simple_slopes_bias_age_sex_modern.png" width="600"/>
 </div>
 
-**Figure B2.** Bland–Altman plots by sex (modern HH inputs)
+**Figure B2.** Bland–Altman Plots by Sex 
 
 <p align="center">
   <img src="figures/part 2/BA_by_Sex_modern.png" width="600"/>
 </p>
 
-**Figure B3.** Bland–Altman plots by age group (modern HH inputs)
+**Figure B3.** Bland–Altman Plots by Age Group 
 
 <p align="center">
   <img src="figures/part 2/BA_by_Age_Group_modern.png" width="600"/>
