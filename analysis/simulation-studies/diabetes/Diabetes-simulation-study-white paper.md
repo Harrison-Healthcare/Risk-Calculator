@@ -2,7 +2,8 @@
   <img src="figures/harrison-logo.png" alt="Harrison Healthcare Logo" width="300"/>
 </p>
 
-# Harrison Healthcare’s Diabetes Risk Calculator Converges with QDiabetes-2018 in a Simulated Dataset
+# Agreement Between Harrison Healthcare’s and QDiabetes 10-Year Type 2 Diabetes Risk Calculator in a Simulated Dataset
+
 
 **Prepared by:**  
 Julia Blumkaitis-Bosankic, MS  
