@@ -48,7 +48,7 @@ September 8, 2025
 
 Type 2 diabetes (T2D) affects more than 500 million adults worldwide and is a leading cause of blindness, kidney failure, heart attack, stroke, and lower‑limb amputation (World Health Organization, 2023). Early identification of individuals at high risk is therefore critical for timely intervention.
 
-The QDiabetes algorithm, developed by the UK’s NHS and first published in the British Medical Journal by Hippisley-Cox et al. (2017), estimates an individual’s 10-year risk of developing type 2 diabetes (T2D). It comprises three models: Model A, which uses only non-biochemical variables; Model B, which builds on Model A by adding fasting blood glucose; and Model C, which further incorporates HbA1c.
+The QDiabetes algorithm, developed by the UK’s NHS and first published in the British Medical Journal by Hippisley-Cox et al. (2017), estimates an individual’s 10-year risk of developing T2D). It comprises three models: Model A, which uses only non-biochemical variables; Model B, which builds on Model A by adding fasting blood glucose; and Model C, which further incorporates HbA1c.
 
 Each model uses fractional‑polynomial terms to calculate non-linear relationships between continuous predictors and log‑risk for TSD. It was selected for the present study because its equations are fully published, extensively validated in external cohorts, and rely on variables already captured in the Harrison Healthcare (HH) risk calculator, making it an ideal benchmark.
 
@@ -187,9 +187,9 @@ On average, HH estimates were slightly higher for 10‑year risk than QDiabetes 
 
 ### Age and Sex Patterns – HH Inputs 
 
-Convergence varied by age and only slightly by sex ([Tables 7-8](#table-7-summary-of-divergence-slope-interaction-and-agreement-limits)(#table-8-absolute-mean-difference-by-age-group)); Figure 9A–C). It was smallest in adults \<45 years (about 1.5–2.4%), highest in midlife 45–64 years (about 5–7%), and smaller again at 65+ (about 0–3.5%). At age 50, HH exceeded QDiabetes by \~2.8% in Model A and \~4% in Models B and C (Table 7). The linear change with age was small—about +0.01 to +0.04% per year (≈ +0.1 to +0.4% per decade). Slopes were similar in women and men for Models A and C (Sex × Age p = 0.14 for both). In Model B, convergence increased faster with age in women (+0.036%/yr) than in men (+0.013%/yr), and the interaction was significant (p \< 0.001) (Figure 8A-C).
+Convergence varied by age and only slightly by sex ([Table 7](#table-7-summary-of-divergence-slope-interaction-and-agreement-limits))([Table 8](#table-8-absolute-mean-difference-by-age-group)); Figure 9A–C). It was smallest in adults \<45 years (about 1.5–2.4%), highest in midlife 45–64 years (about 5–7%), and smaller again at 65+ (about 0–3.5%). At age 50, HH exceeded QDiabetes by \~2.8% in Model A and \~4% in Models B and C (Table 7). The linear change with age was small—about +0.01 to +0.04% per year (≈ +0.1 to +0.4% per decade). Slopes were similar in women and men for Models A and C (Sex × Age p = 0.14 for both). In Model B, convergence increased faster with age in women (+0.036%/yr) than in men (+0.013%/yr), and the interaction was significant (p \< 0.001) (Figure 8A-C).
 
-Detailed results for all subgroup and interaction analyses are provided in Appendix.
+Detailed results for all subgroup and interaction analyses are provided in the Appendix.
 
 # Limitations 
 
@@ -209,9 +209,11 @@ Taken together, these results clarify where and why divergence arises between th
 
 # References
 
-Hippisley-Cox, J., Coupland, C., & Brindle, P. (2017). Development and validation of QDiabetes-2018 risk prediction algorithm to estimate future risk of type 2 diabetes: Cohort study. *BMJ*, *359*, j5019. https://doi.org/10.1136/bmj.j5019
+* Hippisley-Cox, J., Coupland, C., & Brindle, P. (2017). Development and validation of QDiabetes-2018 risk prediction algorithm to estimate future risk of type 2 diabetes: Cohort study. *BMJ*, *359*, j5019. https://doi.org/10.1136/bmj.j5019
 
-World Health Organization. (2023). Diabetes fact sheet. https://www.who.int/news-room/fact-sheets/detail/diabetes
+* World Health Organization. (2023). Diabetes fact sheet. https://www.who.int/news-room/fact-sheets/detail/diabetes
+
+---
 
 # Appendix — Supplementary Methods, Full Result Tables, Additional Graphs
 
