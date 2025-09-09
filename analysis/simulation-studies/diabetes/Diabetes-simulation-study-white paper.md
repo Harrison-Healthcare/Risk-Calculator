@@ -446,3 +446,7 @@ Table 8 shows that the size of the HH–QDiabetes difference depends on age. In 
 <div align="center">
   <img src="figures/Part 2/simple_slopes_Model_C.png" width="600">
 </div>
+
+---
+
+<p align="center">www.harrisonhealthcare.ca</p>
