@@ -19,27 +19,23 @@ The project is divided into two parts:
    - QDiabetes remains unchanged
    - Assesses divergence due to updated inputs
 
----
+
 
 ## Folder Structure
-
-diabetes/
-├─ code/
-│ ├─ Part 1/ # scripts for QDiabetes inputs
-│ └─ Part 2/ # scripts for HH contemporary inputs
-├─ data/
-│ ├─ Part 1/ # raw/processed tables for Part 1
-│ └─ Part 2/ # raw/processed tables for Part 2
-├─ figures/
-│ ├─ Part 1/ # plots for Part 1 (scatter, BA, subgroup)
-│ └─ Part 2/ # plots for Part 2 (scatter, BA, subgroup)
-├─ Diabetes-simulation-study-README.md
-└─ Diabetes-simulation-study-white paper.md
-
-
-> Note: Folders use spaces (`Part 1`, `Part 2`) to match your repo. GitHub handles these; image links work as shown below.
-
----
+```text
+diabetes/                                   # Diabetes validation study
+|-- code/                                   # R analysis scripts
+|   |-- Part 1/                             # QDiabetes inputs
+|   `-- Part 2/                             # HH inputs
+|-- data/                                   # Study-specific datasets
+|   |-- Part 1/                             # QDiabetes inputs datasets
+|   `-- Part 2/                             # HH inputs datasets
+|-- figures/                                # Generated visualizations
+|   |-- Part 1/                             # QDiabetes inputs plots
+|   `-- Part 2/                             # HH inputs plots
+|-- Diabetes-simulation-study-white paper.md
+`-- Diabetes-simulation-study-README.md
+```
 
 ## Documentation
 
@@ -49,23 +45,25 @@ diabetes/
 - **`Diabetes-simulation-study-README.md` (this file)**  
   Project overview, structure, how to run, and conventions.
 
----
 
 ## Data & Inputs (located in `data/` directory)
 
-- **Part 1 (QDiabetes Inputs):**  
+- **Part 1 (QDiabetes Inputs):**
+`QDiabetes_HR_RR10_prevalence.csv`
+
   Relative risks, baseline survival, and factor definitions reflect QDiabetes-2018 (Models A–C):
-  - **Model A:** clinical/demographic (age, sex, ethnicity, BMI, smoking, family history, deprivation, CVD, treated HTN, corticosteroids, mental-health indicators, female-specific factors incl. GDM/PCOS).
+  - **Model A:** clinical/demographic (age, sex, ethnicity, BMI, smoking, family history, deprivation, CVD, treated HTN, corticosteroids, mental-health indicators).
   - **Model B:** Model A + fasting plasma glucose.
   - **Model C:** Model A + HbA1c.
 
-- **Part 2 (HH Inputs):**  
+- **Part 2 (HH Inputs):**
+  `HH_Diabetes_RR_Prevalence_Data_Update.xlsx`
+
   Contemporary RRs/prevalences for HH-DM derived from recent evidence syntheses (age/sex-specific where available).
 
-- **Synthetic cohort (N≈10,000):**  
+- **Synthetic cohort (N≈500,000):**
   Simulated to mirror QDiabetes predictor distributions and correlations; written to `data/Part 1/` and `data/Part 2/` as processed tables.
 
----
 
 ## Figures (`figures/`)
 
@@ -74,8 +72,27 @@ Plots are written to:
 - `figures/Part 1/` — QDiabetes inputs comparisons (HH-DM vs QDiabetes under identical inputs)  
 - `figures/Part 2/` — HH inputs comparisons (contemporary HH-DM vs original QDiabetes)
 
+
 ### Analysis Scripts (located in `code/` directory)
 
+#### Part 1 — QDiabetes Inputs (Original Inputs Analysis)
+- `code/Part 1/dQDiabetes_Dataset_RiskCalc_Original.R`  
+  Builds the synthetic cohort mirroring QDiabetes predictors; computes **QDiabetes Models A–C** and **HH-DM with identical inputs** for analytic convergence.  
+  **Outputs:** tables → `data/Part 1/`, figures → `figures/Part 1/`.
+
+- `code/Part 1/Validation Analysis QDiabetes vs HH Original.R`  
+  Produces agreement metrics (**Pearson**, **Spearman**, **ICC**), **Bland–Altman** bias & LoA, and sex/age subgroup summaries.  
+  **Outputs:** tables → `data/Part 1/`, figures → `figures/Part 1/`.
+
+#### Part 2 — HH Inputs (Contemporary Analysis)
+- `code/Part 2/QDiabetes_Dataset_RiskCalc_Modern.R`  
+  Runs **HH-DM with contemporary relative risks & prevalences** on the same cohort; compares against **QDiabetes-2018 (A–C)**.  
+  **Outputs:** tables → `data/Part 2/`, figures → `figures/Part 2/`.
+
+- `code/Part 2/Validation Analysis QDiabetes vs HH Modern.R`  
+  Computes agreement metrics and **Bland–Altman** statistics versus QDiabetes (A–C); generates subgroup summaries.  
+  **Outputs:** tables → `data/Part 2/`, figures → `figures/Part 2/`.
+  
 
 ## How to Use
 
@@ -90,16 +107,14 @@ Plots are written to:
 
 3. Choose a track
 
-   Part 1: run code/Part 1/dataset-diabetes-qdiabetes-vs-hh.R, then validation-analysis-diabetes-qdiabetes-inputs.R
+   - Part 1: run `code/Part 1/QDiabetes_Dataset_RiskCalc_Original.R`, then `Validation Analysis QDiabetes vs HH Original.R`
 
-   Part 2: run code/Part 2/dataset-diabetes-hh-inputs.R, then validation-analysis-diabetes-hh-inputs.R
+   - Part 2: run `code/Part 2/QDiabetes_Dataset_RiskCalc_Modern.R`, then `Validation Analysis QDiabetes vs HH Modern.R`
 
 4. Outputs
 
-  Tables → data/Part 1/ or data/Part 2/
-  Figures → figures/Part 1/ or figures/Part 2/
-
-## Risk Models Implemented
+  - Tables → `data/Part 1/` or `data/Part 2/`
+  - Figures → `figures/Part 1/` or `figures/Part 2/`
 
 
 ## Output Variables
@@ -111,5 +126,3 @@ Each run produces:
 - Subgroup summaries (age bands; sex)
 - Figures: scatterplots, BA (overall; by sex; by age), simple slopes, adjusted means
 
-## Notes
-  
