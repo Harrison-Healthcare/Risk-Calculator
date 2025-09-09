@@ -1,6 +1,8 @@
 <p align="center">
   <img src="figures/harrison-logo.jpg" alt="Harrison Healthcare Logo" width="150"/>
 </p>
+
+
 ---
 
 # Agreement Between Harrison Healthcare’s and QDiabetes 10-Year Type 2 Diabetes Risk Calculator in a Simulated Dataset
