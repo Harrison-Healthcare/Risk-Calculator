@@ -85,17 +85,22 @@ Across the 500 000 simulated records the two calculators were strongly correlate
 
 **Figure 1.** Scatterplots of QDaibetes vs. HH-Diabetes Using QDiabetes Inputs
 
-1.  **Model A**
+**A. Model A**
+<div align="center">
+  <img src="figures/Part 1/Scatter_Model_A.png" width="600">
+</div>
 
-![A graph with a line going up AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image1.png)
+**B. Model B**
 
-2.  **Model B**
+<div align="center">
+  <img src="figures/Part 1/Scatter_Model_B.png" width="600">
+</div>
 
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image2.png)
+**C. Model C**
 
-3.  **Model C**
-
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image3.png)
+<div align="center">
+  <img src="figures/Part 1/Scatter_Model_C.png" width="600">
+</div>
 
 ### Convergence Across the Risk Spectrum
 
@@ -103,17 +108,23 @@ Across the 500 000 simulated records the two calculators were strongly correlate
 
 **Figure 2.** Bland-Altman Plot Comparing QDiabetes and HH-Diabetes
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image4.png)
+<div align="center">
+  <img src="figures/Part 1/BA_Model_A.png" width="600">
+</div>
 
-2.  **Model B**
+**B. Model B**
 
-![A graph with lines and lines on it AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image5.png)
+<div align="center">
+  <img src="figures/Part 1/BA_Model_B.png" width="600">
+</div>
 
-3.  **Model C**
+**C. Model C**
 
-![A graph with lines and a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image6.png)
+<div align="center">
+  <img src="figures/Part 1/BA_Model_C.png" width="600">
+</div>
 
 ### Age and Sex Effects
 
@@ -121,28 +132,31 @@ In addition to examining convergence along the risk spectrum, we also examined w
 
 A detailed breakdown by age band is provided in [Table 4](#_Age_and_Sex), which shows the convergence widening from about two percentage points in adults under 45 years to six–seven points in those aged 65 years or older.
 
-*  
-*
-
 This section evaluates convergence between the HH Diabetes and QDiabetes risk calculators when HH is run with relative risks and prevalence derived from contemporary peer-reviewed literature. The synthetic cohort is identical to Part 1; QDiabetes remains as originally published. Therefore, any differences reflect HH’s inputs, not implementation.
 
 ### Overall Agreement – HH Inputs
 
 HH and QDaibetes risk scores demonstrated very similar ranking ([Table 5](#part-2-hh-inputs)). Spearman correlations for HH and QDiabetes were 0.869 (Model A), 0.757 (Model B), and 0.868 (Model C), and the scatterplots clustered around the 45° line (Figure 3A–C). Linear correlations were moderate (r = 0.635, 0.566, 0.511). Intraclass correlations were modest (ICC 0.50, 0.32, 0.33), which points to a small numerical difference between tools in precise risk estimates rather than disagreement about high vs. low risk.
 
-Figure 3. Scatterplot of QDiabetes vs HH-Diabetes Using HH Inputs
+**Figure 3.** Scatterplot of QDiabetes vs HH-Diabetes Using HH Inputs
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image7.png)
+<div align="center">
+  <img src="figures/Part 2/Scatter_Model_A.png" width="600">
+</div>
 
-2.  **Model B**
+**B. Model B**
 
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image8.png)
+<div align="center">
+  <img src="figures/Part 2/Scatter_Model_B.png" width="600">
+</div>
 
-3.  **Model C**
+**C. Model C**
 
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image9.png)
+<div align="center">
+  <img src="figures/Part 2/Scatter_Model_C.png" width="600">
+</div>
 
 ### Average Difference and Limits of Agreement (Bland–Altman) – HH Inputs 
 
@@ -150,17 +164,23 @@ On average, HH estimates were slightly higher for 10‑year risk than QDiabetes 
 
 **Figure 4.** Bland-Altman Plot Comparing QDiabetes and HH-Diabetes using HH Inputs
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image10.png)
+<div align="center">
+  <img src="figures/Part 2/BA_Model_A.png" width="600">
+</div>
 
-2.  **Model B**
+**B. Model B**
 
-![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image11.png)
+<div align="center">
+  <img src="figures/Part 2/BA_Model_B.png" width="600">
+</div>
 
-3.  **Model C**
+**C. Model C**
 
-![A graph with lines and a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image12.png)
+<div align="center">
+  <img src="figures/Part 2/BA_Model_C.png" width="600">
+</div>
 
 ### Age and Sex Patterns – HH Inputs 
 
@@ -241,51 +261,75 @@ Table 4 shows how the average difference between QDiabetes and HH widens as peop
 
 **Figure 5.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Sex
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image13.png)![A graph with lines drawn on it AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image14.png)
+<p align="center">
+  <img src="figures/Part 1/BA_Model_A_female.png" width="45%">
+  <img src="figures/Part 1/BA_Model_A_male.png" width="45%">
+</p>
 
-2.  **Model B**
 
-![A graph with lines on a black background AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image15.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image16.png)
+**B. Model B**
 
-3.  **Model C**
+<p align="center">
+  <img src="figures/Part 1/BA_Model_B_female.png" width="45%">
+  <img src="figures/Part 1/BA_Model_B_male.png" width="45%">
+</p>
 
-![A graph with lines and a line on it AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image17.png)![A graph with lines and a blue line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image18.png)
+**C. Model C**
+
+<p align="center">
+  <img src="figures/Part 1/BA_Model_C_female.png" width="45%">
+  <img src="figures/Part 1/BA_Model_C_male.png" width="45%">
+</p>
 
 **Figure 6.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Age
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with a green line and red line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image19.png)![A graph with lines and a line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image20.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image21.png)
+<p align="center">
+  <img src="figures/Part 1/BA_Model_A_age_18-44.png" width="33%">
+  <img src="figures/Part 1/BA_Model_A_age_45-64.png" width="33%">
+  <img src="figures/Part 1/BA_Model_A_age_65plus.png" width="33%">
+</p>
 
-2.  **Model B**
+**B. Model B**
 
-![A graph with lines and numbers AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image22.png)![A graph with lines and a curved line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image23.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image24.png)
+<p align="center">
+  <img src="figures/Part 1/BA_Model_B_age_18-44.png" width="33%">
+  <img src="figures/Part 1/BA_Model_B_age_45-64.png" width="33%">
+  <img src="figures/Part 1/BA_Model_B_age_65plus.png" width="33%">
+</p>
 
-3.  **Model C**
+**C. Model C**
 
-![A graph with lines and a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image25.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image26.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image27.png)
+<p align="center">
+  <img src="figures/Part 1/BA_Model_C_age_18-44.png" width="33%">
+  <img src="figures/Part 1/BA_Model_C_age_45-64.png" width="33%">
+  <img src="figures/Part 1/BA_Model_C_age_65plus.png" width="33%">
+</p>
 
-**  
-**
 
 **Figure 7.** Simple Slopes Bias vs Age by Sex
 
-1.  **Model A**
+**A. Model A**
 
-![A graph with lines and a line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image28.png)
+<div align="center">
+  <img src="figures/Part 1/simple_slopes_Model_A.png" width="600">
+</div>
 
-2.  **Model B**
+**B. Model B**
 
-![A graph with lines and lines AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image29.png)
+<div align="center">
+  <img src="figures/Part 1/simple_slopes_Model_B.png" width="600">
+</div>
 
-**  
-**
+**C. Model C**
 
-3.  **Model C**
+<div align="center">
+  <img src="figures/Part 1/simple_slopes_Model_C.png" width="600">
+</div>
 
-![A graph with lines and a line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image30.png)
 
 # Part 2: HH Inputs
 
@@ -331,44 +375,71 @@ Table 8 shows that the size of the HH–QDiabetes difference depends on age. In 
 | **45–64**     | 5.19%       | 6.51%       | 6.79%       |
 | **65+**       | 0.12%       | 3.51%       | 1.81%       |
 
-Figure 8. Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Sex
+**Figure 8.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Sex
 
-1.  Model A
+**A. Model A**
 
-![A graph with lines and a line on it AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image31.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image32.png)
-
-2.  **Model B**
-
-![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image33.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image34.png)
-
-3.  **Model C**
-
-![A graph with lines and a line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image35.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image36.png)
-
-**Figure 9.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Age
-
-1.  **Model A**
-
-![A graph with a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image37.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image38.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image39.png)
-
-2.  **Model B**
-
-![A graph with a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image40.png)![A graph with green line and red line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image41.png)![A graph with lines and a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image42.png)
-
-3.  **Model C**
-
-![A graph with a green line AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image43.png)![A graph with lines and dots AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image44.png)![A graph with lines and a line in the middle AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image45.png)
-
-**Figure 10.** Simple Slopes Bias vs Age by Sex (Modern Inputs)
-
-1.  **Model A**
-
-![A graph with lines and lines AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image46.png)
+<p align="center">
+  <img src="figures/Part 2/BA_Model_A_bySex_female.png" width="45%">
+  <img src="figures/Part 2/BA_Model_A_bySex_male.png" width="45%">
+</p>
 
 **B. Model B**
 
-![A graph with lines and lines on it AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image47.png)
+<p align="center">
+  <img src="figures/Part 2/BA_Model_B_bySex_female.png" width="45%">
+  <img src="figures/Part 2/BA_Model_B_bySex_male.png" width="45%">
+</p>
 
 **C. Model C**
 
-![A graph with lines and lines AI-generated content may be incorrect.](/mnt/data/qdiabetes_media/media/image48.png)
+<p align="center">
+  <img src="figures/Part 2/BA_Model_C_bySex_female.png" width="45%">
+  <img src="figures/Part 2/BA_Model_C_bySex_male.png" width="45%">
+</p>
+
+**Figure 9.** Bland-Altman Plots Comparing QDiabetes and HH-Diabetes Risk Calculators, Stratified by Age
+
+**A. Model A**
+
+<p align="center">
+  <img src="figures/Part 2/BA_Model_A_byAge_18_44.png" width="33%">
+  <img src="figures/Part 2/BA_Model_A_byAge_45_64.png" width="33%">
+  <img src="figures/Part 2/BA_Model_A_byAge_65_.png" width="33%">
+</p>
+
+**B. Model B**
+
+<p align="center">
+  <img src="figures/Part 2/BA_Model_B_byAge_18_44.png" width="33%">
+  <img src="figures/Part 2/BA_Model_B_byAge_45_64.png" width="33%">
+  <img src="figures/Part 2/BA_Model_B_byAge_65_.png" width="33%">
+</p>
+
+**C. Model C**
+
+<p align="center">
+  <img src="figures/Part 2/BA_Model_B_byAge_18_44.png" width="33%">
+  <img src="figures/Part 2/BA_Model_B_byAge_45_64.png" width="33%">
+  <img src="figures/Part 2/BA_Model_B_byAge_65_.png" width="33%">
+</p>
+
+**Figure 10.** Simple Slopes Bias vs Age by Sex
+
+**A. Model A**
+
+<div align="center">
+  <img src="figures/Part 2/simple_slopes_Model_A.png" width="600">
+</div>
+
+**B. Model B**
+
+<div align="center">
+  <img src="figures/Part 2/simple_slopes_Model_B.png" width="600">
+</div>
+
+**C. Model C**
+
+<div align="center">
+  <img src="figures/Part 2/simple_slopes_Model_C.png" width="600">
+</div>
