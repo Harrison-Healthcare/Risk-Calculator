@@ -7,7 +7,7 @@
 
 # Harrison Healthcare Risk Calculator
 
-*Last Updated: August 2025*
+*Last Updated: September 2025*
 
 ## Authors and Contributors
 
@@ -56,6 +56,8 @@ This methodology builds on established research:
 - **[Risk Dial Citations](./docs/evidence/risk-dial-citations/):** Peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate weights in the Harrison Healthcare Risk Dial for each disease.
 - **[Risk Calculator Spreadsheet](./data/risk-calculator.csv):** Comprehensive spreadsheet of risk factors, relative risks, and prevalence data for all disease models
 - **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
+- **[Dementia Simulation Study](./analysis/simulation-studies/dementia/Dementia-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Dementia Population Risk Tool (DemPoRT)
+- **[Diabetes Simulation Study](./analysis/simulation-studies/diabetes/Diabetes-simulation-study-white%20paper.md):** Validation study comparing our methodology against the QDiabetes-2018 risk predicition algorithms for Type 2 Diabetes
 
 
 ## 🗺️ Repository Structure
@@ -72,18 +74,30 @@ This methodology builds on established research:
 │       └── jbi-reports/                      # JBI Critical Appraisal reports (~200 files)
 │
 ├── data/                                     # Core datasets and risk calculation inputs
-│   └── risk-calculator.csv                  # Main risk factor database
+│   └── risk-calculator.csv                   # Main risk factor database
 │
 └── analysis/                                 # Research studies and validation work
     ├── methodology-enhancements/             # Enhanced methodology research
     │   └── mediation-effects/                # Mediation effect correction methodology
     └── simulation-studies/                   # Validation studies
-        └── coronary-heart-disease/           # CHD validation study
+        ├── coronary-heart-disease/           # CHD validation study
+        │   ├── code/                         # R analysis scripts  
+        │   ├── data/                         # Study-specific datasets
+        │   ├── figures/                      # Generated visualizations
+        │   ├── CHD-simulation-study-white paper.md
+        │   └── CHD-simulation-study-README.md          
+        ├── diabetes/                        # Diabetes validation study
+        │   ├── code/                        # R analysis scripts  
+        │   ├── data/                        # Study-specific datasets
+        │   ├── figures/                     # Generated visualizations
+        │   ├── Diabetes-simulation-study-white paper.md
+        │   └── Diabetes-simulation-study-README.md
+        └── dementia/                         # Dementia validation study
             ├── code/                         # R analysis scripts  
             ├── data/                         # Study-specific datasets
             ├── figures/                      # Generated visualizations
-            ├── CHD-simulation-study-white paper.md
-            └── CHD-simulation-study-README.md
+            ├── Dementia-simulation-study-white paper.md
+            └── Dementia-simulation-study-README.md
 ```
 
 ## 📄 License & Usage
