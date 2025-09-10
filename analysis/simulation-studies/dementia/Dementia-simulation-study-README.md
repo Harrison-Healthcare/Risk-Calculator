@@ -23,7 +23,7 @@ The project is divided into two parts:
 
 ## Folder Structure
 ```text
-dementia/                                   # DemPoRT validation study
+dementia/                                   # Diabetes validation study
 |-- code/                                   # R analysis scripts
 |   |-- part 1/                             # DemPoRT inputs
 |   `-- part 2/                             # HH inputs (modern)
