@@ -111,10 +111,7 @@ Plots are written to:
 
    - Part 2: run `code/Part 2/QDiabetes_Dataset_RiskCalc_Modern.R`, then `Validation Analysis QDiabetes vs HH Modern.R`
 
-4. Outputs
-
-  - Tables → `data/Part 1/` or `data/Part 2/`
-  - Figures → `figures/Part 1/` or `figures/Part 2/`
+4. Outputs: Tables → `data/Part 1/` or `data/Part 2/`; Figures → `figures/Part 1/` or `figures/Part 2/`
 
 
 ## Output Variables
