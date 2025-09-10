@@ -56,17 +56,17 @@ To assess the degree of agreement between HH-CHD and FRS risk estimates, several
 
 The HH-CHD risk calculator demonstrated strong convergence with the Framingham Risk Score (FRS) in estimating 10-year coronary heart disease (CHD). Using Framingham inputs, correlations between HH-CHD and FRS estimates were high for both the Total Cholesterol (TC) and low-density lipoprotein (LDL) models (r = 0.95 and r = 0.94, respectively). On average, HH-CHD estimates differed from FRS by approximately 3%, with 95% of scores falling within 7–9 percentage points of each other.
 
-Figure 1. Scatterplots of HH-CHD vs. FRS Estimates Using Framingham Inputs
+**Figure 1.** Scatterplots of HH-CHD vs. FRS Estimates Using Framingham Inputs
 
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/scatter-TC-vs-HH-CHD-TC.png" width="600">
+  <img src="figures/Part 1/scatter-TC-vs-HH-CHD-TC.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/scatter-LDL-vs-HH-CHD-LDL.png" width="600">
+  <img src="figures/Part 1/scatter-LDL-vs-HH-CHD-LDL.png" width="600">
 </div>
 
 When populated with contemporary relative risks and prevalence figures, the HH-CHD calculator continued to show strong convergence with FRS estimates (r = .87 for TC; r = .85 for LDL). HH-CHD estimates were on average 2% lower, and 95% of estimates fell within 10% of the corresponding FRS estimates. Scatterplots illustrating this comparison are provided in .
@@ -297,7 +297,7 @@ All analyses were executed in R 4.3 (R Foundation, 2025): dplyr 1.1, irr 0.84, g
 
 ### A5. Overall Agreement - Framingham Inputs
 
-Table 1. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
+**Table 1.** Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 | Metric | Framingham TC vs HH-CHD TC | Framingham LDL vs HH-CHD LDL |
 |---|---|---|
@@ -309,17 +309,17 @@ Table 1. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; HH-CHD, Harrison Healthcare coronary heart disease risk calculator; ICC, intraclass correlation coefficient; LoA, limits of agreement.
 
-Figure 2. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
+**Figure 2.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/BA-TC-overall.png" width="600">
+  <img src="figures/Part 1/BA-TC-overall.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/BA-LDL-overall.png" width="600">
+  <img src="figures/Part 1/BA-LDL-overall.png" width="600">
 </div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; LoA, limits of agreement.
@@ -327,7 +327,7 @@ Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; 
 
 ### A6. Subgroup Bland–Altman Statistics (Sex and Age) - Framingham Inputs
 
-Table 2. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
+**Table 2.** Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
 
 | Model | Group | Bias | LoA | Pearson | Spearman |
 |---|---|---|---|---|---|
@@ -344,30 +344,30 @@ Table 2. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs 
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; LoA, limits of agreement.
 
-Figure 3. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
+**Figure 3.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/BA-TC-by-sex.png" width="600">
+  <img src="figures/Part 1/BA-TC-by-sex.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/BA-LDL-by-sex.png" width="600">
+  <img src="figures/Part 1.BA-LDL-by-sex.png" width="600">
 </div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
-Figure 4. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
+**Figure 4.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/BA-TC-by-age.png" width="600">
+  <img src="figures/Part 1/BA-TC-by-age.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/BA-LDL-by-age.png" width="600">
+  <img src="figures/Part 1/BA-LDL-by-age.png" width="600">
 </div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; grp, group.
@@ -375,7 +375,7 @@ Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; 
 
 ### A7. ANCOVA: Type II Tests of Bias - Framingham Inputs
 
-Table 3. Type II ANCOVA of Bias Framingham vs HH-CHD
+**Table 3.** Type II ANCOVA of Bias Framingham vs HH-CHD
 
 | Model | Term | Sum Sq | Df | F value | Pr(>F) | MS | Partial η² |
 |---|---|---|---|---|---|---|---|
@@ -395,7 +395,7 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 ### A8. Simple-Slope & Adjusted-Mean Results - Framingham Inputs
 
-Table 4. Simple Slopes & Adjusted Means Framingham vs HH-CHD
+**Table 4.** Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
 | Model | Sex | Age Slope (SE) | t (df) | p | Adj. Mean Bias (95 % CI) | Female−Male Contrast (95 % CI) | p |
 |---|---|---|---|---|---|---|---|
@@ -406,16 +406,16 @@ Table 4. Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; SE, standard error; t, t-statistic; df, degrees of freedom; p, two-tailed probability value; Adj., adjusted; CI, confidence interval.
 
-Figure 5. Simple Slopes Bias vs Age by Sex
+**Figure 5.** Simple Slopes Bias vs Age by Sex
 
 **A. Total Cholesterol (TC)** 
 <div align="center">
-  <img src="figures/Framingham-simple-slopes-TC.png" width="600">
+  <img src="figures/Part 1/Framingham-simple-slopes-TC.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/Framingham-simple-slopes-LDL.png" width="600">
+  <img src="figures/Part 1/Framingham-simple-slopes-LDL.png" width="600">
 </div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; HH, Harrison Healthcare risk calculator.
@@ -430,7 +430,7 @@ Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
 ### A9. Overall Agreement – Contemporary Inputs
 
-Table 5. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
+**Table 5.** Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 | Metric | Framingham TC vs HH-CHD | Framingham LDL vs HH-CHD |
 |---|---|---|
@@ -442,32 +442,32 @@ Table 5. Agreement and Correlation Metrics for Framingham vs HH-CHD Risk Scores
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; HH-CHD, Harrison Healthcare coronary heart disease risk calculator; ICC, intraclass correlation coefficient; LoA, limits of agreement.
 
-Figure 7. Scatterplots Framingham vs HH-CHD
+**Figure 7.** Scatterplots Framingham vs HH-CHD
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/modern-scatter-TC-vs-HH.png" width="600">
+  <img src="figures/Part 2/modern-scatter-TC-vs-HH.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/modern-scatter-LDL-vs-HH.png" width="600">
+  <img src="figures/Part 2/modern-scatter-LDL-vs-HH.png" width="600">
 </div>
 
 Abbreviations: LDL, low-density lipoprotein cholesterol; TC, total cholesterol; HH, Harrison Healthcare risk calculator.
 
-Figure 8. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
+**Figure 8.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators
 
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/modern-BA-TC-overall.png" width="600">
+  <img src="figures/Part 2/modern-BA-TC-overall.png" width="600">
 </div>
 
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/modern-BA-LDL-overall.png" width="600">
+  <img src="figures/Part 2/modern-BA-LDL-overall.png" width="600">
 </div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol; LoA, limits of agreement.
@@ -475,7 +475,7 @@ Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipopro
 
 ### A10. Subgroup Bland–Altman Statistics (Sex and Age) – Contemporary Inputs
 
-Table 6. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
+**Table 6.** Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs HH-CHD
 
 | Model | Group | Bias | LoA | Pearson | Spearman |
 |---|---|---|---|---|---|
@@ -492,30 +492,30 @@ Table 6. Age- and Sex-Stratified Bland-Altman Statistic Comparing Framingham vs 
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; LoA, limits of agreement.
 
-Figure 9. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
+**Figure 9.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Age
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/modern-BA-TC-by-age.png" width="600">
+  <img src="figures/Part 2/modern-BA-TC-by-age.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/modern-BA-LDL-by-age.png" width="600">
+  <img src="figures/Part 2/modern-BA-LDL-by-age.png" width="600">
 </div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol; grp, group.
 
-Figure 10. Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
+**Figure 10.** Bland–Altman Plots Comparing Framingham and HH-CHD Risk Calculators, Stratified by Sex
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/modern-BA-TC-by-sex.png" width="600">
+  <img src="figures/Part 2/modern-BA-TC-by-sex.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/modern-BA-LDL-by-sex.png" width="600">
+  <img src="figures/Part 2/modern-BA-LDL-by-sex.png" width="600">
 </div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
@@ -523,7 +523,7 @@ Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipopro
 
 ### A11. ANCOVA: Type II Tests of Bias – Contemporary Inputs
 
-Table 7. Type II ANCOVA of Bias Framingham vs HH-CHD
+**Table 7.** Type II ANCOVA of Bias Framingham vs HH-CHD
 
 | Model | Term | Sum Sq | Df | F value | Pr(>F) | MS | Partial η² |
 |---|---|---|---|---|---|---|---|
@@ -543,7 +543,7 @@ Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; 
 
 ## A12. Simple-Slope & Adjusted-Mean Results – Contemporary Inputs
 
-Table 8. Simple Slopes & Adjusted Means Framingham vs HH-CHD
+**Table 8.** Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
 | Model | Sex | Age Slope (SE) | t (df) | p | Adj. Mean Bias (95 % CI) | Female − Male Contrast (95 % CI) | p |
 |---|---|---|---|---|---|---|---|
@@ -554,24 +554,24 @@ Table 8. Simple Slopes & Adjusted Means Framingham vs HH-CHD
 
 Abbreviations: TC, total cholesterol; LDL, low-density lipoprotein cholesterol; SE, standard error; t, t-statistic; df, degrees of freedom; p, two-tailed probability value; Adj., adjusted; CI, confidence interval.
 
-Figure 11. Simple Slopes Bias vs Age by Sex
+**Figure 11.** Simple Slopes Bias vs Age by Sex
 
 **A. Total Cholesterol (TC)**  
 <div align="center">
-  <img src="figures/modern-simple-slopes-TC.png" width="600">
+  <img src="figures/Part 2/modern-simple-slopes-TC.png" width="600">
 </div>
 
 **B. Low-Density Lipoprotein (LDL)**  
 <div align="center">
-  <img src="figures/modern-simple-slopes-LDL.png" width="600">
+  <img src="figures/Part 2/modern-simple-slopes-LDL.png" width="600">
 </div>
 
 Abbreviations: HH, Harrison Healthcare risk calculator; LDL, low-density lipoprotein cholesterol; TC, total cholesterol.
 
-Figure 12. Adjusted Mean Bias
+**Figure 12.** Adjusted Mean Bias
 
 <div align="center">
-  <img src="figures/modern-adjusted-means-by-sex.png" width="600">
+  <img src="figures/Part 2/modern-adjusted-means-by-sex.png" width="600">
 </div>
 
 
