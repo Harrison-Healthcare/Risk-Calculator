@@ -6,7 +6,7 @@
 
 # Agreement Between Harrison Healthcare’s and QDiabetes 10-Year Type 2 Diabetes Risk Calculator in a Simulated Dataset
 
-This directory contains R code, data files, figures, and documentation for simulating and validating type 2 diabetes risk datasets using both **QDiabetes-2018 (Models A–C)** and **Harrison Healthcare’s modular diabetes risk model (HH-DM)**.  
+This directory contains R code, data files, figures, and documentation for simulating and validating type 2 diabetes risk datasets using both QDiabetes-2018 (Models A–C) and Harrison Healthcare’s modular diabetes risk model (HH-DM).  
 
 The project is divided into two parts:
 
@@ -77,20 +77,20 @@ Plots are written to:
 
 #### Part 1 — QDiabetes Inputs (Original Inputs Analysis)
 - `code/Part 1/dQDiabetes_Dataset_RiskCalc_Original.R`  
-  Builds the synthetic cohort mirroring QDiabetes predictors; computes **QDiabetes Models A–C** and **HH-DM with identical inputs** for analytic convergence.  
+  Builds the synthetic cohort mirroring QDiabetes predictors; computes QDiabetes Models A–C and HH-DM with identical inputs for analytic convergence.  
   **Outputs:** tables → `data/Part 1/`, figures → `figures/Part 1/`.
 
 - `code/Part 1/Validation Analysis QDiabetes vs HH Original.R`  
-  Produces agreement metrics (**Pearson**, **Spearman**, **ICC**), **Bland–Altman** bias & LoA, and sex/age subgroup summaries.  
+  Produces agreement metrics (Pearson, Spearman, ICC), Bland–Altman bias & LoA, and sex/age subgroup summaries.  
   **Outputs:** tables → `data/Part 1/`, figures → `figures/Part 1/`.
 
 #### Part 2 — HH Inputs (Contemporary Analysis)
 - `code/Part 2/QDiabetes_Dataset_RiskCalc_Modern.R`  
-  Runs **HH-DM with contemporary relative risks & prevalences** on the same cohort; compares against **QDiabetes-2018 (A–C)**.  
+  Runs HH-DM with contemporary relative risks & prevalences on the same cohort; compares against QDiabetes-2018 (A–C).  
   **Outputs:** tables → `data/Part 2/`, figures → `figures/Part 2/`.
 
 - `code/Part 2/Validation Analysis QDiabetes vs HH Modern.R`  
-  Computes agreement metrics and **Bland–Altman** statistics versus QDiabetes (A–C); generates subgroup summaries.  
+  Computes agreement metrics and Bland–Altman statistics versus QDiabetes (A–C); generates subgroup summaries.  
   **Outputs:** tables → `data/Part 2/`, figures → `figures/Part 2/`.
   
 
