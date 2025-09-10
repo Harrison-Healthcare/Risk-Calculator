@@ -55,9 +55,10 @@ This methodology builds on established research:
 - **[Methodology](./docs/methodology/methodology.md):** Complete methodology documentation with worked examples
 - **[Risk Dial Citations](./docs/evidence/risk-dial-citations/):** Peer-reviewed studies and citations that provide the relative risk and prevalence data used to calculate weights in the Harrison Healthcare Risk Dial for each disease.
 - **[Risk Calculator Spreadsheet](./data/risk-calculator.csv):** Comprehensive spreadsheet of risk factors, relative risks, and prevalence data for all disease models
-- **[CHD Simulation Study](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Framingham Risk Score for Coronary Heart Disease (correlation r > 0.95)
-- **[Dementia Simulation Study](./analysis/simulation-studies/dementia/Dementia-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Dementia Population Risk Tool (DemPoRT)
-- **[Diabetes Simulation Study](./analysis/simulation-studies/diabetes/Diabetes-simulation-study-white%20paper.md):** Validation study comparing our methodology against the QDiabetes-2018 risk predicition algorithms for Type 2 Diabetes
+- **[Simulation Studies](analysis/simulation-studies):** Validation studies comparing our methodology against established risk prediction tools
+  - **[Coronary Heart Disease](./analysis/simulation-studies/coronary-heart-disease/CHD-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Framingham Risk Score.
+  - **[Dementia](./analysis/simulation-studies/dementia/Dementia-simulation-study-white%20paper.md):** Validation study comparing our methodology against the Dementia Population Risk Tool (DemPoRT).
+  - **[Diabetes](./analysis/simulation-studies/diabetes/Diabetes-simulation-study-white%20paper.md):** Validation study comparing our methodology against QDiabetes for Type 2 Diabetes.
 
 
 ## 🗺️ Repository Structure
@@ -102,15 +103,24 @@ This methodology builds on established research:
 
 ## 📄 License & Usage
 
-This work is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+MIT License
 
-### What this means:
-- ✅ **Share** — copy and redistribute the material in any medium or format
-- ✅ **Attribution** — you must give appropriate credit to Harrison Healthcare
-- ❌ **NonCommercial** — you may not use the material for commercial purposes
-- ❌ **NoDerivatives** — you may not distribute modified versions
+Copyright (c) 2025 Harrison Healthcare
 
-### For Commercial Use:
-Commercial licensing and partnerships are available. Please contact Harrison Healthcare for commercial use permissions.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-*© 2024 Harrison Healthcare. All rights reserved.*
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
